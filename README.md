@@ -1,7 +1,7 @@
 # Plasmids in *Yersinia pestis*
 
 ## Overview
-Case study of labelled assembly graphs for *Yersinia pestis*. It looks like most *Y. pestis* isolates have the same three plasmids (pCD1, pMT1 and pPCP1), so there might not be much to learn aside of the ability to label the graphs well.
+Case study of labelled assembly graphs for *Yersinia pestis*. It looks like most *Y. pestis* isolates have the same three plasmids (pCD1, pMT1 and pPCP1), so there might not be much to learn aside of the ability to label the graphs well. One potential issue of interest is the case of multimerization of plasmids.
 
 ## Data
 
