@@ -10,9 +10,13 @@ Case study of labelled assembly graphs for *Yersinia pestis*. It looks like most
 #### Rapid Detection of Genetic Engineering, Structural Variation, and Antimicrobial Resistance Markers in Bacterial Biothreat Pathogens by Nanopore Sequencing
 <a href="https://www.biorxiv.org/content/10.1101/730093v1">Paper</a>
 
+This paper has only two samples, a *Y. pestis* and a *Bacillus anthracis*, for which they generated Illumina, PacBio and Oxford Nanopore data. The *Y. pestis* sample is interesting as it has several variants of the pPCP1 plasmid, if I understood well. One interesting issue they deal with is that the pPCP1 plasmid appears in monomer and dimer/trimer/quadrimer (duplicates) forms.  
+
+Raw data: <a href="https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA523610">RJNA523610</a>
+
 ### Ancient DNA
 
-The papers below describe aDAN datasets. None of them was assembled de-novo, but genomes, whenr econstructed, were obtained by mapping to a reference genome. How realistic is-it to embark into ptre-processing the raw reads data and assembling the data? Lack of uniform coverage is likely a serious issue.
+The papers below describe aDAN datasets. None of them was assembled de-novo, but genomes, whenr econstructed, were obtained by mapping to a reference genome. How realistic is-it to embark into pre-processing the raw reads data and assembling the data? Lack of uniform coverage is likely a serious issue.
 
 #### Analysis of 3800-year-old Yersinia pestis genomes suggests Bronze Age origin for bubonic plague
 <a href="https://www.nature.com/articles/s41467-018-04550-9">Paper</a>
