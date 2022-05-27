@@ -8,15 +8,36 @@ Case study of labelled assembly graphs for *Yersinia pestis*. It looks like most
 ### Extant DNA
 
 #### Rapid Detection of Genetic Engineering, Structural Variation, and Antimicrobial Resistance Markers in Bacterial Biothreat Pathogens by Nanopore Sequencing
-<a href="https://www.biorxiv.org/content/10.1101/730093v1">Paper</a>
+<a href="https://www.nature.com/articles/s41598-019-49700-1">Paper</a>
 
 This paper has only two samples, a *Y. pestis* and a *Bacillus anthracis*, for which they generated Illumina, PacBio and Oxford Nanopore data. The *Y. pestis* sample is interesting as it has several variants of the pPCP1 plasmid, if I understood well. One interesting issue they deal with is that the pPCP1 plasmid appears in monomer and dimer/trimer/quadrimer (duplicates) forms.  
 
 Raw data: <a href="https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA523610">RJNA523610</a>
 
+#### Molecular Characterization of Multidrug-Resistant Yersinia enterocolitica From Foodborne Outbreaks in Sweden
+<a href="https://doi.org/10.3389/fmicb.2021.664665">Paper</a>  
+
+This is not *Y. pestis* but *Y. enterocolitica*. There are five new samples, sequenced using Illumina and Oxford Nanopore. All samples have the same virulence plasmid and one sample has an extra plasmid.  
+
+Raw Illumina data: <a href="https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=702388">PRJEB42815</a>
+
+#### Complete, closed and curated genome sequences of Photobacterium damselae subsp. piscicida isolates from Australia indicate mobilome-driven localized evolution and novel pathogenicity determinants
+<a href="https://doi.org/10.1099/mgen.0.000562">Paper</a>  
+
+Again, not *Y. pestis*, but an interesting case of a newly sequenced pathogen, with two chromosomes and a large number of plasmids, and sequenced using Illumina and Oxford Nanopore.  
+
+Raw data: <a href="https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=662633">PRJNA662633</a>
+
 ### Ancient DNA
 
 The papers below describe aDAN datasets. None of them was assembled de-novo, but genomes, whenr econstructed, were obtained by mapping to a reference genome. How realistic is-it to embark into pre-processing the raw reads data and assembling the data? Lack of uniform coverage is likely a serious issue.
+
+#### Stone Age Yersinia pestis genomes shed light on the early evolution, diversity, and ecology of plague
+<a href="https://doi.org/10.1073/pnas.2116722119">Paper</a>
+
+Seventeen *Y. pestis* genomes from 5,000 to 2,500 y BP from a wide geographic expanse across Eurasia.  
+
+Raw data: <a href="https://www.ebi.ac.uk/ena/browser/view/PRJEB51099">PRJEB51099</a>
 
 #### Analysis of 3800-year-old Yersinia pestis genomes suggests Bronze Age origin for bubonic plague
 <a href="https://www.nature.com/articles/s41467-018-04550-9">Paper</a>
