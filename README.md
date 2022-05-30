@@ -26,11 +26,8 @@ Raw Illumina data: <a href="https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject
 
 Again, not *Y. pestis*, but an interesting case of a newly sequenced pathogen, with two chromosomes and a large number of plasmids, and sequenced using Illumina and Oxford Nanopore.  
 
-Raw data: <a href="https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=662633">PRJNA662633</a>. Other related available SRA datasets include <a href="https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=529570">GCA_004683985.1</a>, <a href="https://www.ncbi.nlm.nih.gov/sra?LinkName=biosample_sra&from_uid=7327716">GCA_003026245.1</a>, <a href="https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=529569">GCA_004684005.1</a>.
+Raw data: <a href="https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=662633">PRJNA662633</a>. Other related available SRA datasets include <a href="https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR6218669">ATCC 29688</a>, <a href="https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR6218444">ATCC 29689</a>, <a href="https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR8902871">SNW-8.1</a> and <a href="https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR8954861">PP3</a>.
 	
-
-
-
 ### Ancient DNA
 
 The papers below describe aDAN datasets. None of them was assembled de-novo, but genomes, whenr econstructed, were obtained by mapping to a reference genome. How realistic is-it to embark into pre-processing the raw reads data and assembling the data? Lack of uniform coverage is likely a serious issue.
