@@ -9,18 +9,18 @@
 #SBATCH --job-name=plasgraph
 
 # Environment variables
-source ../../config.sh
+source ../config.sh
 ## Sample ID
 SAMPLE=$(sed -n "${SLURM_ARRAY_TASK_ID}p" samples.txt)
 ## Experiment and output directory
 EXP_DIR=${REPO_HOME}/classification
 OUT_DIR=${EXP_DIR}/${SAMPLE}
-mkdir -p ${OUT_DIR} ${EXP_DIR}/tmp
+mkdir -p ${OUT_DIR}
 
 # Preparing input: assembly graph
-cp ${REPO_HOME}/assemblies/${SAMPLE}/short.gfa.gz ${EXP_DIR}/tmp/${SAMPLE}.gfa.gz
-gunzip ${EXP_DIR}/tmp/${SAMPLE}.gfa.gz
-GFA=${EXP_DIR}/tmp/${SAMPLE}.gfa
+cp ${REPO_HOME}/assemblies/${SAMPLE}/short.gfa.gz ${OUT_DIR}/
+gunzip ${OUT_DIR}/short.gfa.gz
+GFA=${OUT_DIR}/short.gfa
 
 # Running plASgraph
 source ${TOOLS_DIR}/env_plasgraph/bin/activate
