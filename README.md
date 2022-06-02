@@ -12,14 +12,18 @@ Case study of labelled assembly graphs for *Yersinia pestis*. It looks like most
 
 This paper has only two samples, a *Y. pestis* and a *Bacillus anthracis*, for which they generated Illumina, PacBio and Oxford Nanopore data. The *Y. pestis* sample is interesting as it has several variants of the pPCP1 plasmid, if I understood well. One interesting issue they deal with is that the pPCP1 plasmid appears in monomer and dimer/trimer/quadrimer (duplicates) forms.  
 
-Raw data: <a href="https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA523610">RJNA523610</a>
+Raw data: <a href="https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA523610">RJNA523610</a>  
+
+Local ID (directory names in the various folders): `s41598-019-49700-1`
 
 #### Molecular Characterization of Multidrug-Resistant Yersinia enterocolitica From Foodborne Outbreaks in Sweden
 <a href="https://doi.org/10.3389/fmicb.2021.664665">Paper</a>  
 
 This is not *Y. pestis* but *Y. enterocolitica*. There are five new samples, sequenced using Illumina and Oxford Nanopore. All samples have the same virulence plasmid and one sample has an extra plasmid.  
 
-Raw Illumina data: <a href="https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=702388">PRJEB42815</a>
+Raw Illumina data: <a href="https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=702388">PRJEB42815</a>  
+
+Local ID: `fmicb.2021.664665`
 
 #### Complete, closed and curated genome sequences of Photobacterium damselae subsp. piscicida isolates from Australia indicate mobilome-driven localized evolution and novel pathogenicity determinants
 <a href="https://doi.org/10.1099/mgen.0.000562">Paper</a>  
@@ -27,6 +31,8 @@ Raw Illumina data: <a href="https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject
 Again, not *Y. pestis*, but an interesting case of a newly sequenced pathogen, with two chromosomes and a large number of plasmids, and sequenced using Illumina and Oxford Nanopore.  
 
 Raw data: <a href="https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=662633">PRJNA662633</a>. Other related available SRA datasets include <a href="https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR6218669">ATCC 29688</a>, <a href="https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR6218444">ATCC 29689</a>, <a href="https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR8902871">SNW-8.1</a> and <a href="https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR8954861">PP3</a>.
+
+Local ID: `mgen.0.000562`
 	
 ### Ancient DNA
 
@@ -52,6 +58,8 @@ Raw data: <a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJEB24296">PRJ
 Target enrichment with probes specific for the *Y. pestis* chromosome and its three plasmids (pCD1, pMT1 and pPCP1), and subsequent high-throughput sequencing, yielded data sufficient for analysis in four out of five *Y. pestis* positive human samples (Rostov2033, Rostov2039, Azov38 and Gdansk8). The mapping to the *Y. pestis* reference genome (NC 003143.1, NC 003134.1, NC 003131.1, NC 003132.1) revealed 88–96% of genome length coverage for *Y. pestis* chromosome, 67–100% length coverage for the plasmids, and a minimum fourfold to maximum 184-fold mean coverage (9–245-fold for plasmids).  
 
 Raw data: <a href="https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=667376">PRJEB35426</a>.
+
+Local ID: `rstb.2019.0569_SRA.csv`
 
 #### Yersinia pestis genomes reveal plague in Britain 4,000 years ago
 <a href="https://doi.org/10.1101/2022.01.26.477195">Paper</a>
