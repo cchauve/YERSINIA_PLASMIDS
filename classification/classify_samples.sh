@@ -4,7 +4,7 @@
 #SBATCH --mem=32000M       
 #SBATCH --time=1:00:00
 #SBATCH --account=def-chauvec
-#SBATCH --array=1-2
+#SBATCH --array=1-13
 #SBATCH --output=plASgraph_%A_%a.log
 #SBATCH --job-name=plasgraph
 
