@@ -1,0 +1,10 @@
+fastq-dump --gzip --split-files ERR5265260 >>/project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965451/log
+mv ERR5265260_1.fastq.gz short_1.fastq.gz
+mv ERR5265260_2.fastq.gz short_2.fastq.gz
+/home/chauvec/projects/ctb-chauvec/jsiele/bin/Unicycler/unicycler-runner.py -o short -1 short_1.fastq.gz -2 short_2.fastq.gz -t 8 --keep 0 2>&1 >>/project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965451/log
+mv short/assembly.fasta /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965451/short.fasta
+mv short/assembly.gfa /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965451/short.gfa
+mv short/unicycler.log /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965451/short.log
+rm -r temp
+gzip *.fasta *.gfa log
+touch done

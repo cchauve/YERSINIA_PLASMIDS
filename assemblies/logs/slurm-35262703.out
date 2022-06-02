@@ -1,0 +1,8 @@
+fastq-dump --gzip --split-files SRR8608856 >>/project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/bant-SAMN10984861/log
+mv SRR8608856_1.fastq.gz short_1.fastq.gz
+mv SRR8608856_2.fastq.gz short_2.fastq.gz
+unicycler -o short -1 short_1.fastq.gz -2 short_2.fastq.gz -t 8 --keep 0 2>&1 >>/project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/bant-SAMN10984861/log
+sh: unicycler: command not found
+Error in program 'unicycler -o short -...' (exit: 127, signal: 0, dumped: 0)
+
+  at /var/spool/slurmd/job35262703/slurm_script line 84.

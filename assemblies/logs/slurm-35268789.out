@@ -1,0 +1,10 @@
+fastq-dump --gzip --split-files SRR8954861 >>/project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/pdams-SAMN11420087/log
+mv SRR8954861_1.fastq.gz short_1.fastq.gz
+mv SRR8954861_2.fastq.gz short_2.fastq.gz
+/home/chauvec/projects/ctb-chauvec/jsiele/bin/Unicycler/unicycler-runner.py -o short -1 short_1.fastq.gz -2 short_2.fastq.gz -t 8 --keep 0 2>&1 >>/project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/pdams-SAMN11420087/log
+mv short/assembly.fasta /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/pdams-SAMN11420087/short.fasta
+mv short/assembly.gfa /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/pdams-SAMN11420087/short.gfa
+mv short/unicycler.log /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/pdams-SAMN11420087/short.log
+rm -r temp
+gzip *.fasta *.gfa log
+touch done

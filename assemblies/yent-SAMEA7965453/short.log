@@ -1,0 +1,209 @@
+
+Starting Unicycler (2022-06-02 12:50:32)
+----------------------------------------
+    Welcome to Unicycler, an assembly pipeline for bacterial genomes. Since you provided only short reads, Unicycler will essentially function as a SPAdes-optimiser. It will try many k-mer sizes, choose the best based on contig length and graph connectivity, and scaffold the graph using SPAdes repeat resolution.
+    For more information, please see https://github.com/rrwick/Unicycler
+
+Command: /home/chauvec/projects/ctb-chauvec/jsiele/bin/Unicycler/unicycler-runner.py -o short -1 short_1.fastq.gz -2 short_2.fastq.gz -t 8 --keep 0
+
+Unicycler version: v0.5.0
+Using 8 threads
+
+Making output directory:
+  /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short
+
+Dependencies:
+  Program       Version   Status  
+  spades.py     3.15.3    good    
+  racon                   not used
+  makeblastdb   2.12.0+   good    
+  tblastn       2.12.0+   good    
+
+
+Choosing k-mer range for assembly (2022-06-02 12:51:36)
+-------------------------------------------------------
+    Unicycler chooses a k-mer range for SPAdes based on the length of the input reads. It uses a wide range of many k-mer sizes to maximise the chance of finding an ideal assembly.
+
+SPAdes maximum k-mer: 127
+Median read length: 150
+K-mer range: 27, 53, 71, 87, 99, 111, 119, 127
+
+
+SPAdes assemblies (2022-06-02 12:52:40)
+---------------------------------------
+    Unicycler now uses SPAdes to assemble the short reads. It scores the assembly graph for each k-mer using the number of contigs (fewer is better) and the number of dead ends (fewer is better). The score function is 1/(c*(d+2)), where c is the contig count and d is the dead end count.
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/spades_assembly -k 27 --threads 8 --isolate -1 /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short_1.fastq.gz -2 /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short_2.fastq.gz -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/spades_assembly -k 27,53 --threads 8 --restart-from k27 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/spades_assembly -k 27,53,71 --threads 8 --restart-from k53 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/spades_assembly -k 27,53,71,87 --threads 8 --restart-from k71 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/spades_assembly -k 27,53,71,87,99 --threads 8 --restart-from k87 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/spades_assembly -k 27,53,71,87,99,111 --threads 8 --restart-from k99 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/spades_assembly -k 27,53,71,87,99,111,119 --threads 8 --restart-from k111 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/spades_assembly -k 27,53,71,87,99,111,119,127 --threads 8 --restart-from k119 -m 1024
+
+K-mer   Contigs   Dead ends   Score      
+   27                         too complex
+   53     1,512           0      3.31e-04
+   71     1,074           0      4.66e-04
+   87       844           0      5.92e-04
+   99       745           0      6.71e-04
+  111       702           0      7.12e-04
+  119       658           0      7.60e-04
+  127       645           0      7.75e-04 ← best
+
+Read depth filter: removed 32 contigs totalling 9779 bp
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/001_spades_graph_k027.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/001_spades_graph_k053.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/001_spades_graph_k071.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/001_spades_graph_k087.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/001_spades_graph_k099.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/001_spades_graph_k111.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/001_spades_graph_k119.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/001_spades_graph_k127.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/spades_assembly/
+
+
+Determining graph multiplicity (2022-06-02 14:37:25)
+----------------------------------------------------
+    Multiplicity is the number of times a sequence occurs in the underlying sequence. Single-copy contigs (those with a multiplicity of one, occurring only once in the underlying sequence) are particularly useful.
+
+
+Cleaning graph (2022-06-02 14:37:25)
+------------------------------------
+    Unicycler now performs various cleaning procedures on the graph to remove overlaps and simplify the graph structure. The end result is a graph ready for bridging.
+
+Graph overlaps removed
+
+Removed zero-length segments:
+    268, 270, 271, 274, 275, 281, 284, 286, 290, 294, 295, 297, 300, 306, 311, 318, 321, 322, 325, 326, 328, 331, 346, 352, 357, 358, 359, 363, 365, 367, 370, 372, 374, 378, 379, 380, 382, 383, 387, 388, 390, 393, 395, 396, 397, 398, 402, 406, 407, 411, 412, 414, 419, 427, 428, 433, 435, 444, 448, 449, 450, 453, 460, 461, 462, 463, 465, 467, 468, 469, 473, 475, 478, 479, 481, 485, 491, 494, 496, 497, 498, 499, 507, 510, 512, 513, 517, 518, 519, 524, 527, 528, 546, 547, 553, 554, 561, 563, 568, 569, 576, 577, 581, 588, 592, 595, 609, 614, 615, 617, 622, 626, 628, 630, 631, 632, 643, 645
+
+Removed zero-length segments:
+    336, 347, 401, 404, 417, 429, 474, 495, 520, 530, 532, 565, 571, 590, 596, 605, 623, 625, 627, 629
+
+Removed zero-length segments:
+    364, 557, 604
+
+Removed zero-length segments:
+    486, 607
+
+Merged small segments:
+    543, 550, 551, 552, 558, 562, 564, 572, 575, 578, 580, 584, 589, 598, 599, 600, 601, 602, 603, 611, 612, 613, 616, 618, 619, 620, 621, 635, 638, 639, 641, 642
+
+    Unicycler now selects a set of anchor contigs from the single-copy contigs. These are the contigs which will be connected via bridges to form the final assembly.
+
+131 anchor segments (4,433,865 bp) out of 480 total segments (4,489,152 bp)
+
+
+Creating SPAdes contig bridges (2022-06-02 14:37:26)
+----------------------------------------------------
+    SPAdes uses paired-end information to perform repeat resolution (RR) and produce contigs from the assembly graph. SPAdes saves the graph paths corresponding to these contigs in the contigs.paths file. When one of these paths contains two or more anchor contigs, Unicycler can create a bridge from the path.
+
+                                                                                                                               Bridge
+Start                                                       Path                                                      End     quality
+ -120                       -175 → -451 → -236 → -170 → 200 → 382 → 220 → 147 → 208 → 440 → 161                       130        12.3
+  -68                                                       197                                                       135        59.8
+  -24                                                -244 → -277 → 221                                                109        56.9
+   -9                                                       230                                                       17         63.2
+    3                                                   -251 → -251                                                   27         54.7
+    6                                                       168                                                       -87        63.2
+   13                                                       -237                                                      71         63.2
+   15                                                 167 → 264 → 167                                                 -62        17.4
+   20                                                       237                                                       -97        63.2
+   23                                                 219 → 153 → 219                                                 -39        16.3
+   28                                                       243                                                       -93        63.1
+   31                                                 246 → -163 → 246                                                121        21.3
+   34                                              177 → 207 → 310 → 260                                              122        31.8
+   36                                                    296 → 261                                                    -75        62.5
+   44                                              -299 → 416 → 422 → 339                                             -94        63.2
+   46   238 → -152 → 204 → 291 → -187 → -414 → 284 → 239 → -222 → -157 → 204 → -292 → -187 → 412 → 284 → 238 → -222   49          2.0
+   49                                                 177 → 223 → 260                                                 83         39.5
+   50                                                       -243                                                      -79        63.0
+   55                                                       296                                                       37         63.0
+   59                                            -355 → -287 → -228 → -329                                            -67        63.1
+   63                                    173 → 205 → -218 → 258 → 189 → -274 → -213                                   44         19.0
+   69                                                    150 → 150                                                    -73        11.6
+   83                        -175 → 456 → -236 → 171 → 200 → 379 → 220 → 148 → 208 → -441 → 161                       129        12.1
+   95                                    304 → 195 → -459 → 162 → 346 → 448 → -194                                    42         23.6
+  103                                                       197                                                       136        60.7
+  106                                                       156                                                       73         45.2
+  109                                                       310                                                       115        63.2
+  119                                    213 → -275 → -189 → 257 → 218 → 192 → -173                                   51         18.8
+  126                                              169 → -155 → 186 → 227                                             99         16.7
+  133                                                -240 → 366 → -231                                                -136       62.6
+  135                                                 231 → 367 → 240                                                 131        60.9
+
+
+Creating loop unrolling bridges (2022-06-02 14:37:26)
+-----------------------------------------------------
+    When a SPAdes contig path connects an anchor contig with the middle contig of a simple loop, Unicycler concludes that the sequences are contiguous (i.e. the loop is not a separate piece of DNA). It then uses the read depth of the middle and repeat contigs to guess the number of times to traverse the loop and makes a bridge.
+
+                                  Loop count   Loop count    Loop    Bridge
+Start   Repeat   Middle     End    by repeat    by middle   count   quality
+   15      167      264     -62         0.98         0.86       1      43.5
+ -121     -246      163     -31         1.36         1.01       1      39.8
+   23      219      153     -39         0.83         0.93       1      42.3
+   65      242      254      64         0.00         0.54       1      22.4
+
+
+Applying bridges (2022-06-02 14:37:26)
+--------------------------------------
+    Unicycler now applies to the graph in decreasing order of quality. This ensures that when multiple, contradictory bridges exist, the most supported option is used.
+
+Bridge type   Start → end    Path                                       Quality
+SPAdes            6 → -87    168                                         63.246
+SPAdes           -9 → 17     230                                         63.245
+SPAdes           20 → -97    237                                         63.241
+SPAdes          109 → 115    310                                         63.234
+SPAdes           13 → 71     -237                                        63.194
+SPAdes           44 → -94    -299, 416, 422, 339                         63.159
+SPAdes           28 → -93    243                                         63.085
+SPAdes           59 → -67    -355, -287, -228, -329                      63.060
+SPAdes           55 → 37     296                                         63.034
+SPAdes           50 → -79    -243                                        63.018
+SPAdes          133 → -136   -240, 366, -231                             62.568
+SPAdes           36 → -75    296, 261                                    62.527
+SPAdes          135 → 131    231, 367, 240                               60.882
+SPAdes          103 → 136    197                                         60.714
+SPAdes          -68 → 135    197                                         59.848
+SPAdes          -24 → 109    -244, -277, 221                             56.891
+SPAdes            3 → 27     -251, -251                                  54.671
+SPAdes          106 → 73     156                                         45.200
+SPAdes           49 → 83     177, 223, 260                               39.454
+SPAdes           34 → 122    177, 207, 310, 260                          31.752
+SPAdes           95 → 42     304, 195, -459, 162, 346, 448, -194         23.562
+SPAdes           31 → 121    246, -163, 246                              21.340
+SPAdes           63 → 44     173, 205, -218, 258, 189, -274, -213        19.014
+SPAdes          119 → 51     213, -275, -189, 257, 218, 192, -173        18.752
+SPAdes           15 → -62    167, 264, 167                               17.383
+SPAdes          126 → 99     169, -155, 186, 227                         16.699
+SPAdes           23 → -39    219, 153, 219                               16.323
+SPAdes         -120 → 130    -175, -451, -236, -170, 200, 382, 220,      12.326
+                             147, 208, 440, 161                                
+SPAdes           83 → 129    -175, 456, -236, 171, 200, 379, 220,        12.122
+                             148, 208, -441, 161                               
+SPAdes           69 → -73    150, 150                                    11.625
+loop             65 → 64     242, 254, 242                               22.448
+
+
+Bridged assembly graph (2022-06-02 14:37:26)
+--------------------------------------------
+    The assembly is now mostly finished and no more structural changes will be made. Ideally the assembly graph should now have one contig per replicon and no erroneous contigs (i.e. a complete assembly). If there are more contigs, then the assembly is not complete.
+
+
+Component   Segments   Links   Length      N50      Longest segment   Status    
+        1        383     556   4,497,455   70,584           218,310   incomplete
+
+
+Assembly complete (2022-06-02 14:37:26)
+---------------------------------------
+Saving /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/assembly.gfa
+Saving /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965453/temp/short/assembly.fasta
+
