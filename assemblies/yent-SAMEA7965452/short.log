@@ -1,0 +1,305 @@
+
+Starting Unicycler (2022-06-02 12:49:53)
+----------------------------------------
+    Welcome to Unicycler, an assembly pipeline for bacterial genomes. Since you provided only short reads, Unicycler will essentially function as a SPAdes-optimiser. It will try many k-mer sizes, choose the best based on contig length and graph connectivity, and scaffold the graph using SPAdes repeat resolution.
+    For more information, please see https://github.com/rrwick/Unicycler
+
+Command: /home/chauvec/projects/ctb-chauvec/jsiele/bin/Unicycler/unicycler-runner.py -o short -1 short_1.fastq.gz -2 short_2.fastq.gz -t 8 --keep 0
+
+Unicycler version: v0.5.0
+Using 8 threads
+
+Making output directory:
+  /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short
+
+Dependencies:
+  Program       Version   Status  
+  spades.py     3.15.3    good    
+  racon                   not used
+  makeblastdb   2.12.0+   good    
+  tblastn       2.12.0+   good    
+
+
+Choosing k-mer range for assembly (2022-06-02 12:50:54)
+-------------------------------------------------------
+    Unicycler chooses a k-mer range for SPAdes based on the length of the input reads. It uses a wide range of many k-mer sizes to maximise the chance of finding an ideal assembly.
+
+SPAdes maximum k-mer: 127
+Median read length: 150
+K-mer range: 27, 53, 71, 87, 99, 111, 119, 127
+
+
+SPAdes assemblies (2022-06-02 12:51:54)
+---------------------------------------
+    Unicycler now uses SPAdes to assemble the short reads. It scores the assembly graph for each k-mer using the number of contigs (fewer is better) and the number of dead ends (fewer is better). The score function is 1/(c*(d+2)), where c is the contig count and d is the dead end count.
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/spades_assembly -k 27 --threads 8 --isolate -1 /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short_1.fastq.gz -2 /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short_2.fastq.gz -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/spades_assembly -k 27,53 --threads 8 --restart-from k27 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/spades_assembly -k 27,53,71 --threads 8 --restart-from k53 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/spades_assembly -k 27,53,71,87 --threads 8 --restart-from k71 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/spades_assembly -k 27,53,71,87,99 --threads 8 --restart-from k87 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/spades_assembly -k 27,53,71,87,99,111 --threads 8 --restart-from k99 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/spades_assembly -k 27,53,71,87,99,111,119 --threads 8 --restart-from k111 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/spades_assembly -k 27,53,71,87,99,111,119,127 --threads 8 --restart-from k119 -m 1024
+
+K-mer   Contigs   Dead ends   Score      
+   27                         too complex
+   53     2,134         494      9.45e-07
+   71     1,364         283      2.57e-06
+   87       913         120      8.98e-06 ← best
+   99       815         142      8.52e-06
+  111       762         166      7.81e-06
+  119       736         165      8.14e-06
+  127       720         183      7.51e-06
+
+Read depth filter: removed 232 contigs totalling 3856539 bp
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/001_spades_graph_k027.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/001_spades_graph_k053.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/001_spades_graph_k071.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/001_spades_graph_k087.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/001_spades_graph_k099.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/001_spades_graph_k111.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/001_spades_graph_k119.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/001_spades_graph_k127.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/spades_assembly/
+
+
+Determining graph multiplicity (2022-06-02 14:03:35)
+----------------------------------------------------
+    Multiplicity is the number of times a sequence occurs in the underlying sequence. Single-copy contigs (those with a multiplicity of one, occurring only once in the underlying sequence) are particularly useful.
+
+
+Cleaning graph (2022-06-02 14:03:36)
+------------------------------------
+    Unicycler now performs various cleaning procedures on the graph to remove overlaps and simplify the graph structure. The end result is a graph ready for bridging.
+
+Graph overlaps removed
+
+Removed zero-length segments:
+    458, 460, 463, 464, 467, 474, 475, 476, 478, 479, 489, 499, 500, 509, 510, 517, 520, 530, 534, 537, 540, 543, 546, 547, 575, 576, 577, 583, 589, 597, 598, 615, 616, 619, 621, 633, 635, 637, 641, 644, 645, 647, 649, 651, 658, 659, 661, 665, 669, 670, 671, 674, 675, 678, 690, 693, 695, 699, 702, 703, 705, 713, 728, 730, 731, 733, 734, 735, 743, 754, 758, 763, 764, 768, 769, 778, 782, 784, 787, 789, 790, 791, 793, 794, 797, 801, 806, 807, 811, 815, 816, 819, 822, 823, 829, 831, 832, 835, 837, 838, 839, 851, 852, 853, 866, 867, 870, 871, 873, 882, 883, 890, 891, 894, 898, 900, 907
+
+Removed zero-length segments:
+    465, 486, 522, 528, 529, 531, 552, 554, 588, 602, 653, 672, 698, 706, 741, 744, 745, 749, 751, 755, 756, 765, 774, 800, 802, 808, 812, 814, 834, 849, 886, 892
+
+Removed zero-length segments:
+    471, 722, 750, 795, 809, 840, 857, 912
+
+Removed zero-length segments:
+    462, 760
+
+Merged small segments:
+    770, 771, 773, 775, 777, 779, 780, 781, 783, 786, 796, 798, 803, 804, 810, 818, 820, 825, 826, 827, 833, 836, 844, 845, 850, 855, 856, 859, 862, 863, 865, 874, 875, 876, 877, 879, 880, 884, 889, 893, 895, 897, 901, 903, 904, 905, 908, 909
+
+    Unicycler now selects a set of anchor contigs from the single-copy contigs. These are the contigs which will be connected via bridges to form the final assembly.
+
+208 anchor segments (5,136,524 bp) out of 714 total segments (5,210,992 bp)
+
+
+Creating SPAdes contig bridges (2022-06-02 14:03:36)
+----------------------------------------------------
+    SPAdes uses paired-end information to perform repeat resolution (RR) and produce contigs from the assembly graph. SPAdes saves the graph paths corresponding to these contigs in the contigs.paths file. When one of these paths contains two or more anchor contigs, Unicycler can create a bridge from the path.
+
+                                                                                                                                                                             Bridge
+Start                                                                              Path                                                                             End     quality
+ -120                                                                              -438                                                                             193        62.2
+ -114                                                                        418 → -222 → 418                                                                       115        18.3
+  -78                                                                              363                                                                              166        63.1
+  -56                                                                              419                                                                              134        62.2
+  -53                                                                              395                                                                              106        62.5
+  -44                                                     -366 → -712 → -373 → -639 → -633 → -648 → -622 → -585                                                     133        63.2
+  -40                                                          336 → -242 → -377 → -535 → 336 → -237 → -377                                                         158         8.3
+  -25                                                                        355 → 257 → 355                                                                        180        23.0
+  -15                                                                              -409                                                                             192        63.2
+  -13                                                   -385 → -277 → 442 → -385 → -333 → -396 → 442 → -385 → -333                                                  150         5.5
+  -11                                                                           411 → 506                                                                           91         62.9
+   -5                                                                       -438 → -480 → -606                                                                      79         63.2
+    5                                                                              410                                                                              154        62.9
+    6                                                                              265                                                                              116        63.2
+    8                                                                              400                                                                              181        63.2
+   15                                                                              409                                                                              -106       63.2
+   19                                          702 → -421 → 482 → 696 → -367 → -695 → -421 → 482 → -686 → -367 → 702 → -421                                         -76         6.1
+   23                                                                              -498                                                                             -60        63.1
+   24                                                                       -449 → -480 → -606                                                                      35         63.2
+   26                                                                              473                                                                              -135       61.9
+   29                                                                    -628 → 411 → -378 → 514                                                                    75         63.2
+   32                                                                     606 → 480 → 449 → 636                                                                     -131       63.2
+   33                                                                  274 → 311 → -558 → 392 → 510                                                                 179        32.2
+   34                                                                       -428 → -450 → -428                                                                      20         41.3
+   39                                                                           358 → 512                                                                           100        63.1
+   44                                                 -330 → -429 → -293 → 679 → 398 → 614 → -337 → -307 → 317 → 366                                                -73        19.2
+   48                                                                              -389                                                                             187        63.2
+   49   -375 → -621 → -300 → 236 → -308 → 446 → 292 → -613 → -553 → -375 → -620 → -300 → -586 → -244 → -308 → -445 → 292 → 612 → -553 → -375 → -621 → -300 → -586   -57         0.5
+   50                                                                              410                                                                              10         63.2
+   51                                                                              487                                                                              97         63.2
+   52                                                                        354 → -431 → 339                                                                       160        62.9
+   55                                                                              480                                                                              -111       63.2
+   59                                                 -366 → -317 → 295 → 337 → 607 → -398 → -668 → 293 → 430 → 330                                                 -177       18.9
+   64                                                                              422                                                                              85         63.0
+   65                                                                              358                                                                              67         63.2
+   66                                                                              -417                                                                             -78        63.1
+   70                                                                  -511 → 552 → 490 → 345 → 496                                                                 81         63.2
+   74                                                                              417                                                                              52         62.7
+   84                                        299 → 439 → 360 → -261 → 394 → -276 → 359 → 279 → -349 → 547 → 352 → -407 → -386                                       207        14.1
+   89                                                                              475                                                                              -141       63.1
+   96                                                                              -486                                                                             -125       63.1
+   97                                                                        487 → 591 → 475                                                                        -158       63.0
+   98                                                                              265                                                                              -144       63.2
+   99                                                                              422                                                                              64         63.2
+  103                                                                              413                                                                              55         63.1
+  114                                                                        484 → -514 → 486                                                                       -174       62.7
+  115                                                                              591                                                                              88         63.2
+  119                                                                   -510 → -392 → -374 → -274                                                                   57         38.5
+  124                                                                     606 → 480 → 449 → 636                                                                     109        62.9
+  129                                                                              -413                                                                             36         62.3
+  130                                                                              -422                                                                             182        62.8
+  136                                                                              363                                                                              189        63.2
+  143                                                                        -628 → 411 → 506                                                                       18         63.0
+  145                                                             -343 → -286 → 243 → 364 → -676 → -266                                                             191        17.8
+  150                                                                              -423                                                                             98         59.7
+  160                                                                           -558 → 392                                                                          172        62.3
+  165                                                                       -395 → 212 → -397                                                                       194        20.1
+  181                                                                              -348                                                                             14         63.1
+  184                                                                              419                                                                              129        63.2
+  197                    250 → -656 → -312 → -252 → -403 → 263 → 338 → -569 → -304 → 268 → 351 → 683 → -272 → -238 → 401 → 470 → -393 → 225 → 362                   119         9.6
+  198                  250 → -655 → -312 → 251 → -403 → -264 → 338 → -568 → -304 → 267 → 351 → -665 → -272 → -239 → 401 → -471 → -393 → -224 → 362                  190         9.1
+  206                                     -269 → -674 → -406 → -669 → 342 → -680 → -384 → -233 → -365 → -518 → -259 → 253 → 404                                     173        13.5
+  208                                      -269 → -678 → -406 → 672 → 342 → -671 → -384 → -232 → -365 → -519 → -259 → 254 → 404                                     183        12.6
+  209                                       386 → 408 → -352 → -548 → 349 → 278 → -359 → 275 → -394 → 262 → -360 → -440 → -299                                      153        13.9
+
+
+Creating loop unrolling bridges (2022-06-02 14:03:37)
+-----------------------------------------------------
+    When a SPAdes contig path connects an anchor contig with the middle contig of a simple loop, Unicycler concludes that the sequences are contiguous (i.e. the loop is not a separate piece of DNA). It then uses the read depth of the middle and repeat contigs to guess the number of times to traverse the loop and makes a bridge.
+
+                                  Loop count   Loop count    Loop    Bridge
+Start   Repeat   Middle     End    by repeat    by middle   count   quality
+  -20      428      450     -34         0.75         0.75       1      38.6
+ -170      399      530      46         1.36         0.87       1      33.0
+  -25      355      257     180         0.95         1.00       1      43.8
+ -115     -418      222     114         0.63         0.95       1      42.7
+
+
+Applying bridges (2022-06-02 14:03:37)
+--------------------------------------
+    Unicycler now applies to the graph in decreasing order of quality. This ensures that when multiple, contradictory bridges exist, the most supported option is used.
+
+Bridge type   Start → end    Path                                       Quality
+SPAdes           98 → -144   265                                         63.245
+SPAdes           65 → 67     358                                         63.245
+SPAdes           48 → 187    -389                                        63.241
+SPAdes           55 → -111   480                                         63.240
+SPAdes           51 → 97     487                                         63.238
+SPAdes           70 → 81     -511, 552, 490, 345, 496                    63.230
+SPAdes           32 → -131   606, 480, 449, 636                          63.224
+SPAdes           99 → 64     422                                         63.224
+SPAdes           50 → 10     410                                         63.220
+SPAdes           24 → 35     -449, -480, -606                            63.215
+SPAdes          136 → 189    363                                         63.215
+SPAdes          115 → 88     591                                         63.211
+SPAdes           29 → 75     -628, 411, -378, 514                        63.209
+SPAdes            8 → 181    400                                         63.175
+SPAdes          -44 → 133    -366, -712, -373, -639, -633, -648,         63.165
+                             -622, -585                                        
+SPAdes           -5 → 79     -438, -480, -606                            63.159
+SPAdes          -15 → 192    -409                                        63.159
+SPAdes            6 → 116    265                                         63.156
+SPAdes           15 → -106   409                                         63.152
+SPAdes          184 → 129    419                                         63.150
+SPAdes          103 → 55     413                                         63.144
+SPAdes           96 → -125   -486                                        63.142
+SPAdes           39 → 100    358, 512                                    63.130
+SPAdes           23 → -60    -498                                        63.122
+SPAdes           66 → -78    -417                                        63.110
+SPAdes           89 → -141   475                                         63.069
+SPAdes          181 → 14     -348                                        63.069
+SPAdes          -78 → 166    363                                         63.059
+SPAdes          143 → 18     -628, 411, 506                              63.015
+SPAdes           97 → -158   487, 591, 475                               63.005
+SPAdes           64 → 85     422                                         62.970
+SPAdes          124 → 109    606, 480, 449, 636                          62.939
+SPAdes            5 → 154    410                                         62.920
+SPAdes          -11 → 91     411, 506                                    62.901
+SPAdes           52 → 160    354, -431, 339                              62.897
+SPAdes          130 → 182    -422                                        62.803
+SPAdes           74 → 52     417                                         62.733
+SPAdes          114 → -174   484, -514, 486                              62.708
+SPAdes          -53 → 106    395                                         62.539
+SPAdes          129 → 36     -413                                        62.331
+SPAdes          160 → 172    -558, 392                                   62.323
+SPAdes          -56 → 134    419                                         62.194
+SPAdes         -120 → 193    -438                                        62.191
+SPAdes           26 → -135   473                                         61.863
+SPAdes          150 → 98     -423                                        59.674
+SPAdes           34 → 20     -428, -450, -428                            41.313
+SPAdes          119 → 57     -510, -392, -374, -274                      38.492
+SPAdes           33 → 179    274, 311, -558, 392, 510                    32.214
+SPAdes          -25 → 180    355, 257, 355                               23.005
+SPAdes          165 → 194    -395, 212, -397                             20.132
+SPAdes           44 → -73    -330, -429, -293, 679, 398, 614, -337,      19.172
+                             -307, 317, 366                                    
+SPAdes           59 → -177   -366, -317, 295, 337, 607, -398, -668,      18.888
+                             293, 430, 330                                     
+SPAdes         -114 → 115    418, -222, 418                              18.277
+SPAdes          145 → 191    -343, -286, 243, 364, -676, -266            17.788
+SPAdes           84 → 207    299, 439, 360, -261, 394, -276, 359,        14.110
+                             279, -349, 547, 352, -407, -386                   
+SPAdes          209 → 153    386, 408, -352, -548, 349, 278, -359,       13.888
+                             275, -394, 262, -360, -440, -299                  
+SPAdes          206 → 173    -269, -674, -406, -669, 342, -680, -384,    13.484
+                             -233, -365, -518, -259, 253, 404                  
+SPAdes          208 → 183    -269, -678, -406, 672, 342, -671, -384,     12.627
+                             -232, -365, -519, -259, 254, 404                  
+loop           -170 → 46     399, 530, 399                               32.974
+
+
+Bridged assembly graph (2022-06-02 14:03:37)
+--------------------------------------------
+    The assembly is now mostly finished and no more structural changes will be made. Ideally the assembly graph should now have one contig per replicon and no erroneous contigs (i.e. a complete assembly). If there are more contigs, then the assembly is not complete.
+
+
+Component   Segments   Links   Length      N50       Longest segment   Status    
+    total        495     674   5,209,320    60,582           166,773             
+        1        466     674   4,480,806    61,072           166,773   incomplete
+        2          1       0     160,461   160,461           160,461   incomplete
+        3          1       0     141,601   141,601           141,601   incomplete
+        4          1       0      51,983    51,983            51,983   incomplete
+        5          1       0      48,939    48,939            48,939   incomplete
+        6          1       0      47,051    47,051            47,051   incomplete
+        7          1       0      43,158    43,158            43,158   incomplete
+        8          1       0      39,034    39,034            39,034   incomplete
+        9          1       0      21,604    21,604            21,604   incomplete
+       10          1       0      21,293    21,293            21,293   incomplete
+       11          1       0      19,061    19,061            19,061   incomplete
+       12          1       0      15,405    15,405            15,405   incomplete
+       13          1       0      13,605    13,605            13,605   incomplete
+       14          1       0      13,292    13,292            13,292   incomplete
+       15          1       0      10,849    10,849            10,849   incomplete
+       16          1       0       9,947     9,947             9,947   incomplete
+       17          1       0       9,485     9,485             9,485   incomplete
+       18          1       0       8,671     8,671             8,671   incomplete
+       19          1       0       8,496     8,496             8,496   incomplete
+       20          1       0       7,844     7,844             7,844   incomplete
+       21          1       0       7,625     7,625             7,625   incomplete
+       22          1       0       5,736     5,736             5,736   incomplete
+       23          1       0       5,589     5,589             5,589   incomplete
+       24          1       0       4,946     4,946             4,946   incomplete
+       25          1       0       4,247     4,247             4,247   incomplete
+       26          1       0       3,504     3,504             3,504   incomplete
+       27          1       0       1,658     1,658             1,658   incomplete
+       28          1       0       1,175     1,175             1,175   incomplete
+       29          1       0       1,138     1,138             1,138   incomplete
+       30          1       0       1,117     1,117             1,117   incomplete
+
+
+Assembly complete (2022-06-02 14:03:37)
+---------------------------------------
+Saving /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/assembly.gfa
+Saving /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies/yent-SAMEA7965452/temp/short/assembly.fasta
+
