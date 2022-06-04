@@ -13,12 +13,12 @@ source ../config.sh
 ## Sample ID
 SAMPLE=$(sed -n "${SLURM_ARRAY_TASK_ID}p" samples.txt)
 ## Experiment and output directory
-EXP_DIR=${REPO_HOME}/classification
+EXP_DIR=${REPO_HOME}/classification_unicycler
 OUT_DIR=${EXP_DIR}/${SAMPLE}
 mkdir -p ${OUT_DIR}
 
 # Preparing input: assembly graph
-cp ${REPO_HOME}/assemblies/${SAMPLE}/short.gfa.gz ${OUT_DIR}/
+cp ${REPO_HOME}/assemblies_unicycler/${SAMPLE}/short.gfa.gz ${OUT_DIR}/
 gunzip ${OUT_DIR}/short.gfa.gz
 GFA=${OUT_DIR}/short.gfa
 
