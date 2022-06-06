@@ -28,7 +28,7 @@ while (my $line=<IN>) {
 
     if ($row >= $from && $row <= $to) {
 	print "sbatch --time=1-0 -c 8 --mem=30G --account=def-chauvec ";
-        print "/home/chauvec/projects/ctb-chauvec/PLASMIDS/YERSINIA_PLASMIDS/assemblies/single-sample.pl -r $parts[0] $parts[1] $parts[3] $parts[2]\n";
+        print "/home/chauvec/projects/ctb-chauvec/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/single-sample.pl -r $parts[0] $parts[1] $parts[3] $parts[2]\n";
     }
 
     $row++;

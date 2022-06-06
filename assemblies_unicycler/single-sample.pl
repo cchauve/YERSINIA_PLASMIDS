@@ -39,7 +39,7 @@ unless (-e "short_2.fastq.gz" && $Options{'r'}) {
 
 #unicycler short
 unless (-e "$dir/short.gfa" && $Options{'r'}) {
-    my_run("/home/chauvec/projects/ctb-chauvec/jsiele/bin/Unicycler/unicycler-runner.py -o short -1 short_1.fastq.gz -2 short_2.fastq.gz -t $threads --keep 0 2>&1 >>$dir/log");
+    my_run("/home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/Unicycler/unicycler-runner.py -o short -1 short_1.fastq.gz -2 short_2.fastq.gz -t $threads --keep 0 2>&1 >>$dir/log");
     my_run("mv short/assembly.fasta $dir/short.fasta");
     my_run("mv short/assembly.gfa $dir/short.gfa");
     my_run("mv short/unicycler.log $dir/short.log");

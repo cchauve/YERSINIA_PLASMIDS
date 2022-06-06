@@ -7,3 +7,8 @@ chmod 755 s41598-019-49700-1.sh fmicb.2021.664665.sh mgen.0.000562.sh
 ./s41598-019-49700-1.sh
 ./fmicb.2021.664665.sh
 ./mgen.0.000562.sh
+
+2022-06-06
+./joblist-cedar.pl e_faecium_mlplasmids.tsv 1 `wc -l e_faecium_mlplasmids.tsv  | cut -f 1 -d " "` > e_faecium_mlplasmids.sh
+chmod 755 e_faecium_mlplasmids.sh
+./e_faecium_mlplasmids.sh
