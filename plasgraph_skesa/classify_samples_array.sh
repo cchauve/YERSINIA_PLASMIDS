@@ -11,7 +11,7 @@
 # Environment variables
 source ../config.sh
 ## Sample ID
-SAMPLE=$(sed -n "${SLURM_ARRAY_TASK_ID}p" samples.txt)
+SAMPLE=$(sed -n "${SLURM_ARRAY_TASK_ID}p" sample_test.txt)
 ## Experiment and output directory
 EXP_DIR=${REPO_HOME}/classification_skesa
 OUT_DIR=${EXP_DIR}/${SAMPLE}
