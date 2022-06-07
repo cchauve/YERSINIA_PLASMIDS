@@ -1,0 +1,10 @@
+2022-06-07
+grep NA ../assemblies_unicycler/s41598-019-49700-1.tsv | awk '{print "assemblies_unicycler/"$1"-"$2"/short.gfa.gz,NA,"$1"-"$2}' > s41598-019-49700-1.csv
+grep NA ../assemblies_unicycler/fmicb.2021.664665.tsv | awk '{print "assemblies_unicycler/"$1"-"$2"/short.gfa.gz,NA,"$1"-"$2}' > fmicb.2021.664665.csv
+grep NA ../assemblies_unicycler/mgen.0.000562.tsv | awk '{print "assemblies_unicycler/"$1"-"$2"/short.gfa.gz,NA,"$1"-"$2}' > mgen.0.000562.csv
+grep efae ../assemblies_unicycler/e_faecium_mlplasmids.tsv | awk '{print "assemblies_unicycler/"$1"-"$2"/short.gfa.gz,NA,"$1"-"$2}' > e_faecium_mlplasmids.csv
+
+./classify_samples.sh s41598-019-49700-1
+./classify_samples.sh fmicb.2021.664665
+./classify_samples.sh mgen.0.000562
+./classify_samples.sh e_faecium_mlplasmids
