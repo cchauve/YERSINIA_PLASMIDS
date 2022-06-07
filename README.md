@@ -150,16 +150,28 @@ of samples (*e.g.* `samples_subset.txt` and then running
 `classify_samples.sh samples_subset.txt`).
 
 #### Original plASgraph
-For thh original (WABI submission) plASgraph implementation, for a given
+For the original (WABI submission) plASgraph implementation, for a given
 sample, the results are listed in a file
 `<sample_name>/<sample_name>_class.csv`. All files resulting from the
 analysis of a sample are stored in the directory `<sample_name>`, and
-they include a '`png` graph file.
+they include a `png` graph file.
 
 The corresponding directories are `plasgraph_unicycler` and
-`plasgraph_skesa`. In this last one, only one sample was processed as
-the implementation expects that contigs id are integers, which is not
-the case for SKESA.
+`plasgraph_skesa`. In this last one, only one sample was processed
+(and failed) as the implementation expects that contigs id are
+integers, which is not the case for SKESA.
 
-#### Rewritten plASgraph
+#### Working plASgraph
+
+The rewritten (working) implementation of plASgraph works differently
+as it processes a set of samples at once and generates a single
+classification file.
+
+To handle this difference, the classificatio takes as input a `csv`
+file with the information abot th samples to process and generates a
+classification `csv` file.
+
+Processing the samples with Unicycler assemblies and the WABI model
+is done in the directory `plasgraph2_WABI_unicycler`. For the SKESA
+assemblies it is done in the directory `plasgraph2_WABI_skesa`.
 
