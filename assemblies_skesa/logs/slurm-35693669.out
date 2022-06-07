@@ -1,0 +1,1698 @@
+fastq-dump --gzip --split-files ERR2779700 >>/project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/log
+mv ERR2779700_1.fastq.gz short_1.fastq.gz
+mv ERR2779700_2.fastq.gz short_2.fastq.gz
+/home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/SKESA/skesa --reads short_1.fastq.gz,short_2.fastq.gz --min_contig 100 --contigs_out /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/short.fasta 2>&1 >>/project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/contigs.log
+/home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/SKESA/skesa --reads short_1.fastq.gz,short_2.fastq.gz --min_contig 100 --contigs_out /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/short.fasta 
+
+Total mates: 3530776 Paired reads: 1765388
+Reads acquired in  37.791810s wall, 37.240000s user + 0.490000s system = 37.730000s CPU (99.8%)
+
+Kmer len: 19
+Raw kmers: 467904014 Memory needed (GB): 8.98376 Memory available (GB): 29.8263 1 cycle(s) will be performed
+Distinct kmers: 2419070
+Kmer count in  16.393963s wall, 119.570000s user + 6.880000s system = 126.450000s CPU (771.3%)
+Uniq kmers merging in  1.123626s wall, 0.120000s user + 1.580000s system = 1.700000s CPU (151.3%)
+Clipping point: 0 343
+Clipping point: 1 1
+Clipping point: 2 2
+Clipping point: 3 2
+Clipping point: 4 19
+Clipping point: 5 20
+Clipping point: 6 6
+Clipping point: 7 9
+Clipping point: 8 4
+Clipping point: 9 4
+Clipping point: 10 4
+Clipping point: 11 2
+Clipping point: 12 2
+Clipping point: 13 5
+Clipping point: 14 4
+Clipping point: 15 4
+Clipping point: 16 3
+Clipping point: 17 5
+Clipping point: 18 2
+Clipping point: 19 3
+Clipping point: 20 4
+Clipping point: 21 4
+Clipping point: 22 4
+Clipping point: 23 8
+Clipping point: 24 8
+Clipping point: 25 4
+Clipping point: 26 13
+Clipping point: 27 35
+Clipping point: 28 64
+Clipping point: 29 71
+Clipping point: 30 160
+Clipping point: 31 176
+Clipping point: 32 169
+Clipping point: 33 181
+Clipping point: 34 269
+Clipping point: 35 376
+Clipping point: 36 498
+Clipping point: 37 687
+Clipping point: 38 864
+Clipping point: 39 801
+Clipping point: 40 897
+Clipping point: 41 860
+Clipping point: 42 959
+Clipping point: 43 949
+Clipping point: 44 1017
+Clipping point: 45 1120
+Clipping point: 46 1246
+Clipping point: 47 1232
+Clipping point: 48 1216
+Clipping point: 49 1304
+Clipping point: 50 1221
+Clipping point: 51 1291
+Clipping point: 52 1291
+Clipping point: 53 1336
+Clipping point: 54 1345
+Clipping point: 55 1436
+Clipping point: 56 1529
+Clipping point: 57 1662
+Clipping point: 58 1611
+Clipping point: 59 1728
+Clipping point: 60 1777
+Clipping point: 61 1900
+Clipping point: 62 1739
+Clipping point: 63 1795
+Clipping point: 64 1847
+Clipping point: 65 1944
+Clipping point: 66 1974
+Clipping point: 67 2075
+Clipping point: 68 2212
+Clipping point: 69 2303
+Clipping point: 70 2184
+Clipping point: 71 2267
+Clipping point: 72 2224
+Clipping point: 73 2321
+Clipping point: 74 2545
+Clipping point: 75 2544
+Clipping point: 76 2660
+Clipping point: 77 2731
+Clipping point: 78 2822
+Clipping point: 79 2807
+Clipping point: 80 2982
+Clipping point: 81 3020
+Clipping point: 82 3188
+Clipping point: 83 3076
+Clipping point: 84 3117
+Clipping point: 85 3209
+Clipping point: 86 3310
+Clipping point: 87 3345
+Clipping point: 88 3512
+Clipping point: 89 3602
+Clipping point: 90 3748
+Clipping point: 91 3772
+Clipping point: 92 3789
+Clipping point: 93 3754
+Clipping point: 94 3929
+Clipping point: 95 3928
+Clipping point: 96 4103
+Clipping point: 97 4346
+Clipping point: 98 4337
+Clipping point: 99 4384
+Clipping point: 100 4428
+Clipping point: 101 4683
+Clipping point: 102 4644
+Clipping point: 103 4767
+Clipping point: 104 4812
+Clipping point: 105 4776
+Clipping point: 106 4963
+Clipping point: 107 5113
+Clipping point: 108 5239
+Clipping point: 109 5307
+Clipping point: 110 5341
+Clipping point: 111 5495
+Clipping point: 112 5582
+Clipping point: 113 5564
+Clipping point: 114 5762
+Clipping point: 115 5756
+Clipping point: 116 6002
+Clipping point: 117 6020
+Clipping point: 118 5853
+Clipping point: 119 6102
+Clipping point: 120 6221
+Clipping point: 121 6436
+Clipping point: 122 6377
+Clipping point: 123 6391
+Clipping point: 124 6555
+Clipping point: 125 6655
+Clipping point: 126 6638
+Clipping point: 127 6919
+Clipping point: 128 6740
+Clipping point: 129 7039
+Clipping point: 130 7361
+Clipping point: 131 7358
+Clipping point: 132 6593
+Adapters: 2 Reads before: 3530776 Sequence before: 531457436 Reads after: 3530433 Sequence after: 513957806 Reads clipped: 340704
+Adapters clipped in  21.931945s wall, 154.050000s user + 8.600000s system = 162.650000s CPU (741.6%)
+Adapter: AGATGTGTATAAGAGACAG 339174
+Adapter: CCCCCCCCCCCCCCCCCCC 243414
+
+Kmer len: 21
+Raw kmers: 443350996 Memory needed (GB): 8.51234 Memory available (GB): 29.7104 1 cycle(s) will be performed
+Distinct kmers: 6348603
+Kmer count in  17.317571s wall, 118.930000s user + 11.960000s system = 130.890000s CPU (755.8%)
+Uniq kmers merging in  0.711324s wall, 0.520000s user + 0.760000s system = 1.280000s CPU (179.9%)
+WARNING: --min_count changed from 2 to 4 because of high coverage for genome size 2388895
+WARNING: --max_kmer_count 10 to 22 because of high coverage for genome size 2388895
+Kmers branching in  0.926899s wall, 6.810000s user + 0.020000s system = 6.830000s CPU (736.9%)
+
+Average read length: 146
+Genome size estimate: 2388895
+
+Kmer: 21 Graph size: 3091022 Contigs in: 0
+Valley: 35
+
+Mark used kmers in  0.000024s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Kmers in multiple/single contigs: 0 0
+Fragments before: 1218 2761035
+Fragments after: 1109 2761035
+New seeds: 882
+New seeds in  1.880234s wall, 14.440000s user + 0.020000s system = 14.460000s CPU (769.1%)
+Fragments before: 1764 37044
+Fragments after: 1764 37044
+Connectors: 0 Extenders: 1764
+Connections and extensions in  0.256810s wall, 1.590000s user + 0.010000s system = 1.600000s CPU (623.0%)
+Contigs out: 882 Genome: 2729222 N50: 6643 L50: 128
+Assembled in  2.163053s wall, 16.050000s user + 0.030000s system = 16.080000s CPU (743.4%)
+
+
+Kmer len: 123
+Raw kmers: 91360980 Memory needed (GB): 4.38533 Memory available (GB): 29.6029 1 cycle(s) will be performed
+Distinct kmers: 2828441
+Kmer count in  5.484020s wall, 39.040000s user + 2.160000s system = 41.200000s CPU (751.3%)
+Uniq kmers merging in  0.468289s wall, 0.420000s user + 0.420000s system = 0.840000s CPU (179.4%)
+
+Kmer len: 117
+Raw kmers: 111039607 Memory needed (GB): 5.3299 Memory available (GB): 29.6029 1 cycle(s) will be performed
+Distinct kmers: 2840927
+Kmer count in  7.030158s wall, 47.520000s user + 2.900000s system = 50.420000s CPU (717.2%)
+Uniq kmers merging in  0.484343s wall, 0.470000s user + 0.500000s system = 0.970000s CPU (200.3%)
+
+Average count: 121.749 Max kmer: 117
+Connected: 7674 ambiguously connected: 718 from 10000 mate pairs
+Connect pairs in  7.796111s wall, 58.380000s user + 0.080000s system = 58.460000s CPU (749.9%)
+
+N50 for inserts: 272
+
+Seed kmers: 0
+Cleaned reads: 844969
+Reads for connection: 543010
+Internal reads: 58616
+Reads cleaned in  4.676623s wall, 35.460000s user + 0.350000s system = 35.810000s CPU (765.7%)
+
+Kmer len: 31
+Raw kmers: 98291551 Memory needed (GB): 1.8872 Memory available (GB): 29.6028 1 cycle(s) will be performed
+Distinct kmers: 920044
+Kmer count in  3.337272s wall, 25.150000s user + 0.550000s system = 25.700000s CPU (770.1%)
+Uniq kmers merging in  0.036126s wall, 0.090000s user + 0.020000s system = 0.110000s CPU (304.5%)
+Kmers branching in  0.257612s wall, 1.730000s user + 0.000000s system = 1.730000s CPU (671.6%)
+Kmer: 31 Graph size: 920044 Contigs in: 882
+Valley: 52
+
+Mark used kmers in  0.164373s wall, 1.280000s user + 0.000000s system = 1.280000s CPU (778.7%)
+Kmers in multiple/single contigs: 0 697056
+Fragments before: 1429 72722
+Fragments after: 1399 72722
+New seeds: 55
+New seeds in  0.451338s wall, 3.080000s user + 0.010000s system = 3.090000s CPU (684.6%)
+Fragments before: 1874 59272
+Fragments after: 1362 59272
+Connectors: 512 Extenders: 850
+Connections and extensions in  0.241360s wall, 1.580000s user + 0.010000s system = 1.590000s CPU (658.8%)
+Contigs out: 425 Genome: 2755750 N50: 15201 L50: 55
+Assembled in  0.864982s wall, 5.950000s user + 0.020000s system = 5.970000s CPU (690.2%)
+
+Seed kmers: 0
+Cleaned reads: 543166
+Reads for connection: 374960
+Internal reads: 33825
+Reads cleaned in  2.850077s wall, 21.600000s user + 0.040000s system = 21.640000s CPU (759.3%)
+
+Kmer len: 39
+Raw kmers: 58784193 Memory needed (GB): 1.69298 Memory available (GB): 29.8135 1 cycle(s) will be performed
+Distinct kmers: 504114
+Kmer count in  2.542642s wall, 19.350000s user + 0.100000s system = 19.450000s CPU (765.0%)
+Uniq kmers merging in  0.029337s wall, 0.070000s user + 0.020000s system = 0.090000s CPU (306.8%)
+Kmers branching in  0.156380s wall, 1.140000s user + 0.000000s system = 1.140000s CPU (729.0%)
+Kmer: 39 Graph size: 504114 Contigs in: 425
+Valley: 50
+
+Mark used kmers in  0.183693s wall, 1.400000s user + 0.010000s system = 1.410000s CPU (767.6%)
+Kmers in multiple/single contigs: 0 343633
+Fragments before: 899 42660
+Fragments after: 864 42660
+New seeds: 14
+New seeds in  0.321563s wall, 1.880000s user + 0.000000s system = 1.880000s CPU (584.6%)
+Fragments before: 878 35099
+Fragments after: 807 35099
+Connectors: 71 Extenders: 736
+Connections and extensions in  0.255117s wall, 1.590000s user + 0.010000s system = 1.600000s CPU (627.2%)
+Contigs out: 368 Genome: 2764191 N50: 18211 L50: 43
+Assembled in  0.765356s wall, 4.870000s user + 0.020000s system = 4.890000s CPU (638.9%)
+
+Seed kmers: 0
+Cleaned reads: 501594
+Reads for connection: 346878
+Internal reads: 31851
+Reads cleaned in  2.936572s wall, 21.630000s user + 0.100000s system = 21.730000s CPU (740.0%)
+
+Kmer len: 49
+Raw kmers: 49305567 Memory needed (GB): 1.42 Memory available (GB): 29.8189 1 cycle(s) will be performed
+Distinct kmers: 424387
+Kmer count in  2.068660s wall, 15.950000s user + 0.040000s system = 15.990000s CPU (773.0%)
+Uniq kmers merging in  0.023786s wall, 0.060000s user + 0.010000s system = 0.070000s CPU (294.3%)
+Kmers branching in  0.127038s wall, 0.880000s user + 0.010000s system = 0.890000s CPU (700.6%)
+Kmer: 49 Graph size: 424387 Contigs in: 368
+Valley: 38
+
+Mark used kmers in  0.186391s wall, 1.280000s user + 0.000000s system = 1.280000s CPU (686.7%)
+Kmers in multiple/single contigs: 0 288982
+Fragments before: 771 43244
+Fragments after: 743 43244
+New seeds: 8
+New seeds in  0.230742s wall, 1.570000s user + 0.000000s system = 1.570000s CPU (680.4%)
+Fragments before: 752 35893
+Fragments after: 698 35893
+Connectors: 54 Extenders: 644
+Connections and extensions in  0.224112s wall, 1.450000s user + 0.000000s system = 1.450000s CPU (647.0%)
+Contigs out: 322 Genome: 2771897 N50: 22357 L50: 38
+Assembled in  0.645523s wall, 4.310000s user + 0.000000s system = 4.310000s CPU (667.7%)
+
+Seed kmers: 0
+Cleaned reads: 464341
+Reads for connection: 316210
+Internal reads: 32147
+Reads cleaned in  2.635493s wall, 19.450000s user + 0.100000s system = 19.550000s CPU (741.8%)
+
+Kmer len: 59
+Raw kmers: 41125714 Memory needed (GB): 1.18442 Memory available (GB): 29.8077 1 cycle(s) will be performed
+Distinct kmers: 359894
+Kmer count in  1.724335s wall, 13.270000s user + 0.030000s system = 13.300000s CPU (771.3%)
+Uniq kmers merging in  0.020935s wall, 0.060000s user + 0.010000s system = 0.070000s CPU (334.4%)
+Kmers branching in  0.131989s wall, 0.750000s user + 0.000000s system = 0.750000s CPU (568.2%)
+Kmer: 59 Graph size: 359894 Contigs in: 322
+Valley: 36
+
+Mark used kmers in  0.173955s wall, 1.250000s user + 0.010000s system = 1.260000s CPU (724.3%)
+Kmers in multiple/single contigs: 0 245140
+Fragments before: 669 40875
+Fragments after: 648 40875
+New seeds: 5
+New seeds in  0.229832s wall, 1.290000s user + 0.000000s system = 1.290000s CPU (561.3%)
+Fragments before: 654 35915
+Fragments after: 622 35915
+Connectors: 32 Extenders: 590
+Connections and extensions in  0.226517s wall, 1.520000s user + 0.010000s system = 1.530000s CPU (675.4%)
+Contigs out: 295 Genome: 2777755 N50: 26159 L50: 33
+Assembled in  0.634074s wall, 4.060000s user + 0.020000s system = 4.080000s CPU (643.5%)
+
+Seed kmers: 0
+Cleaned reads: 440125
+Reads for connection: 299490
+Internal reads: 31596
+Reads cleaned in  2.359006s wall, 16.940000s user + 0.080000s system = 17.020000s CPU (721.5%)
+
+Kmer len: 69
+Raw kmers: 34723565 Memory needed (GB): 1.33338 Memory available (GB): 29.799 1 cycle(s) will be performed
+Distinct kmers: 315623
+Kmer count in  1.713531s wall, 13.090000s user + 0.030000s system = 13.120000s CPU (765.7%)
+Uniq kmers merging in  0.017184s wall, 0.040000s user + 0.010000s system = 0.050000s CPU (291.0%)
+Kmers branching in  0.130962s wall, 0.770000s user + 0.000000s system = 0.770000s CPU (588.0%)
+Kmer: 69 Graph size: 315623 Contigs in: 295
+Valley: 34
+
+Mark used kmers in  0.194858s wall, 1.330000s user + 0.010000s system = 1.340000s CPU (687.7%)
+Kmers in multiple/single contigs: 0 215951
+Fragments before: 602 40166
+Fragments after: 583 40166
+New seeds: 2
+New seeds in  0.202370s wall, 1.230000s user + 0.000000s system = 1.230000s CPU (607.8%)
+Fragments before: 590 35744
+Fragments after: 562 35744
+Connectors: 28 Extenders: 534
+Connections and extensions in  0.267963s wall, 1.610000s user + 0.010000s system = 1.620000s CPU (604.6%)
+Contigs out: 267 Genome: 2782067 N50: 31120 L50: 28
+Assembled in  0.668516s wall, 4.170000s user + 0.020000s system = 4.190000s CPU (626.8%)
+
+Seed kmers: 0
+Cleaned reads: 413126
+Reads for connection: 278782
+Internal reads: 29897
+Reads cleaned in  2.231952s wall, 16.080000s user + 0.090000s system = 16.170000s CPU (724.5%)
+
+Kmer len: 79
+Raw kmers: 28635959 Memory needed (GB): 1.09962 Memory available (GB): 29.7877 1 cycle(s) will be performed
+Distinct kmers: 280578
+Kmer count in  1.422067s wall, 10.520000s user + 0.030000s system = 10.550000s CPU (741.9%)
+Uniq kmers merging in  0.015427s wall, 0.040000s user + 0.000000s system = 0.040000s CPU (259.3%)
+Kmers branching in  0.091360s wall, 0.650000s user + 0.010000s system = 0.660000s CPU (722.4%)
+Kmer: 79 Graph size: 280578 Contigs in: 267
+Valley: 29
+
+Mark used kmers in  0.156033s wall, 1.210000s user + 0.000000s system = 1.210000s CPU (775.5%)
+Kmers in multiple/single contigs: 0 192637
+Fragments before: 553 40736
+Fragments after: 532 40736
+New seeds: 4
+New seeds in  0.174921s wall, 1.040000s user + 0.000000s system = 1.040000s CPU (594.6%)
+Fragments before: 530 35727
+Fragments after: 514 35727
+Connectors: 16 Extenders: 498
+Connections and extensions in  0.245182s wall, 1.590000s user + 0.010000s system = 1.600000s CPU (652.6%)
+Contigs out: 249 Genome: 2785892 N50: 34662 L50: 26
+Assembled in  0.579053s wall, 3.840000s user + 0.010000s system = 3.850000s CPU (664.9%)
+
+Seed kmers: 0
+Cleaned reads: 390114
+Reads for connection: 263168
+Internal reads: 28555
+Reads cleaned in  2.120865s wall, 14.660000s user + 0.090000s system = 14.750000s CPU (695.5%)
+
+Kmer len: 87
+Raw kmers: 24089929 Memory needed (GB): 0.925053 Memory available (GB): 29.7776 1 cycle(s) will be performed
+Distinct kmers: 253287
+Kmer count in  1.163322s wall, 8.710000s user + 0.050000s system = 8.760000s CPU (753.0%)
+Uniq kmers merging in  0.013881s wall, 0.030000s user + 0.010000s system = 0.040000s CPU (288.2%)
+Kmers branching in  0.091484s wall, 0.520000s user + 0.000000s system = 0.520000s CPU (568.4%)
+Kmer: 87 Graph size: 253287 Contigs in: 249
+Valley: 25
+
+Mark used kmers in  0.198848s wall, 1.250000s user + 0.010000s system = 1.260000s CPU (633.6%)
+Kmers in multiple/single contigs: 0 173664
+Fragments before: 509 39905
+Fragments after: 486 39905
+New seeds: 4
+New seeds in  0.150796s wall, 0.940000s user + 0.000000s system = 0.940000s CPU (623.4%)
+Fragments before: 492 35169
+Fragments after: 469 35169
+Connectors: 23 Extenders: 446
+Connections and extensions in  0.238056s wall, 1.560000s user + 0.000000s system = 1.560000s CPU (655.3%)
+Contigs out: 223 Genome: 2788933 N50: 36568 L50: 25
+Assembled in  0.590386s wall, 3.750000s user + 0.010000s system = 3.760000s CPU (636.9%)
+
+Seed kmers: 0
+Cleaned reads: 372551
+Reads for connection: 252710
+Internal reads: 27513
+Reads cleaned in  2.059884s wall, 13.810000s user + 0.100000s system = 13.910000s CPU (675.3%)
+
+Kmer len: 97
+Raw kmers: 19439223 Memory needed (GB): 0.933083 Memory available (GB): 29.768 1 cycle(s) will be performed
+Distinct kmers: 226630
+Kmer count in  1.120587s wall, 8.460000s user + 0.030000s system = 8.490000s CPU (757.6%)
+Uniq kmers merging in  0.014521s wall, 0.020000s user + 0.020000s system = 0.040000s CPU (275.5%)
+Kmers branching in  0.086831s wall, 0.610000s user + 0.000000s system = 0.610000s CPU (702.5%)
+Kmer: 97 Graph size: 226630 Contigs in: 223
+Valley: 0
+
+Mark used kmers in  0.194851s wall, 1.380000s user + 0.010000s system = 1.390000s CPU (713.4%)
+Kmers in multiple/single contigs: 0 153536
+Fragments before: 488 39015
+Fragments after: 456 39015
+New seeds: 2
+New seeds in  0.151051s wall, 0.930000s user + 0.000000s system = 0.930000s CPU (615.7%)
+Fragments before: 444 34535
+Fragments after: 434 34535
+Connectors: 10 Extenders: 424
+Connections and extensions in  0.292153s wall, 1.660000s user + 0.010000s system = 1.670000s CPU (571.6%)
+Contigs out: 212 Genome: 2790930 N50: 38667 L50: 23
+Assembled in  0.640496s wall, 3.980000s user + 0.020000s system = 4.000000s CPU (624.5%)
+
+Seed kmers: 0
+Cleaned reads: 355905
+Reads for connection: 242742
+Internal reads: 26686
+Reads cleaned in  1.813147s wall, 12.710000s user + 0.110000s system = 12.820000s CPU (707.1%)
+
+Kmer len: 107
+Raw kmers: 15205960 Memory needed (GB): 0.729886 Memory available (GB): 29.757 1 cycle(s) will be performed
+Distinct kmers: 207072
+Kmer count in  0.811789s wall, 6.250000s user + 0.030000s system = 6.280000s CPU (773.6%)
+Uniq kmers merging in  0.013785s wall, 0.040000s user + 0.010000s system = 0.050000s CPU (362.7%)
+Kmers branching in  0.072369s wall, 0.490000s user + 0.000000s system = 0.490000s CPU (677.1%)
+Kmer: 107 Graph size: 207072 Contigs in: 212
+Valley: 0
+
+Mark used kmers in  0.213470s wall, 1.230000s user + 0.010000s system = 1.240000s CPU (580.9%)
+Kmers in multiple/single contigs: 0 137626
+Fragments before: 460 39206
+Fragments after: 433 39206
+New seeds: 1
+New seeds in  0.172430s wall, 0.850000s user + 0.000000s system = 0.850000s CPU (493.0%)
+Fragments before: 418 35713
+Fragments after: 412 35713
+Connectors: 6 Extenders: 406
+Connections and extensions in  0.245196s wall, 1.670000s user + 0.010000s system = 1.680000s CPU (685.2%)
+Contigs out: 203 Genome: 2791965 N50: 42999 L50: 21
+Assembled in  0.633335s wall, 3.750000s user + 0.020000s system = 3.770000s CPU (595.3%)
+
+Seed kmers: 0
+Cleaned reads: 347243
+Reads for connection: 239994
+Internal reads: 25838
+Reads cleaned in  1.649581s wall, 11.480000s user + 0.110000s system = 11.590000s CPU (702.6%)
+
+Kmer len: 117
+Raw kmers: 11563538 Memory needed (GB): 0.55505 Memory available (GB): 29.7468 1 cycle(s) will be performed
+Distinct kmers: 191410
+Kmer count in  0.634630s wall, 4.780000s user + 0.030000s system = 4.810000s CPU (757.9%)
+Uniq kmers merging in  0.013750s wall, 0.040000s user + 0.010000s system = 0.050000s CPU (363.6%)
+Kmers branching in  0.071529s wall, 0.440000s user + 0.000000s system = 0.440000s CPU (615.1%)
+Kmer: 117 Graph size: 191410 Contigs in: 203
+Valley: 0
+
+Mark used kmers in  0.173393s wall, 1.240000s user + 0.000000s system = 1.240000s CPU (715.1%)
+Kmers in multiple/single contigs: 0 123243
+Fragments before: 409 39421
+Fragments after: 393 39421
+New seeds: 0
+New seeds in  0.135478s wall, 0.860000s user + 0.000000s system = 0.860000s CPU (634.8%)
+Fragments before: 390 36876
+Fragments after: 380 36876
+Connectors: 10 Extenders: 370
+Connections and extensions in  0.256634s wall, 1.610000s user + 0.010000s system = 1.620000s CPU (631.3%)
+Contigs out: 186 Genome: 2793198 N50: 43529 L50: 21
+Assembled in  0.567691s wall, 3.710000s user + 0.010000s system = 3.720000s CPU (655.3%)
+
+Seed kmers: 0
+Cleaned reads: 335084
+Reads for connection: 235892
+Internal reads: 24522
+Reads cleaned in  1.415259s wall, 9.240000s user + 0.100000s system = 9.340000s CPU (660.0%)
+
+Connecting mate pairs using kmer length: 21
+Connected: 69401 ambiguously connected: 28878 from 117946 mate pairs
+Connect pairs in  66.374810s wall, 520.980000s user + 1.240000s system = 522.220000s CPU (786.8%)
+
+Connecting mate pairs using kmer length: 31
+Connected: 6634 ambiguously connected: 21570 from 28878 mate pairs
+Connect pairs in  12.581603s wall, 98.500000s user + 0.350000s system = 98.850000s CPU (785.7%)
+
+Connecting mate pairs using kmer length: 39
+Connected: 1338 ambiguously connected: 19669 from 21570 mate pairs
+Connect pairs in  8.514055s wall, 65.670000s user + 0.180000s system = 65.850000s CPU (773.4%)
+
+Connecting mate pairs using kmer length: 49
+Connected: 3353 ambiguously connected: 15890 from 19669 mate pairs
+Connect pairs in  7.804571s wall, 59.610000s user + 0.240000s system = 59.850000s CPU (766.9%)
+
+Connecting mate pairs using kmer length: 59
+Connected: 1059 ambiguously connected: 14315 from 15890 mate pairs
+Connect pairs in  3.626022s wall, 28.170000s user + 0.040000s system = 28.210000s CPU (778.0%)
+
+Connecting mate pairs using kmer length: 69
+Connected: 188 ambiguously connected: 13768 from 14315 mate pairs
+Connect pairs in  3.704870s wall, 25.700000s user + 0.050000s system = 25.750000s CPU (695.0%)
+
+Connecting mate pairs using kmer length: 79
+Connected: 735 ambiguously connected: 12618 from 13768 mate pairs
+Connect pairs in  3.444153s wall, 25.520000s user + 0.020000s system = 25.540000s CPU (741.5%)
+
+Connecting mate pairs using kmer length: 87
+Connected: 592 ambiguously connected: 11708 from 12618 mate pairs
+Connect pairs in  3.434453s wall, 24.400000s user + 0.020000s system = 24.420000s CPU (711.0%)
+
+Connecting mate pairs using kmer length: 97
+Connected: 842 ambiguously connected: 10423 from 11708 mate pairs
+Connect pairs in  4.070566s wall, 26.710000s user + 0.020000s system = 26.730000s CPU (656.7%)
+
+Connecting mate pairs using kmer length: 107
+Connected: 561 ambiguously connected: 9473 from 10423 mate pairs
+Connect pairs in  3.493787s wall, 22.730000s user + 0.030000s system = 22.760000s CPU (651.4%)
+
+Connecting mate pairs using kmer length: 117
+Connected: 106 ambiguously connected: 8849 from 9473 mate pairs
+Connect pairs in  2.571807s wall, 19.320000s user + 0.040000s system = 19.360000s CPU (752.8%)
+Totally connected: 84809
+Added notconnected: 17666
+
+Kmer len: 145
+Raw kmers: 22454841 Memory needed (GB): 1.2934 Memory available (GB): 29.7304 1 cycle(s) will be performed
+Distinct kmers: 185926
+Kmer count in  1.478207s wall, 10.470000s user + 0.620000s system = 11.090000s CPU (750.2%)
+Uniq kmers merging in  0.018000s wall, 0.040000s user + 0.020000s system = 0.060000s CPU (333.3%)
+Kmers branching in  0.083082s wall, 0.510000s user + 0.000000s system = 0.510000s CPU (613.9%)
+Kmer: 145 Graph size: 185926 Contigs in: 186
+Valley: 0
+
+Mark used kmers in  0.175774s wall, 1.260000s user + 0.010000s system = 1.270000s CPU (722.5%)
+Kmers in multiple/single contigs: 0 119996
+Fragments before: 391 43832
+Fragments after: 360 43832
+New seeds: 1
+New seeds in  0.147183s wall, 0.860000s user + 0.000000s system = 0.860000s CPU (584.3%)
+Fragments before: 363 41736
+Fragments after: 351 41736
+Connectors: 12 Extenders: 339
+Connections and extensions in  0.307094s wall, 1.700000s user + 0.010000s system = 1.710000s CPU (556.8%)
+Contigs out: 173 Genome: 2795882 N50: 49349 L50: 19
+Assembled in  0.632153s wall, 3.820000s user + 0.020000s system = 3.840000s CPU (607.4%)
+
+
+Kmer len: 209
+Raw kmers: 15479282 Memory needed (GB): 1.18881 Memory available (GB): 29.7185 1 cycle(s) will be performed
+Distinct kmers: 186290
+Kmer count in  1.288374s wall, 8.630000s user + 0.060000s system = 8.690000s CPU (674.5%)
+Uniq kmers merging in  0.014714s wall, 0.030000s user + 0.010000s system = 0.040000s CPU (271.9%)
+Kmers branching in  0.086438s wall, 0.600000s user + 0.010000s system = 0.610000s CPU (705.7%)
+Kmer: 209 Graph size: 186290 Contigs in: 173
+Valley: 21
+
+Mark used kmers in  0.262742s wall, 1.470000s user + 0.010000s system = 1.480000s CPU (563.3%)
+Kmers in multiple/single contigs: 0 104980
+Fragments before: 358 54862
+Fragments after: 324 54654
+New seeds: 0
+New seeds in  0.194946s wall, 0.930000s user + 0.000000s system = 0.930000s CPU (477.1%)
+Fragments before: 326 53275
+Fragments after: 323 53275
+Connectors: 3 Extenders: 320
+Connections and extensions in  0.292549s wall, 1.760000s user + 0.000000s system = 1.760000s CPU (601.6%)
+Contigs out: 164 Genome: 2797380 N50: 49349 L50: 19
+Assembled in  0.752117s wall, 4.160000s user + 0.010000s system = 4.170000s CPU (554.4%)
+
+
+Kmer len: 271
+Raw kmers: 10296272 Memory needed (GB): 0.988442 Memory available (GB): 29.7035 1 cycle(s) will be performed
+Distinct kmers: 184777
+Kmer count in  1.060850s wall, 6.570000s user + 0.030000s system = 6.600000s CPU (622.1%)
+Uniq kmers merging in  0.021959s wall, 0.040000s user + 0.010000s system = 0.050000s CPU (227.7%)
+Kmers branching in  0.113334s wall, 0.640000s user + 0.010000s system = 0.650000s CPU (573.5%)
+Kmer: 271 Graph size: 184777 Contigs in: 164
+Valley: 0
+
+Mark used kmers in  0.298290s wall, 1.600000s user + 0.000000s system = 1.600000s CPU (536.4%)
+Kmers in multiple/single contigs: 0 89406
+Fragments before: 351 64818
+Fragments after: 313 64818
+New seeds: 0
+New seeds in  0.242243s wall, 1.100000s user + 0.010000s system = 1.110000s CPU (458.2%)
+Fragments before: 297 62144
+Fragments after: 296 62144
+Connectors: 1 Extenders: 295
+Connections and extensions in  0.346378s wall, 1.850000s user + 0.000000s system = 1.850000s CPU (534.1%)
+Contigs out: 153 Genome: 2796300 N50: 49349 L50: 19
+Assembled in  0.888913s wall, 4.550000s user + 0.010000s system = 4.560000s CPU (513.0%)
+
+DONE
+/home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/SKESA/gfa_connector --reads short_1.fastq.gz,short_2.fastq.gz --contigs /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/short.fasta --gfa /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/short_skesa.gfa --csv /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/short.csv 2>&1 >>/project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/graph.log
+/home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/SKESA/gfa_connector --reads short_1.fastq.gz,short_2.fastq.gz --contigs /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/short.fasta --gfa /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/short_skesa.gfa --csv /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/short.csv 
+
+Total mates: 3530776 Paired reads: 1765388
+Reads acquired in  37.340407s wall, 36.200000s user + 0.690000s system = 36.890000s CPU (98.8%)
+
+Bloom table size: 729844224(367.7MB) Counter bit size: 4 Hash num: 6
+Estimated kmers above threshold: 2833625 Estimated uniq kmers: 39181611 Estimated bloom false positive rate 0.000436119
+Bloom filter in  14.210925s wall, 107.410000s user + 1.610000s system = 109.020000s CPU (767.2%)
+Create hash in  16.313874s wall, 126.020000s user + 1.710000s system = 127.730000s CPU (783.0%)
+Clean hash in  0.028476s wall, 0.140000s user + 0.000000s system = 0.140000s CPU (491.6%)
+Initial kmers: 2839875 Kmers above threshold: 2833737 Total kmers: 467904014 Hash table size: 4250440(76.5MB)
+Clipping point: 0 343
+Clipping point: 1 1
+Clipping point: 2 2
+Clipping point: 3 2
+Clipping point: 4 19
+Clipping point: 5 20
+Clipping point: 6 6
+Clipping point: 7 9
+Clipping point: 8 4
+Clipping point: 9 4
+Clipping point: 10 4
+Clipping point: 11 2
+Clipping point: 12 2
+Clipping point: 13 5
+Clipping point: 14 4
+Clipping point: 15 4
+Clipping point: 16 3
+Clipping point: 17 5
+Clipping point: 18 2
+Clipping point: 19 3
+Clipping point: 20 4
+Clipping point: 21 4
+Clipping point: 22 4
+Clipping point: 23 8
+Clipping point: 24 8
+Clipping point: 25 4
+Clipping point: 26 13
+Clipping point: 27 35
+Clipping point: 28 64
+Clipping point: 29 71
+Clipping point: 30 160
+Clipping point: 31 176
+Clipping point: 32 169
+Clipping point: 33 181
+Clipping point: 34 269
+Clipping point: 35 376
+Clipping point: 36 498
+Clipping point: 37 687
+Clipping point: 38 864
+Clipping point: 39 801
+Clipping point: 40 897
+Clipping point: 41 860
+Clipping point: 42 959
+Clipping point: 43 949
+Clipping point: 44 1017
+Clipping point: 45 1120
+Clipping point: 46 1246
+Clipping point: 47 1232
+Clipping point: 48 1216
+Clipping point: 49 1304
+Clipping point: 50 1221
+Clipping point: 51 1291
+Clipping point: 52 1291
+Clipping point: 53 1336
+Clipping point: 54 1345
+Clipping point: 55 1436
+Clipping point: 56 1529
+Clipping point: 57 1662
+Clipping point: 58 1611
+Clipping point: 59 1728
+Clipping point: 60 1777
+Clipping point: 61 1900
+Clipping point: 62 1739
+Clipping point: 63 1795
+Clipping point: 64 1847
+Clipping point: 65 1944
+Clipping point: 66 1974
+Clipping point: 67 2075
+Clipping point: 68 2212
+Clipping point: 69 2303
+Clipping point: 70 2184
+Clipping point: 71 2267
+Clipping point: 72 2224
+Clipping point: 73 2321
+Clipping point: 74 2545
+Clipping point: 75 2544
+Clipping point: 76 2660
+Clipping point: 77 2731
+Clipping point: 78 2822
+Clipping point: 79 2807
+Clipping point: 80 2982
+Clipping point: 81 3020
+Clipping point: 82 3188
+Clipping point: 83 3076
+Clipping point: 84 3117
+Clipping point: 85 3209
+Clipping point: 86 3310
+Clipping point: 87 3345
+Clipping point: 88 3512
+Clipping point: 89 3602
+Clipping point: 90 3748
+Clipping point: 91 3772
+Clipping point: 92 3789
+Clipping point: 93 3754
+Clipping point: 94 3929
+Clipping point: 95 3928
+Clipping point: 96 4103
+Clipping point: 97 4346
+Clipping point: 98 4337
+Clipping point: 99 4384
+Clipping point: 100 4428
+Clipping point: 101 4683
+Clipping point: 102 4644
+Clipping point: 103 4767
+Clipping point: 104 4812
+Clipping point: 105 4776
+Clipping point: 106 4963
+Clipping point: 107 5113
+Clipping point: 108 5239
+Clipping point: 109 5307
+Clipping point: 110 5341
+Clipping point: 111 5495
+Clipping point: 112 5582
+Clipping point: 113 5564
+Clipping point: 114 5762
+Clipping point: 115 5756
+Clipping point: 116 6002
+Clipping point: 117 6020
+Clipping point: 118 5853
+Clipping point: 119 6102
+Clipping point: 120 6221
+Clipping point: 121 6436
+Clipping point: 122 6377
+Clipping point: 123 6391
+Clipping point: 124 6555
+Clipping point: 125 6655
+Clipping point: 126 6638
+Clipping point: 127 6919
+Clipping point: 128 6740
+Clipping point: 129 7039
+Clipping point: 130 7361
+Clipping point: 131 7358
+Clipping point: 132 6593
+Adapters: 2 Reads before: 3530776 Sequence before: 531457436 Reads after: 3530433 Sequence after: 513957806 Reads clipped: 340704
+Adapters clipped in  35.378849s wall, 268.380000s user + 3.620000s system = 272.000000s CPU (768.8%)
+Adapter: AGATGTGTATAAGAGACAG 339174
+Adapter: CCCCCCCCCCCCCCCCCCC 243414
+Read length: 146 Kmer: 73
+
+Bloom table size: 729844224(183.8MB) Counter bit size: 2 Hash num: 6
+Estimated kmers above threshold: 4634438 Estimated uniq kmers: 50514155 Estimated bloom false positive rate 0.00154046
+Bloom filter in  9.580349s wall, 71.420000s user + 0.780000s system = 72.200000s CPU (753.6%)
+Create hash in  11.217963s wall, 86.860000s user + 1.390000s system = 88.250000s CPU (786.7%)
+Clean hash in  0.040707s wall, 0.300000s user + 0.000000s system = 0.300000s CPU (737.0%)
+Initial kmers: 4644373 Kmers above threshold: 4585558 Total kmers: 260629604 Hash table size: 6951664(236.3MB)
+Kmers branching in  1.889965s wall, 14.660000s user + 0.010000s system = 14.670000s CPU (776.2%)
+Contigs: 153
+Assembling in  0.499606s wall, 2.220000s user + 0.120000s system = 2.340000s CPU (468.4%)
+Connected: 5774 ambiguously connected: 73 from 10000 mate pairs
+Connect pairs in  4.258206s wall, 31.570000s user + 0.340000s system = 31.910000s CPU (749.4%)
+Read length: 146 Inserts: 389/272/181
+Kmers colored in:  0.005095s wall, 0.020000s user + 0.000000s system = 0.020000s CPU (392.5%)
+Raw reads: 3530433 Raw sequence: 513957806 Reads after clip: 191871 Sequence after clip: 26494887
+Reads clipped in:  16.270114s wall, 126.930000s user + 1.040000s system = 127.970000s CPU (786.5%)
+Filtering 64 graphs
+Kmer estimate: 30970
+Init kmer hash in  0.168746s wall, 0.320000s user + 0.250000s system = 0.570000s CPU (337.8%)
+Selected reads: 82886 indexed in:  9.324190s wall, 54.750000s user + 0.880000s system = 55.630000s CPU (596.6%)
+Read hash elements: 34980 Read hash size: 154856
+Total entries: 8529826
+Started graph: Contig_100_369.535:3p:0 3
+Started graph: Contig_101_124.667:5p:0 3
+Started graph: Contig_100_369.535:5p:0 3
+Started graph: Contig_103_140.379:5p:0 3
+Started graph: Contig_102_150.001:5p:0 8
+Finished graph: Contig_100_369.535:3p:0 3 1 1 in  0.006516s wall, 0.000000s user + 0.030000s system = 0.030000s CPU (460.4%)
+Finished graph: Contig_101_124.667:5p:0 3 1 1 in  0.007641s wall, 0.010000s user + 0.030000s system = 0.040000s CPU (523.5%)
+Started graph: Contig_111_69.6068:3p:0 3
+Started graph: Contig_115_149.024:5p:0 4
+Started graph: Contig_108_150.249:5p:0 2
+Finished graph: Contig_103_140.379:5p:0 3 1 1 in  0.010067s wall, 0.010000s user + 0.030000s system = 0.040000s CPU (397.3%)
+Started graph: Contig_110_125.218:5p:0 6
+Started graph: Contig_111_69.6068:5p:0 2
+Started graph: Contig_106_546.877:5p:0 6
+Finished graph: Contig_100_369.535:5p:0 3 1 1 in  0.012237s wall, 0.020000s user + 0.040000s system = 0.060000s CPU (490.3%)
+Started graph: Contig_107_154.878:5p:0 4
+Started graph: Contig_105_395.551:5p:0 4
+Finished graph: Contig_102_150.001:5p:0 8 1 1 in  0.013694s wall, 0.020000s user + 0.040000s system = 0.060000s CPU (438.2%)
+Started graph: Contig_102_150.001:3p:0 2
+Started graph: Contig_101_124.667:3p:0 4
+Started graph: Contig_10_118.883:5p:0 3
+Started graph: Contig_107_154.878:3p:0 4
+Started graph: Contig_105_395.551:3p:0 7
+Finished graph: Contig_111_69.6068:3p:0 3 1 1 in  0.012862s wall, 0.020000s user + 0.030000s system = 0.050000s CPU (388.7%)
+Started graph: Contig_112_109.029:3p:0 4
+Started graph: Contig_113_105.059:3p:0 5
+Finished graph: Contig_108_150.249:5p:0 2 1 1 in  0.014779s wall, 0.030000s user + 0.030000s system = 0.060000s CPU (406.0%)
+Started graph: Contig_110_125.218:3p:0 5
+Started graph: Contig_106_546.877:3p:0 9
+Started graph: Contig_104_311.289:5p:0 8
+Started graph: Contig_103_140.379:3p:0 15
+Started graph: Contig_115_149.024:3p:0 3
+Finished graph: Contig_115_149.024:5p:0 4 1 1 in  0.009751s wall, 0.020000s user + 0.010000s system = 0.030000s CPU (307.7%)
+Started graph: Contig_116_129.302:5p:0 6
+Finished graph: Contig_111_69.6068:5p:0 2 1 1 in  0.015313s wall, 0.030000s user + 0.030000s system = 0.060000s CPU (391.8%)
+Finished graph: Contig_110_125.218:5p:0 6 1 1 in  0.016450s wall, 0.030000s user + 0.030000s system = 0.060000s CPU (364.7%)
+Started graph: Contig_114_623.248:3p:0 7
+Finished graph: Contig_106_546.877:5p:0 6 1 1 in  0.017916s wall, 0.030000s user + 0.050000s system = 0.080000s CPU (446.5%)
+Started graph: Contig_109_1699.01:3p:0 16
+Finished graph: Contig_107_154.878:5p:0 4 1 1 in  0.018267s wall, 0.030000s user + 0.040000s system = 0.070000s CPU (383.2%)
+Started graph: Contig_117_120.415:3p:0 2
+Started graph: Contig_10_118.883:3p:0 14
+Finished graph: Contig_117_120.415:3p:0 2 1 1 in  0.007124s wall, 0.020000s user + 0.010000s system = 0.030000s CPU (421.1%)
+Started graph: Contig_112_109.029:5p:0 8
+Finished graph: Contig_105_395.551:5p:0 4 1 1 in  0.019460s wall, 0.040000s user + 0.050000s system = 0.090000s CPU (462.5%)
+Started graph: Contig_113_105.059:5p:0 16
+Finished graph: Contig_102_150.001:3p:0 2 1 1 in  0.020377s wall, 0.040000s user + 0.050000s system = 0.090000s CPU (441.7%)
+Started graph: Contig_117_120.415:5p:0 3
+Started graph: Contig_109_1699.01:5p:0 30
+Finished graph: Contig_10_118.883:5p:0 3 1 1 in  0.020153s wall, 0.040000s user + 0.040000s system = 0.080000s CPU (397.0%)
+Finished graph: Contig_107_154.878:3p:0 4 1 1 in  0.021415s wall, 0.040000s user + 0.040000s system = 0.080000s CPU (373.6%)
+Finished graph: Contig_101_124.667:3p:0 4 1 1 in  0.022719s wall, 0.050000s user + 0.050000s system = 0.100000s CPU (440.2%)
+Finished graph: Contig_105_395.551:3p:0 7 1 1 in  0.024235s wall, 0.050000s user + 0.060000s system = 0.110000s CPU (453.9%)
+Finished graph: Contig_112_109.029:3p:0 4 1 1 in  0.022536s wall, 0.050000s user + 0.050000s system = 0.100000s CPU (443.7%)
+Finished graph: Contig_112_109.029:5p:0 9 1.125 1 in  0.022976s wall, 0.060000s user + 0.050000s system = 0.110000s CPU (478.8%)
+Started graph: Contig_118_906.124:3p:0 6
+Finished graph: Contig_113_105.059:3p:0 5 1 1 in  0.022770s wall, 0.060000s user + 0.040000s system = 0.100000s CPU (439.2%)
+Finished graph: Contig_118_906.124:3p:0 6 1 1 in  0.011427s wall, 0.040000s user + 0.020000s system = 0.060000s CPU (525.1%)
+Started graph: Contig_125_100.175:5p:0 5
+Started graph: Contig_118_906.124:5p:0 6
+Finished graph: Contig_110_125.218:3p:0 5 1 1 in  0.025820s wall, 0.060000s user + 0.050000s system = 0.110000s CPU (426.0%)
+Finished graph: Contig_115_149.024:3p:0 3 1 1 in  0.022388s wall, 0.070000s user + 0.040000s system = 0.110000s CPU (491.3%)
+Finished graph: Contig_116_129.302:5p:0 6 1 1 in  0.017398s wall, 0.060000s user + 0.030000s system = 0.090000s CPU (517.3%)
+Started graph: Contig_119_123.96:5p:0 5
+Finished graph: Contig_106_546.877:3p:0 8 0.888889 2 in  0.027615s wall, 0.070000s user + 0.060000s system = 0.130000s CPU (470.8%)
+Finished graph: Contig_119_123.96:5p:0 5 1 1 in  0.010489s wall, 0.040000s user + 0.020000s system = 0.060000s CPU (572.1%)
+Started graph: Contig_11_167.095:3p:0 5
+Started graph: Contig_127_334.565:5p:0 6
+Finished graph: Contig_11_167.095:3p:0 5 1 1 in  0.010806s wall, 0.040000s user + 0.010000s system = 0.050000s CPU (462.7%)
+Started graph: Contig_120_134.885:3p:0 7
+Started graph: Contig_114_623.248:5p:0 10
+Started graph: Contig_120_134.885:5p:0 4
+Finished graph: Contig_104_311.289:5p:0 8 1 1 in  0.030124s wall, 0.080000s user + 0.060000s system = 0.140000s CPU (464.7%)
+Started graph: Contig_121_132.547:3p:0 9
+Finished graph: Contig_117_120.415:5p:0 3 1 1 in  0.017538s wall, 0.060000s user + 0.020000s system = 0.080000s CPU (456.1%)
+Started graph: Contig_122_120.193:5p:0 7
+Started graph: Contig_121_132.547:5p:0 18
+Started graph: Contig_104_311.289:3p:0 34
+Started graph: Contig_122_120.193:3p:0 9
+Started graph: Contig_123_328.491:5p:0 8
+Started graph: Contig_123_328.491:3p:0 14
+Started graph: Contig_124_191.009:3p:0 4
+Started graph: Contig_116_129.302:3p:0 53
+Finished graph: Contig_125_100.175:5p:0 5 1 1 in  0.010592s wall, 0.040000s user + 0.010000s system = 0.050000s CPU (472.1%)
+Finished graph: Contig_118_906.124:5p:0 6 1 1 in  0.021864s wall, 0.080000s user + 0.030000s system = 0.110000s CPU (503.1%)
+Started graph: Contig_12_215.498:3p:0 6
+Started graph: Contig_129_288.447:3p:0 86
+Started graph: Contig_126_165.94:3p:0 2
+Started graph: Contig_126_165.94:5p:0 12
+Started graph: Contig_119_123.96:3p:0 4
+Finished graph: Contig_119_123.96:3p:0 4 1 1 in  0.022607s wall, 0.090000s user + 0.030000s system = 0.120000s CPU (530.8%)
+Finished graph: Contig_126_165.94:5p:0 12 1 1 in  0.012349s wall, 0.050000s user + 0.010000s system = 0.060000s CPU (485.9%)
+Finished graph: Contig_114_623.248:3p:0 7 1 1 in  0.036224s wall, 0.120000s user + 0.050000s system = 0.170000s CPU (469.3%)
+Finished graph: Contig_127_334.565:5p:0 6 1 1 in  0.012188s wall, 0.050000s user + 0.010000s system = 0.060000s CPU (492.3%)
+Started graph: Contig_124_191.009:5p:0 45
+Started graph: Contig_128_157.284:3p:0 6
+Finished graph: Contig_109_1699.01:5p:0 30 1 1 in  0.043371s wall, 0.140000s user + 0.060000s system = 0.200000s CPU (461.1%)
+Finished graph: Contig_120_134.885:5p:0 4 1 1 in  0.024857s wall, 0.100000s user + 0.020000s system = 0.120000s CPU (482.8%)
+Finished graph: Contig_103_140.379:3p:0 16 1.06667 1 in  0.044525s wall, 0.140000s user + 0.070000s system = 0.210000s CPU (471.6%)
+Finished graph: Contig_113_105.059:5p:0 17 1.0625 1 in  0.041129s wall, 0.140000s user + 0.050000s system = 0.190000s CPU (462.0%)
+Started graph: Contig_129_288.447:5p:0 3
+Finished graph: Contig_120_134.885:3p:0 7 1 1 in  0.026223s wall, 0.110000s user + 0.020000s system = 0.130000s CPU (495.8%)
+Finished graph: Contig_122_120.193:5p:0 7 1 1 in  0.023212s wall, 0.090000s user + 0.020000s system = 0.110000s CPU (473.9%)
+Started graph: Contig_125_100.175:3p:0 53
+Finished graph: Contig_122_120.193:3p:0 9 1 2 in  0.023965s wall, 0.110000s user + 0.020000s system = 0.130000s CPU (542.4%)
+Finished graph: Contig_114_623.248:5p:0 10 1 1 in  0.041159s wall, 0.150000s user + 0.050000s system = 0.200000s CPU (485.9%)
+Finished graph: Contig_121_132.547:3p:0 9 1 2 in  0.025978s wall, 0.110000s user + 0.020000s system = 0.130000s CPU (500.4%)
+Started graph: Contig_128_157.284:5p:0 34
+Finished graph: Contig_124_191.009:3p:0 4 1 1 in  0.020942s wall, 0.100000s user + 0.010000s system = 0.110000s CPU (525.3%)
+Finished graph: Contig_10_118.883:3p:0 15 1.07143 1 in  0.049335s wall, 0.170000s user + 0.060000s system = 0.230000s CPU (466.2%)
+Finished graph: Contig_123_328.491:5p:0 8 1 1 in  0.025755s wall, 0.120000s user + 0.010000s system = 0.130000s CPU (504.8%)
+Finished graph: Contig_12_215.498:3p:0 6 1 2 in  0.013571s wall, 0.070000s user + 0.000000s system = 0.070000s CPU (515.8%)
+Finished graph: Contig_126_165.94:3p:0 2 1 1 in  0.023681s wall, 0.110000s user + 0.010000s system = 0.120000s CPU (506.7%)
+Started graph: Contig_127_334.565:3p:0 3
+Started graph: Contig_11_167.095:5p:0 3
+Finished graph: Contig_123_328.491:3p:0 14 1 1 in  0.028435s wall, 0.120000s user + 0.020000s system = 0.140000s CPU (492.4%)
+Finished graph: Contig_121_132.547:5p:0 22 1.22222 1 in  0.030800s wall, 0.140000s user + 0.020000s system = 0.160000s CPU (519.5%)
+Finished graph: Contig_128_157.284:3p:0 6 1 1 in  0.023201s wall, 0.110000s user + 0.010000s system = 0.120000s CPU (517.2%)
+Finished graph: Contig_109_1699.01:3p:0 18 1.125 1 in  0.051466s wall, 0.180000s user + 0.060000s system = 0.240000s CPU (466.3%)
+Finished graph: Contig_129_288.447:5p:0 3 1 1 in  0.020782s wall, 0.100000s user + 0.010000s system = 0.110000s CPU (529.3%)
+Finished graph: Contig_104_311.289:3p:0 38 1.11765 1 in  0.052415s wall, 0.180000s user + 0.070000s system = 0.250000s CPU (477.0%)
+Finished graph: Contig_127_334.565:3p:0 3 1 1 in  0.024853s wall, 0.110000s user + 0.010000s system = 0.120000s CPU (482.8%)
+Finished graph: Contig_11_167.095:5p:0 3 1 1 in  0.034450s wall, 0.150000s user + 0.020000s system = 0.170000s CPU (493.5%)
+Finished graph: Contig_128_157.284:5p:0 38 1.11765 1 in  0.027842s wall, 0.130000s user + 0.010000s system = 0.140000s CPU (502.8%)
+Finished graph: Contig_124_191.009:5p:0 46 1.02222 3 in  0.036017s wall, 0.160000s user + 0.020000s system = 0.180000s CPU (499.8%)
+Finished graph: Contig_129_288.447:3p:0 105 1.22093 1 in  0.057170s wall, 0.220000s user + 0.020000s system = 0.240000s CPU (419.8%)
+Finished graph: Contig_116_129.302:3p:0 74 1.39623 1 in  0.080202s wall, 0.290000s user + 0.050000s system = 0.340000s CPU (423.9%)
+Finished graph: Contig_125_100.175:3p:0 74 1.39623 1 in  0.066456s wall, 0.240000s user + 0.020000s system = 0.260000s CPU (391.2%)
+Align reads in  0.094991s wall, 0.310000s user + 0.080000s system = 0.390000s CPU (410.6%)
+Filtering 64 graphs
+Kmer estimate: 35418
+Init kmer hash in  0.151760s wall, 0.480000s user + 0.290000s system = 0.770000s CPU (507.4%)
+Selected reads: 79644 indexed in:  1.375410s wall, 10.310000s user + 0.030000s system = 10.340000s CPU (751.8%)
+Read hash elements: 29518 Read hash size: 177096
+Total entries: 7973368
+Started graph: Contig_130_1686.32:3p:0 6
+Started graph: Contig_139_811.704:3p:0 11
+Started graph: Contig_130_1686.32:5p:0 6
+Started graph: Contig_132_123.736:5p:0 3
+Started graph: Contig_137_160.625:5p:0 4
+Started graph: Contig_136_130.374:5p:0 5
+Started graph: Contig_145_135.476:3p:0 7
+Finished graph: Contig_136_130.374:5p:0 5 1 1 in  0.003139s wall, 0.020000s user + 0.000000s system = 0.020000s CPU (637.2%)
+Started graph: Contig_137_160.625:3p:0 14
+Started graph: Contig_12_215.498:5p:0 8
+Started graph: Contig_132_123.736:3p:0 15
+Started graph: Contig_142_112.808:3p:0 53
+Started graph: Contig_144_147.274:3p:0 77
+Finished graph: Contig_145_135.476:3p:0 7 1 2 in  0.002091s wall, 0.000000s user + 0.010000s system = 0.010000s CPU (478.3%)
+Started graph: Contig_146_136.126:3p:0 4
+Finished graph: Contig_146_136.126:3p:0 4 1 1 in  0.000381s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (n/a%)
+Started graph: Contig_133_261.262:3p:0 8
+Started graph: Contig_139_811.704:5p:0 6
+Started graph: Contig_135_204.221:5p:0 3
+Finished graph: Contig_139_811.704:5p:0 6 1 1 in  0.005235s wall, 0.020000s user + 0.010000s system = 0.030000s CPU (573.1%)
+Started graph: Contig_147_122.978:3p:0 3
+Finished graph: Contig_147_122.978:3p:0 3 1 1 in  0.000385s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Finished graph: Contig_130_1686.32:3p:0 6 1 1 in  0.006669s wall, 0.030000s user + 0.010000s system = 0.040000s CPU (599.8%)
+Finished graph: Contig_139_811.704:3p:0 11 1 1 in  0.006308s wall, 0.020000s user + 0.010000s system = 0.030000s CPU (475.6%)
+Started graph: Contig_148_115.168:5p:0 3
+Finished graph: Contig_148_115.168:5p:0 3 1 1 in  0.000431s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (n/a%)
+Started graph: Contig_13_1653.21:5p:0 16
+Started graph: Contig_149_154.604:3p:0 17
+Started graph: Contig_143_141.424:5p:0 4
+Started graph: Contig_135_204.221:3p:0 3
+Started graph: Contig_140_150.113:3p:0 16
+Started graph: Contig_13_1653.21:3p:0 39
+Started graph: Contig_144_147.274:5p:0 2
+Finished graph: Contig_132_123.736:5p:0 3 1 1 in  0.008587s wall, 0.040000s user + 0.010000s system = 0.050000s CPU (582.2%)
+Started graph: Contig_142_112.808:5p:0 2
+Finished graph: Contig_142_112.808:5p:0 2 1 1 in  0.012492s wall, 0.070000s user + 0.010000s system = 0.080000s CPU (640.4%)
+Started graph: Contig_14_134.286:3p:0 4
+Finished graph: Contig_14_134.286:3p:0 4 1 1 in  0.000332s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_138_172.625:5p:0 23
+Started graph: Contig_133_261.262:5p:0 14
+Finished graph: Contig_149_154.604:3p:0 22 1.29412 1 in  0.009816s wall, 0.050000s user + 0.000000s system = 0.050000s CPU (509.4%)
+Finished graph: Contig_137_160.625:5p:0 4 1 1 in  0.017316s wall, 0.100000s user + 0.010000s system = 0.110000s CPU (635.2%)
+Started graph: Contig_143_141.424:3p:0 52
+Started graph: Contig_134_2008.6:5p:0 6
+Started graph: Contig_136_130.374:3p:0 55
+Started graph: Contig_145_135.476:5p:0 4
+Finished graph: Contig_145_135.476:5p:0 4 1 1 in  0.015163s wall, 0.080000s user + 0.010000s system = 0.090000s CPU (593.5%)
+Finished graph: Contig_137_160.625:3p:0 2 0.142857 2 in  0.018580s wall, 0.100000s user + 0.010000s system = 0.110000s CPU (592.0%)
+Started graph: Contig_134_2008.6:3p:0 6
+Finished graph: Contig_12_215.498:5p:0 8 1 1 in  0.019351s wall, 0.100000s user + 0.010000s system = 0.110000s CPU (568.5%)
+Started graph: Contig_146_136.126:5p:0 5
+Finished graph: Contig_135_204.221:5p:0 3 1 1 in  0.019347s wall, 0.100000s user + 0.010000s system = 0.110000s CPU (568.6%)
+Started graph: Contig_152_123.975:3p:0 8
+Finished graph: Contig_146_136.126:5p:0 5 1 1 in  0.014731s wall, 0.080000s user + 0.000000s system = 0.080000s CPU (543.1%)
+Started graph: Contig_153_120.046:3p:0 6
+Finished graph: Contig_153_120.046:3p:0 6 1 1 in  0.000473s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_153_120.046:5p:0 3
+Finished graph: Contig_153_120.046:5p:0 3 1 1 in  0.000381s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Finished graph: Contig_152_123.975:3p:0 8 1 1 in  0.001801s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (555.3%)
+Finished graph: Contig_133_261.262:3p:0 8 1 1 in  0.021367s wall, 0.120000s user + 0.010000s system = 0.130000s CPU (608.4%)
+Finished graph: Contig_130_1686.32:5p:0 6 1 1 in  0.021718s wall, 0.120000s user + 0.010000s system = 0.130000s CPU (598.6%)
+Started graph: Contig_16_263.841:5p:0 7
+Started graph: Contig_17_115.964:3p:0 3
+Finished graph: Contig_17_115.964:3p:0 3 1 1 in  0.000396s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Finished graph: Contig_135_204.221:3p:0 3 1 1 in  0.022226s wall, 0.120000s user + 0.010000s system = 0.130000s CPU (584.9%)
+Started graph: Contig_18_138.517:3p:0 5
+Finished graph: Contig_18_138.517:3p:0 5 1 1 in  0.000483s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_18_138.517:5p:0 7
+Finished graph: Contig_16_263.841:5p:0 7 1 1 in  0.001794s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (557.5%)
+Started graph: Contig_19_152.5:3p:0 4
+Finished graph: Contig_19_152.5:3p:0 4 1 1 in  0.000345s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_149_154.604:5p:0 2
+Finished graph: Contig_132_123.736:3p:0 16 1.06667 1 in  0.024158s wall, 0.130000s user + 0.010000s system = 0.140000s CPU (579.5%)
+Finished graph: Contig_18_138.517:5p:0 7 1 1 in  0.001384s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (722.3%)
+Finished graph: Contig_13_1653.21:5p:0 18 1.125 1 in  0.023415s wall, 0.120000s user + 0.010000s system = 0.130000s CPU (555.2%)
+Started graph: Contig_1_139.016:5p:0 8
+Finished graph: Contig_1_139.016:5p:0 8 1 1 in  0.000547s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_21_121.985:3p:0 15
+Started graph: Contig_20_105.699:3p:0 79
+Started graph: Contig_14_134.286:5p:0 2
+Finished graph: Contig_14_134.286:5p:0 2 1 1 in  0.012237s wall, 0.070000s user + 0.000000s system = 0.070000s CPU (572.1%)
+Started graph: Contig_141_112.588:5p:0 3
+Finished graph: Contig_140_150.113:3p:0 17 1.0625 1 in  0.031942s wall, 0.170000s user + 0.020000s system = 0.190000s CPU (594.8%)
+Started graph: Contig_131_133.527:5p:0 6
+Started graph: Contig_150_111.855:5p:0 4
+Finished graph: Contig_134_2008.6:5p:0 6 1 1 in  0.034837s wall, 0.190000s user + 0.020000s system = 0.210000s CPU (602.8%)
+Started graph: Contig_151_113.798:3p:0 3
+Started graph: Contig_151_113.798:5p:0 5
+Finished graph: Contig_134_2008.6:3p:0 6 1 1 in  0.035789s wall, 0.200000s user + 0.020000s system = 0.220000s CPU (614.7%)
+Finished graph: Contig_13_1653.21:3p:0 40 1.02564 1 in  0.035381s wall, 0.190000s user + 0.020000s system = 0.210000s CPU (593.5%)
+Started graph: Contig_150_111.855:3p:0 79
+Started graph: Contig_131_133.527:3p:0 5
+Started graph: Contig_15_140.962:3p:0 3
+Started graph: Contig_16_263.841:3p:0 6
+Started graph: Contig_147_122.978:5p:0 4
+Started graph: Contig_148_115.168:3p:0 43
+Finished graph: Contig_16_263.841:3p:0 6 1 1 in  0.016095s wall, 0.100000s user + 0.010000s system = 0.110000s CPU (683.4%)
+Started graph: Contig_17_115.964:5p:0 7
+Finished graph: Contig_17_115.964:5p:0 7 1 1 in  0.016556s wall, 0.090000s user + 0.010000s system = 0.100000s CPU (604.0%)
+Finished graph: Contig_144_147.274:5p:0 2 1 1 in  0.036780s wall, 0.210000s user + 0.020000s system = 0.230000s CPU (625.3%)
+Finished graph: Contig_143_141.424:5p:0 4 1 1 in  0.041040s wall, 0.230000s user + 0.020000s system = 0.250000s CPU (609.2%)
+Finished graph: Contig_149_154.604:5p:0 2 1 1 in  0.034331s wall, 0.200000s user + 0.010000s system = 0.210000s CPU (611.7%)
+Started graph: Contig_1_139.016:3p:0 4
+Started graph: Contig_141_112.588:3p:0 8
+Finished graph: Contig_141_112.588:5p:0 3 1 1 in  0.041881s wall, 0.230000s user + 0.020000s system = 0.250000s CPU (596.9%)
+Finished graph: Contig_131_133.527:5p:0 6 1 1 in  0.043917s wall, 0.250000s user + 0.020000s system = 0.270000s CPU (614.8%)
+Finished graph: Contig_150_111.855:5p:0 4 1 1 in  0.026435s wall, 0.150000s user + 0.010000s system = 0.160000s CPU (605.3%)
+Finished graph: Contig_138_172.625:5p:0 29 1.26087 1 in  0.044180s wall, 0.250000s user + 0.020000s system = 0.270000s CPU (611.1%)
+Finished graph: Contig_21_121.985:3p:0 16 1.06667 1 in  0.019639s wall, 0.110000s user + 0.010000s system = 0.120000s CPU (611.0%)
+Finished graph: Contig_151_113.798:3p:0 3 1 1 in  0.026290s wall, 0.150000s user + 0.010000s system = 0.160000s CPU (608.6%)
+Finished graph: Contig_133_261.262:5p:0 15 1.07143 1 in  0.045043s wall, 0.250000s user + 0.020000s system = 0.270000s CPU (599.4%)
+Finished graph: Contig_151_113.798:5p:0 5 1 1 in  0.026421s wall, 0.160000s user + 0.010000s system = 0.170000s CPU (643.4%)
+Started graph: Contig_152_123.975:5p:0 3
+Finished graph: Contig_131_133.527:3p:0 5 1 1 in  0.045909s wall, 0.260000s user + 0.020000s system = 0.280000s CPU (609.9%)
+Finished graph: Contig_15_140.962:3p:0 3 1 1 in  0.024935s wall, 0.150000s user + 0.010000s system = 0.160000s CPU (641.7%)
+Finished graph: Contig_147_122.978:5p:0 4 1 1 in  0.039781s wall, 0.230000s user + 0.010000s system = 0.240000s CPU (603.3%)
+Started graph: Contig_19_152.5:5p:0 4
+Finished graph: Contig_19_152.5:5p:0 4 1 1 in  0.022679s wall, 0.130000s user + 0.010000s system = 0.140000s CPU (617.3%)
+Finished graph: Contig_1_139.016:3p:0 4 1 1 in  0.022517s wall, 0.130000s user + 0.010000s system = 0.140000s CPU (621.7%)
+Finished graph: Contig_141_112.588:3p:0 9 1.125 1 in  0.045557s wall, 0.260000s user + 0.020000s system = 0.280000s CPU (614.6%)
+Finished graph: Contig_152_123.975:5p:0 3 1 1 in  0.027618s wall, 0.160000s user + 0.010000s system = 0.170000s CPU (615.5%)
+Finished graph: Contig_148_115.168:3p:0 45 1.04651 1 in  0.050904s wall, 0.310000s user + 0.010000s system = 0.320000s CPU (628.6%)
+Finished graph: Contig_142_112.808:3p:0 74 1.39623 1 in  0.069311s wall, 0.410000s user + 0.020000s system = 0.430000s CPU (620.4%)
+Finished graph: Contig_136_130.374:3p:0 76 1.38182 1 in  0.071501s wall, 0.420000s user + 0.020000s system = 0.440000s CPU (615.4%)
+Finished graph: Contig_143_141.424:3p:0 73 1.40385 1 in  0.070336s wall, 0.420000s user + 0.020000s system = 0.440000s CPU (625.6%)
+Finished graph: Contig_144_147.274:3p:0 95 1.23377 3 in  0.091356s wall, 0.480000s user + 0.020000s system = 0.500000s CPU (547.3%)
+Finished graph: Contig_20_105.699:3p:0 95 1.20253 3 in  0.070071s wall, 0.360000s user + 0.010000s system = 0.370000s CPU (528.0%)
+Finished graph: Contig_150_111.855:3p:0 97 1.22785 3 in  0.083264s wall, 0.410000s user + 0.010000s system = 0.420000s CPU (504.4%)
+Align reads in  0.103420s wall, 0.500000s user + 0.020000s system = 0.520000s CPU (502.8%)
+Filtering 64 graphs
+Kmer estimate: 45912
+Init kmer hash in  0.155662s wall, 0.500000s user + 0.190000s system = 0.690000s CPU (443.3%)
+Selected reads: 89322 indexed in:  2.017888s wall, 12.350000s user + 0.090000s system = 12.440000s CPU (616.5%)
+Read hash elements: 39986 Read hash size: 229560
+Total entries: 9196926
+Started graph: Contig_24_137.981:3p:0 4
+Started graph: Contig_31_148.751:3p:0 5
+Started graph: Contig_25_133.424:3p:0 4
+Started graph: Contig_21_121.985:5p:0 9
+Started graph: Contig_23_121.095:3p:0 7
+Started graph: Contig_28_172.073:3p:0 4
+Started graph: Contig_26_136.336:5p:0 5
+Started graph: Contig_30_472.338:5p:0 3
+Started graph: Contig_29_151.465:5p:0 4
+Started graph: Contig_28_172.073:5p:0 3
+Started graph: Contig_30_472.338:3p:0 11
+Started graph: Contig_27_139.603:3p:0 7
+Started graph: Contig_29_151.465:3p:0 4
+Started graph: Contig_2_159.295:5p:0 2
+Started graph: Contig_22_150.271:5p:0 5
+Started graph: Contig_27_139.603:5p:0 4
+Finished graph: Contig_24_137.981:3p:0 4 1 1 in  0.007688s wall, 0.020000s user + 0.010000s system = 0.030000s CPU (390.2%)
+Started graph: Contig_32_1145.29:3p:0 3
+Started graph: Contig_23_121.095:5p:0 14
+Started graph: Contig_31_148.751:5p:0 6
+Finished graph: Contig_31_148.751:3p:0 5 1 1 in  0.008086s wall, 0.020000s user + 0.010000s system = 0.030000s CPU (371.0%)
+Started graph: Contig_32_1145.29:5p:0 6
+Started graph: Contig_33_153.828:5p:0 2
+Started graph: Contig_24_137.981:5p:0 14
+Started graph: Contig_35_72.0939:3p:0 2
+Finished graph: Contig_35_72.0939:3p:0 2 1 1 in  0.008695s wall, 0.030000s user + 0.020000s system = 0.050000s CPU (575.0%)
+Started graph: Contig_38_317.674:3p:0 4
+Finished graph: Contig_38_317.674:3p:0 4 1 1 in  0.000372s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_35_72.0939:5p:0 5
+Started graph: Contig_36_149.688:3p:0 2
+Started graph: Contig_36_149.688:5p:0 4
+Finished graph: Contig_23_121.095:3p:0 7 1 1 in  0.011739s wall, 0.030000s user + 0.020000s system = 0.050000s CPU (425.9%)
+Started graph: Contig_34_186.158:3p:0 59
+Finished graph: Contig_23_121.095:5p:0 14 1 1 in  0.012067s wall, 0.030000s user + 0.020000s system = 0.050000s CPU (414.3%)
+Finished graph: Contig_26_136.336:5p:0 5 1 1 in  0.012046s wall, 0.030000s user + 0.020000s system = 0.050000s CPU (415.1%)
+Finished graph: Contig_30_472.338:5p:0 3 1 1 in  0.011771s wall, 0.030000s user + 0.020000s system = 0.050000s CPU (424.8%)
+Finished graph: Contig_29_151.465:5p:0 4 1 1 in  0.012298s wall, 0.030000s user + 0.020000s system = 0.050000s CPU (406.6%)
+Finished graph: Contig_28_172.073:5p:0 3 1 1 in  0.012527s wall, 0.030000s user + 0.020000s system = 0.050000s CPU (399.1%)
+Finished graph: Contig_21_121.985:5p:0 9 1 1 in  0.013115s wall, 0.040000s user + 0.020000s system = 0.060000s CPU (457.5%)
+Started graph: Contig_41_104.834:3p:0 5
+Finished graph: Contig_2_159.295:5p:0 2 1 1 in  0.012940s wall, 0.040000s user + 0.020000s system = 0.060000s CPU (463.7%)
+Finished graph: Contig_30_472.338:3p:0 12 1.09091 1 in  0.012991s wall, 0.040000s user + 0.020000s system = 0.060000s CPU (461.8%)
+Finished graph: Contig_22_150.271:5p:0 5 1 1 in  0.013855s wall, 0.040000s user + 0.020000s system = 0.060000s CPU (433.1%)
+Finished graph: Contig_27_139.603:3p:0 7 1 1 in  0.013764s wall, 0.040000s user + 0.020000s system = 0.060000s CPU (435.9%)
+Finished graph: Contig_27_139.603:5p:0 4 1 1 in  0.013965s wall, 0.040000s user + 0.020000s system = 0.060000s CPU (429.6%)
+Started graph: Contig_25_133.424:5p:0 77
+Finished graph: Contig_32_1145.29:3p:0 3 1 1 in  0.013147s wall, 0.040000s user + 0.020000s system = 0.060000s CPU (456.4%)
+Started graph: Contig_22_150.271:3p:0 78
+Started graph: Contig_37_240.265:5p:0 2
+Finished graph: Contig_32_1145.29:5p:0 6 1 1 in  0.013392s wall, 0.040000s user + 0.020000s system = 0.060000s CPU (448.0%)
+Finished graph: Contig_33_153.828:5p:0 2 1 1 in  0.013507s wall, 0.040000s user + 0.020000s system = 0.060000s CPU (444.2%)
+Started graph: Contig_33_153.828:3p:0 86
+Started graph: Contig_45_99.7699:5p:0 16
+Started graph: Contig_44_576.065:3p:0 83
+Finished graph: Contig_24_137.981:5p:0 15 1.07143 1 in  0.019526s wall, 0.070000s user + 0.020000s system = 0.090000s CPU (460.9%)
+Started graph: Contig_46_107.646:5p:0 7
+Started graph: Contig_38_317.674:5p:0 2
+Finished graph: Contig_38_317.674:5p:0 2 1 1 in  0.009332s wall, 0.050000s user + 0.000000s system = 0.050000s CPU (535.8%)
+Started graph: Contig_47_134.585:3p:0 3
+Finished graph: Contig_47_134.585:3p:0 3 1 1 in  0.000413s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Finished graph: Contig_46_107.646:5p:0 7 1 1 in  0.001474s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (678.2%)
+Finished graph: Contig_36_149.688:3p:0 2 1 1 in  0.019173s wall, 0.080000s user + 0.020000s system = 0.100000s CPU (521.6%)
+Started graph: Contig_48_163.079:5p:0 6
+Finished graph: Contig_25_133.424:3p:0 4 1 1 in  0.021909s wall, 0.090000s user + 0.020000s system = 0.110000s CPU (502.1%)
+Finished graph: Contig_28_172.073:3p:0 4 1 1 in  0.021911s wall, 0.090000s user + 0.020000s system = 0.110000s CPU (502.0%)
+Started graph: Contig_2_159.295:3p:0 71
+Started graph: Contig_39_173.259:3p:0 4
+Started graph: Contig_39_173.259:5p:0 15
+Started graph: Contig_3_99.6568:3p:0 7
+Finished graph: Contig_39_173.259:3p:0 4 1 1 in  0.011055s wall, 0.070000s user + 0.000000s system = 0.070000s CPU (633.2%)
+Started graph: Contig_40_961.337:3p:0 27
+Started graph: Contig_4_131.449:3p:0 7
+Started graph: Contig_49_1391.19:5p:0 30
+Finished graph: Contig_41_104.834:3p:0 5 1 1 in  0.010667s wall, 0.070000s user + 0.000000s system = 0.070000s CPU (656.2%)
+Started graph: Contig_4_131.449:5p:0 8
+Finished graph: Contig_3_99.6568:3p:0 7 1 1 in  0.012069s wall, 0.080000s user + 0.000000s system = 0.080000s CPU (662.9%)
+Started graph: Contig_50_159.225:3p:0 3
+Finished graph: Contig_50_159.225:3p:0 3 1 1 in  0.000382s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_50_159.225:5p:0 3
+Finished graph: Contig_50_159.225:5p:0 3 1 1 in  0.000373s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_42_2117.53:3p:0 6
+Started graph: Contig_42_2117.53:5p:0 6
+Finished graph: Contig_29_151.465:3p:0 4 1 1 in  0.025549s wall, 0.110000s user + 0.020000s system = 0.130000s CPU (508.8%)
+Started graph: Contig_43_186.408:3p:0 37
+Started graph: Contig_45_99.7699:3p:0 6
+Finished graph: Contig_37_240.265:5p:0 2 1 1 in  0.016860s wall, 0.100000s user + 0.020000s system = 0.120000s CPU (711.7%)
+Finished graph: Contig_45_99.7699:3p:0 6 1 1 in  0.011846s wall, 0.080000s user + 0.010000s system = 0.090000s CPU (759.8%)
+Finished graph: Contig_31_148.751:5p:0 6 1 1 in  0.025445s wall, 0.120000s user + 0.030000s system = 0.150000s CPU (589.5%)
+Started graph: Contig_37_240.265:3p:0 52
+Finished graph: Contig_39_173.259:5p:0 16 1.06667 1 in  0.018848s wall, 0.120000s user + 0.010000s system = 0.130000s CPU (689.7%)
+Started graph: Contig_44_576.065:5p:0 2
+Started graph: Contig_47_134.585:5p:0 4
+Finished graph: Contig_44_576.065:5p:0 2 1 1 in  0.017681s wall, 0.120000s user + 0.010000s system = 0.130000s CPU (735.3%)
+Finished graph: Contig_35_72.0939:5p:0 5 1 1 in  0.029998s wall, 0.150000s user + 0.030000s system = 0.180000s CPU (600.0%)
+Finished graph: Contig_45_99.7699:5p:0 17 1.0625 1 in  0.017608s wall, 0.130000s user + 0.010000s system = 0.140000s CPU (795.1%)
+Finished graph: Contig_36_149.688:5p:0 4 1 1 in  0.030465s wall, 0.160000s user + 0.030000s system = 0.190000s CPU (623.7%)
+Finished graph: Contig_34_186.158:3p:0 62 1.05085 1 in  0.031350s wall, 0.170000s user + 0.030000s system = 0.200000s CPU (638.0%)
+Finished graph: Contig_48_163.079:5p:0 6 1 1 in  0.011839s wall, 0.080000s user + 0.010000s system = 0.090000s CPU (760.2%)
+Started graph: Contig_40_961.337:5p:0 6
+Started graph: Contig_49_1391.19:3p:0 44
+Finished graph: Contig_4_131.449:3p:0 7 1 1 in  0.010917s wall, 0.070000s user + 0.010000s system = 0.080000s CPU (732.8%)
+Started graph: Contig_41_104.834:5p:0 3
+Finished graph: Contig_4_131.449:5p:0 8 1 1 in  0.010409s wall, 0.070000s user + 0.010000s system = 0.080000s CPU (768.6%)
+Started graph: Contig_51_102.389:3p:0 7
+Finished graph: Contig_42_2117.53:3p:0 6 1 1 in  0.020949s wall, 0.140000s user + 0.010000s system = 0.150000s CPU (716.0%)
+Finished graph: Contig_42_2117.53:5p:0 6 1 1 in  0.020865s wall, 0.140000s user + 0.010000s system = 0.150000s CPU (718.9%)
+Started graph: Contig_51_102.389:5p:0 4
+Started graph: Contig_46_107.646:3p:0 2
+Finished graph: Contig_46_107.646:3p:0 2 1 1 in  0.019665s wall, 0.140000s user + 0.010000s system = 0.150000s CPU (762.8%)
+Started graph: Contig_48_163.079:3p:0 6
+Finished graph: Contig_48_163.079:3p:0 6 1 1 in  0.014599s wall, 0.100000s user + 0.010000s system = 0.110000s CPU (753.5%)
+Finished graph: Contig_40_961.337:5p:0 6 1 1 in  0.023367s wall, 0.160000s user + 0.010000s system = 0.170000s CPU (727.5%)
+Finished graph: Contig_41_104.834:5p:0 3 1 1 in  0.023120s wall, 0.150000s user + 0.010000s system = 0.160000s CPU (692.0%)
+Finished graph: Contig_51_102.389:5p:0 4 1 1 in  0.011233s wall, 0.070000s user + 0.010000s system = 0.080000s CPU (712.2%)
+Finished graph: Contig_51_102.389:3p:0 7 1 1 in  0.013190s wall, 0.090000s user + 0.010000s system = 0.100000s CPU (758.1%)
+Finished graph: Contig_49_1391.19:5p:0 30 1 1 in  0.020968s wall, 0.130000s user + 0.010000s system = 0.140000s CPU (667.7%)
+Finished graph: Contig_47_134.585:5p:0 4 1 1 in  0.022588s wall, 0.140000s user + 0.010000s system = 0.150000s CPU (664.1%)
+Finished graph: Contig_43_186.408:3p:0 38 1.02703 2 in  0.030506s wall, 0.190000s user + 0.010000s system = 0.200000s CPU (655.6%)
+Started graph: Contig_26_136.336:3p:0 86
+Finished graph: Contig_40_961.337:3p:0 35 1.2963 1 in  0.037715s wall, 0.240000s user + 0.010000s system = 0.250000s CPU (662.9%)
+Finished graph: Contig_37_240.265:3p:0 57 1.09615 1 in  0.048345s wall, 0.290000s user + 0.020000s system = 0.310000s CPU (641.2%)
+Finished graph: Contig_49_1391.19:3p:0 45 1.02273 3 in  0.037167s wall, 0.240000s user + 0.020000s system = 0.260000s CPU (699.6%)
+Finished graph: Contig_2_159.295:3p:0 82 1.15493 1 in  0.067193s wall, 0.370000s user + 0.040000s system = 0.410000s CPU (610.2%)
+Finished graph: Contig_33_153.828:3p:0 105 1.22093 1 in  0.067837s wall, 0.380000s user + 0.040000s system = 0.420000s CPU (619.1%)
+Finished graph: Contig_25_133.424:5p:0 95 1.23377 3 in  0.082136s wall, 0.440000s user + 0.040000s system = 0.480000s CPU (584.4%)
+Finished graph: Contig_22_150.271:3p:0 71 0.910256 5 in  0.088425s wall, 0.450000s user + 0.040000s system = 0.490000s CPU (554.1%)
+Finished graph: Contig_26_136.336:3p:0 94 1.09302 2 in  0.094257s wall, 0.470000s user + 0.040000s system = 0.510000s CPU (541.1%)
+Finished graph: Contig_44_576.065:3p:0 96 1.15663 3 in  0.092868s wall, 0.440000s user + 0.020000s system = 0.460000s CPU (495.3%)
+Align reads in  0.110331s wall, 0.480000s user + 0.040000s system = 0.520000s CPU (471.3%)
+Filtering 64 graphs
+Kmer estimate: 46639
+Init kmer hash in  0.143937s wall, 0.590000s user + 0.130000s system = 0.720000s CPU (500.2%)
+Selected reads: 110581 indexed in:  1.068817s wall, 8.390000s user + 0.010000s system = 8.400000s CPU (785.9%)
+Read hash elements: 47498 Read hash size: 233200
+Total entries: 11875340
+Started graph: Contig_54_142.53:3p:0 2
+Started graph: Contig_52_126.385:3p:0 9
+Started graph: Contig_53_385.256:3p:0 14
+Started graph: Contig_56_111.428:3p:0 3
+Started graph: Contig_5_110.716:3p:0 9
+Started graph: Contig_56_111.428:5p:0 2
+Started graph: Contig_59_519.837:3p:0 6
+Started graph: Contig_59_519.837:5p:0 6
+Started graph: Contig_64_141.039:3p:0 3
+Started graph: Contig_64_141.039:5p:0 6
+Finished graph: Contig_54_142.53:3p:0 2 1 1 in  0.003965s wall, 0.020000s user + 0.010000s system = 0.030000s CPU (756.6%)
+Finished graph: Contig_52_126.385:3p:0 9 1 2 in  0.004452s wall, 0.020000s user + 0.010000s system = 0.030000s CPU (673.8%)
+Started graph: Contig_67_124.528:3p:0 7
+Started graph: Contig_55_513.272:3p:0 11
+Started graph: Contig_63_1964.52:3p:0 82
+Started graph: Contig_66_512.419:3p:0 87
+Started graph: Contig_55_513.272:5p:0 5
+Started graph: Contig_62_2362.32:5p:0 24
+Started graph: Contig_61_1157.4:3p:0 6
+Started graph: Contig_60_148.692:5p:0 7
+Finished graph: Contig_55_513.272:3p:0 12 1.09091 1 in  0.006993s wall, 0.030000s user + 0.010000s system = 0.040000s CPU (572.0%)
+Started graph: Contig_68_158.938:5p:0 3
+Started graph: Contig_60_148.692:3p:0 3
+Finished graph: Contig_60_148.692:3p:0 3 1 1 in  0.007382s wall, 0.030000s user + 0.010000s system = 0.040000s CPU (541.9%)
+Finished graph: Contig_68_158.938:5p:0 3 1 1 in  0.000858s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_62_2362.32:3p:0 44
+Finished graph: Contig_56_111.428:3p:0 3 1 1 in  0.008041s wall, 0.030000s user + 0.010000s system = 0.040000s CPU (497.4%)
+Started graph: Contig_54_142.53:5p:0 14
+Started graph: Contig_61_1157.4:5p:0 113
+Finished graph: Contig_53_385.256:3p:0 15 1.07143 1 in  0.010828s wall, 0.060000s user + 0.010000s system = 0.070000s CPU (646.5%)
+Finished graph: Contig_56_111.428:5p:0 2 1 1 in  0.010577s wall, 0.050000s user + 0.010000s system = 0.060000s CPU (567.3%)
+Started graph: Contig_6_154.222:5p:0 4
+Started graph: Contig_70_478.884:3p:0 11
+Started graph: Contig_63_1964.52:5p:0 17
+Started graph: Contig_58_160.502:5p:0 8
+Finished graph: Contig_59_519.837:5p:0 6 1 1 in  0.011318s wall, 0.050000s user + 0.010000s system = 0.060000s CPU (530.1%)
+Finished graph: Contig_64_141.039:3p:0 3 1 1 in  0.008587s wall, 0.040000s user + 0.010000s system = 0.050000s CPU (582.2%)
+Started graph: Contig_70_478.884:5p:0 6
+Finished graph: Contig_70_478.884:5p:0 6 1 1 in  0.000515s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (n/a%)
+Finished graph: Contig_54_142.53:5p:0 13 0.928571 2 in  0.013402s wall, 0.060000s user + 0.010000s system = 0.070000s CPU (522.3%)
+Finished graph: Contig_58_160.502:5p:0 8 1 1 in  0.013316s wall, 0.060000s user + 0.010000s system = 0.070000s CPU (525.7%)
+Started graph: Contig_71_260.697:3p:0 75
+Started graph: Contig_57_122.113:5p:0 4
+Started graph: Contig_71_260.697:5p:0 21
+Started graph: Contig_65_150.535:3p:0 3
+Finished graph: Contig_65_150.535:3p:0 3 1 1 in  0.011205s wall, 0.060000s user + 0.010000s system = 0.070000s CPU (624.7%)
+Started graph: Contig_73_242.555:5p:0 2
+Finished graph: Contig_73_242.555:5p:0 2 1 1 in  0.000334s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_74_145.193:3p:0 5
+Finished graph: Contig_74_145.193:3p:0 5 1 1 in  0.000417s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (n/a%)
+Started graph: Contig_74_145.193:5p:0 3
+Finished graph: Contig_74_145.193:5p:0 3 1 1 in  0.000298s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_75_475.715:3p:0 7
+Finished graph: Contig_75_475.715:3p:0 7 1 1 in  0.000382s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_75_475.715:5p:0 4
+Finished graph: Contig_75_475.715:5p:0 4 1 1 in  0.000380s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_76_138.463:3p:0 2
+Finished graph: Contig_76_138.463:3p:0 2 1 1 in  0.000303s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (n/a%)
+Started graph: Contig_76_138.463:5p:0 14
+Finished graph: Contig_62_2362.32:3p:0 44 1 1 in  0.019991s wall, 0.110000s user + 0.010000s system = 0.120000s CPU (600.3%)
+Finished graph: Contig_67_124.528:3p:0 7 1 1 in  0.016534s wall, 0.100000s user + 0.000000s system = 0.100000s CPU (604.8%)
+Started graph: Contig_77_153.673:3p:0 3
+Finished graph: Contig_77_153.673:3p:0 3 1 1 in  0.000338s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (n/a%)
+Started graph: Contig_78_112.176:3p:0 3
+Finished graph: Contig_71_260.697:5p:0 20 0.952381 1 in  0.008277s wall, 0.060000s user + 0.000000s system = 0.060000s CPU (724.9%)
+Started graph: Contig_66_512.419:5p:0 75
+Finished graph: Contig_55_513.272:5p:0 5 1 1 in  0.021805s wall, 0.120000s user + 0.010000s system = 0.130000s CPU (596.2%)
+Finished graph: Contig_61_1157.4:3p:0 6 1 1 in  0.021651s wall, 0.120000s user + 0.010000s system = 0.130000s CPU (600.4%)
+Started graph: Contig_69_102.432:3p:0 2
+Finished graph: Contig_69_102.432:3p:0 2 1 1 in  0.014788s wall, 0.090000s user + 0.010000s system = 0.100000s CPU (676.2%)
+Started graph: Contig_57_122.113:3p:0 4
+Started graph: Contig_7_121.82:3p:0 5
+Finished graph: Contig_7_121.82:3p:0 5 1 1 in  0.001114s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (897.6%)
+Finished graph: Contig_62_2362.32:5p:0 24 1 1 in  0.024067s wall, 0.130000s user + 0.020000s system = 0.150000s CPU (623.3%)
+Finished graph: Contig_6_154.222:5p:0 4 1 1 in  0.014448s wall, 0.090000s user + 0.010000s system = 0.100000s CPU (692.1%)
+Started graph: Contig_80_161.903:5p:0 2
+Finished graph: Contig_80_161.903:5p:0 2 1 1 in  0.000375s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_81_1151.8:3p:0 12
+Started graph: Contig_80_161.903:3p:0 46
+Finished graph: Contig_81_1151.8:3p:0 12 1 1 in  0.001825s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (548.1%)
+Started graph: Contig_81_1151.8:5p:0 27
+Finished graph: Contig_63_1964.52:5p:0 17 1 1 in  0.029944s wall, 0.180000s user + 0.020000s system = 0.200000s CPU (667.9%)
+Finished graph: Contig_70_478.884:3p:0 12 1.09091 1 in  0.022033s wall, 0.140000s user + 0.010000s system = 0.150000s CPU (680.8%)
+Started graph: Contig_72_1037.79:3p:0 11
+Finished graph: Contig_72_1037.79:3p:0 12 1.09091 1 in  0.022129s wall, 0.140000s user + 0.010000s system = 0.150000s CPU (677.8%)
+Started graph: Contig_65_150.535:5p:0 7
+Finished graph: Contig_5_110.716:3p:0 9 1 2 in  0.035945s wall, 0.210000s user + 0.020000s system = 0.230000s CPU (639.9%)
+Started graph: Contig_5_110.716:5p:0 4
+Finished graph: Contig_5_110.716:5p:0 4 1 1 in  0.036491s wall, 0.220000s user + 0.020000s system = 0.240000s CPU (657.7%)
+Started graph: Contig_53_385.256:5p:0 46
+Finished graph: Contig_65_150.535:5p:0 7 1 1 in  0.034252s wall, 0.210000s user + 0.020000s system = 0.230000s CPU (671.5%)
+Finished graph: Contig_59_519.837:3p:0 6 1 1 in  0.037762s wall, 0.230000s user + 0.020000s system = 0.250000s CPU (662.0%)
+Finished graph: Contig_57_122.113:5p:0 4 1 1 in  0.037982s wall, 0.230000s user + 0.020000s system = 0.250000s CPU (658.2%)
+Started graph: Contig_73_242.555:3p:0 5
+Finished graph: Contig_64_141.039:5p:0 6 1 1 in  0.035595s wall, 0.220000s user + 0.020000s system = 0.240000s CPU (674.3%)
+Started graph: Contig_77_153.673:5p:0 4
+Finished graph: Contig_77_153.673:5p:0 4 1 1 in  0.018300s wall, 0.130000s user + 0.010000s system = 0.140000s CPU (765.0%)
+Started graph: Contig_67_124.528:5p:0 4
+Finished graph: Contig_78_112.176:3p:0 3 1 1 in  0.018319s wall, 0.120000s user + 0.010000s system = 0.130000s CPU (709.7%)
+Started graph: Contig_68_158.938:3p:0 5
+Started graph: Contig_78_112.176:5p:0 4
+Finished graph: Contig_68_158.938:3p:0 5 1 1 in  0.033938s wall, 0.220000s user + 0.010000s system = 0.230000s CPU (677.7%)
+Started graph: Contig_6_154.222:3p:0 4
+Finished graph: Contig_60_148.692:5p:0 7 1 1 in  0.039859s wall, 0.240000s user + 0.020000s system = 0.260000s CPU (652.3%)
+Finished graph: Contig_57_122.113:3p:0 4 1 1 in  0.040253s wall, 0.240000s user + 0.020000s system = 0.260000s CPU (645.9%)
+Started graph: Contig_58_160.502:3p:0 13
+Finished graph: Contig_76_138.463:5p:0 15 1.07143 1 in  0.023874s wall, 0.160000s user + 0.010000s system = 0.170000s CPU (712.1%)
+Started graph: Contig_79_149.235:3p:0 52
+Finished graph: Contig_58_160.502:3p:0 5 0.384615 2 in  0.041058s wall, 0.250000s user + 0.020000s system = 0.270000s CPU (657.6%)
+Started graph: Contig_7_121.82:5p:0 16
+Started graph: Contig_72_1037.79:5p:0 6
+Finished graph: Contig_72_1037.79:5p:0 6 1 1 in  0.028273s wall, 0.190000s user + 0.010000s system = 0.200000s CPU (707.4%)
+Finished graph: Contig_73_242.555:3p:0 5 1 1 in  0.036255s wall, 0.250000s user + 0.010000s system = 0.260000s CPU (717.1%)
+Finished graph: Contig_67_124.528:5p:0 4 1 1 in  0.045467s wall, 0.300000s user + 0.010000s system = 0.310000s CPU (681.8%)
+Finished graph: Contig_78_112.176:5p:0 4 1 1 in  0.029387s wall, 0.200000s user + 0.010000s system = 0.210000s CPU (714.6%)
+Started graph: Contig_79_149.235:5p:0 16
+Finished graph: Contig_53_385.256:5p:0 48 1.04348 1 in  0.056549s wall, 0.370000s user + 0.030000s system = 0.400000s CPU (707.3%)
+Finished graph: Contig_79_149.235:5p:0 17 1.0625 1 in  0.035232s wall, 0.250000s user + 0.020000s system = 0.270000s CPU (766.4%)
+Finished graph: Contig_61_1157.4:5p:0 146 1.29204 2 in  0.057123s wall, 0.370000s user + 0.030000s system = 0.400000s CPU (700.2%)
+Finished graph: Contig_80_161.903:3p:0 46 1 1 in  0.032626s wall, 0.240000s user + 0.010000s system = 0.250000s CPU (766.3%)
+Finished graph: Contig_6_154.222:3p:0 4 1 1 in  0.050164s wall, 0.350000s user + 0.020000s system = 0.370000s CPU (737.6%)
+Finished graph: Contig_81_1151.8:5p:0 35 1.2963 1 in  0.031887s wall, 0.240000s user + 0.010000s system = 0.250000s CPU (784.0%)
+Finished graph: Contig_7_121.82:5p:0 17 1.0625 1 in  0.035879s wall, 0.260000s user + 0.010000s system = 0.270000s CPU (752.5%)
+Finished graph: Contig_66_512.419:3p:0 106 1.21839 1 in  0.056363s wall, 0.380000s user + 0.030000s system = 0.410000s CPU (727.4%)
+Finished graph: Contig_66_512.419:5p:0 89 1.18667 1 in  0.066051s wall, 0.420000s user + 0.020000s system = 0.440000s CPU (666.1%)
+Finished graph: Contig_71_260.697:3p:0 93 1.24 3 in  0.066617s wall, 0.400000s user + 0.020000s system = 0.420000s CPU (630.5%)
+Finished graph: Contig_63_1964.52:3p:0 95 1.15854 4 in  0.080393s wall, 0.460000s user + 0.030000s system = 0.490000s CPU (609.5%)
+Finished graph: Contig_79_149.235:3p:0 73 1.40385 1 in  0.074517s wall, 0.360000s user + 0.020000s system = 0.380000s CPU (510.0%)
+Align reads in  0.099334s wall, 0.490000s user + 0.030000s system = 0.520000s CPU (523.5%)
+Filtering 37 graphs
+Kmer estimate: 32945
+Init kmer hash in  0.110495s wall, 0.480000s user + 0.100000s system = 0.580000s CPU (524.9%)
+Selected reads: 64493 indexed in:  0.518288s wall, 3.930000s user + 0.010000s system = 3.940000s CPU (760.2%)
+Read hash elements: 30074 Read hash size: 164728
+Total entries: 6646654
+Started graph: Contig_83_148.243:3p:0 2
+Started graph: Contig_83_148.243:5p:0 5
+Finished graph: Contig_83_148.243:3p:0 2 1 1 in  0.000722s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (n/a%)
+Started graph: Contig_89_1072.73:3p:0 13
+Started graph: Contig_85_802.63:5p:0 3
+Finished graph: Contig_89_1072.73:3p:0 13 1 1 in  0.000740s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_82_130.869:5p:0 9
+Started graph: Contig_89_1072.73:5p:0 4
+Finished graph: Contig_83_148.243:5p:0 5 1 1 in  0.001639s wall, 0.020000s user + 0.010000s system = 0.030000s CPU (1830.0%)
+Started graph: Contig_85_802.63:3p:0 13
+Started graph: Contig_82_130.869:3p:0 86
+Started graph: Contig_90_129.656:5p:0 85
+Started graph: Contig_84_459.863:3p:0 27
+Finished graph: Contig_89_1072.73:5p:0 4 1 1 in  0.002927s wall, 0.020000s user + 0.010000s system = 0.030000s CPU (1025.0%)
+Started graph: Contig_86_1153.51:5p:0 2
+Finished graph: Contig_86_1153.51:5p:0 2 1 1 in  0.003650s wall, 0.020000s user + 0.010000s system = 0.030000s CPU (821.8%)
+Started graph: Contig_98_110.827:5p:0 2
+Finished graph: Contig_98_110.827:5p:0 2 1 1 in  0.000716s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+Started graph: Contig_9_143.034:3p:0 4
+Finished graph: Contig_9_143.034:3p:0 4 1 1 in  0.000490s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (n/a%)
+Started graph: Contig_87_109.378:3p:0 47
+Started graph: Contig_93_209.273:5p:0 9
+Started graph: Contig_92_119.578:5p:0 4
+Started graph: Contig_91_128.221:3p:0 31
+Started graph: Contig_94_1252.71:5p:0 6
+Started graph: Contig_8_123.942:3p:0 5
+Finished graph: Contig_94_1252.71:5p:0 6 1 1 in  0.004849s wall, 0.030000s user + 0.000000s system = 0.030000s CPU (618.7%)
+Finished graph: Contig_82_130.869:5p:0 9 1 1 in  0.006814s wall, 0.050000s user + 0.010000s system = 0.060000s CPU (880.5%)
+Finished graph: Contig_85_802.63:5p:0 3 1 1 in  0.006982s wall, 0.040000s user + 0.010000s system = 0.050000s CPU (716.2%)
+Started graph: Contig_97_163.716:3p:0 6
+Started graph: Contig_96_157.968:5p:0 25
+Started graph: Contig_94_1252.71:3p:0 59
+Started graph: Contig_97_163.716:5p:0 3
+Finished graph: Contig_97_163.716:5p:0 3 1 1 in  0.004689s wall, 0.020000s user + 0.000000s system = 0.020000s CPU (426.5%)
+Finished graph: Contig_93_209.273:5p:0 9 1 2 in  0.009368s wall, 0.050000s user + 0.000000s system = 0.050000s CPU (533.8%)
+Started graph: Contig_96_157.968:3p:0 8
+Started graph: Contig_88_302.687:3p:0 68
+Started graph: Contig_84_459.863:5p:0 5
+Started graph: Contig_99_100.743:3p:0 4
+Finished graph: Contig_84_459.863:5p:0 5 1 1 in  0.013065s wall, 0.080000s user + 0.010000s system = 0.090000s CPU (688.8%)
+Started graph: Contig_88_302.687:5p:0 6
+Finished graph: Contig_88_302.687:5p:0 6 1 1 in  0.009173s wall, 0.060000s user + 0.000000s system = 0.060000s CPU (654.1%)
+Started graph: Contig_98_110.827:3p:0 86
+Started graph: Contig_86_1153.51:3p:0 5
+Finished graph: Contig_86_1153.51:3p:0 5 1 1 in  0.014101s wall, 0.090000s user + 0.010000s system = 0.100000s CPU (709.2%)
+Started graph: Contig_91_128.221:5p:0 5
+Finished graph: Contig_91_128.221:5p:0 5 1 1 in  0.013794s wall, 0.090000s user + 0.010000s system = 0.100000s CPU (724.9%)
+Started graph: Contig_9_143.034:5p:0 15
+Finished graph: Contig_85_802.63:3p:0 15 1.15385 1 in  0.015512s wall, 0.100000s user + 0.010000s system = 0.110000s CPU (709.1%)
+Started graph: Contig_8_123.942:5p:0 4
+Finished graph: Contig_92_119.578:5p:0 4 1 1 in  0.017193s wall, 0.110000s user + 0.010000s system = 0.120000s CPU (698.0%)
+Finished graph: Contig_8_123.942:3p:0 5 1 1 in  0.018185s wall, 0.120000s user + 0.010000s system = 0.130000s CPU (714.9%)
+Started graph: Contig_95_129.747:5p:0 25
+Finished graph: Contig_91_128.221:3p:0 31 1 1 in  0.018260s wall, 0.120000s user + 0.010000s system = 0.130000s CPU (711.9%)
+Finished graph: Contig_96_157.968:5p:0 34 1.36 1 in  0.017075s wall, 0.120000s user + 0.000000s system = 0.120000s CPU (702.8%)
+Finished graph: Contig_97_163.716:3p:0 6 1 1 in  0.016625s wall, 0.110000s user + 0.000000s system = 0.110000s CPU (661.7%)
+Finished graph: Contig_84_459.863:3p:0 27 1 1 in  0.019868s wall, 0.130000s user + 0.010000s system = 0.140000s CPU (704.7%)
+Started graph: Contig_92_119.578:3p:0 5
+Finished graph: Contig_92_119.578:3p:0 5 1 1 in  0.019287s wall, 0.130000s user + 0.010000s system = 0.140000s CPU (725.9%)
+Finished graph: Contig_96_157.968:3p:0 8 1 1 in  0.018522s wall, 0.130000s user + 0.000000s system = 0.130000s CPU (701.9%)
+Started graph: Contig_93_209.273:3p:0 19
+Finished graph: Contig_99_100.743:3p:0 4 1 1 in  0.017101s wall, 0.120000s user + 0.000000s system = 0.120000s CPU (701.7%)
+Started graph: Contig_99_100.743:5p:0 5
+Finished graph: Contig_99_100.743:5p:0 5 1 1 in  0.017515s wall, 0.120000s user + 0.000000s system = 0.120000s CPU (685.1%)
+Finished graph: Contig_87_109.378:3p:0 54 1.14894 1 in  0.024336s wall, 0.160000s user + 0.020000s system = 0.180000s CPU (739.6%)
+Finished graph: Contig_9_143.034:5p:0 16 1.06667 1 in  0.020948s wall, 0.140000s user + 0.010000s system = 0.150000s CPU (716.0%)
+Finished graph: Contig_8_123.942:5p:0 4 1 1 in  0.025180s wall, 0.170000s user + 0.020000s system = 0.190000s CPU (754.6%)
+Finished graph: Contig_93_209.273:3p:0 19 1 2 in  0.024659s wall, 0.170000s user + 0.020000s system = 0.190000s CPU (770.5%)
+Finished graph: Contig_95_129.747:5p:0 32 1.28 1 in  0.029435s wall, 0.200000s user + 0.010000s system = 0.210000s CPU (713.4%)
+Finished graph: Contig_90_129.656:5p:0 104 1.22353 1 in  0.049284s wall, 0.300000s user + 0.020000s system = 0.320000s CPU (649.3%)
+Finished graph: Contig_82_130.869:3p:0 105 1.22093 1 in  0.051179s wall, 0.320000s user + 0.020000s system = 0.340000s CPU (664.3%)
+Finished graph: Contig_88_302.687:3p:0 82 1.20588 1 in  0.051281s wall, 0.310000s user + 0.020000s system = 0.330000s CPU (643.5%)
+Finished graph: Contig_94_1252.71:3p:0 85 1.44068 2 in  0.052554s wall, 0.300000s user + 0.010000s system = 0.310000s CPU (589.9%)
+Finished graph: Contig_98_110.827:3p:0 100 1.16279 1 in  0.060053s wall, 0.300000s user + 0.010000s system = 0.310000s CPU (516.2%)
+Align reads in  0.065917s wall, 0.330000s user + 0.020000s system = 0.350000s CPU (531.0%)
+ErasedA Contig_121_132.547:3p
+ErasedA Contig_106_546.877:3p
+ErasedA Contig_122_120.193:3p
+ErasedA Contig_12_215.498:3p
+ErasedA Contig_124_191.009:5p
+ErasedA Contig_124_191.009:5p
+ErasedA Contig_137_160.625:3p
+ErasedA Contig_137_160.625:3p
+ErasedA Contig_150_111.855:3p
+ErasedA Contig_150_111.855:3p
+ErasedA Contig_20_105.699:3p
+ErasedA Contig_20_105.699:3p
+ErasedA Contig_145_135.476:3p
+ErasedA Contig_144_147.274:3p
+ErasedA Contig_144_147.274:3p
+ErasedA Contig_22_150.271:3p
+ErasedA Contig_22_150.271:3p
+ErasedA Contig_22_150.271:3p
+ErasedA Contig_22_150.271:3p
+ErasedA Contig_22_150.271:3p
+ErasedA Contig_43_186.408:3p
+ErasedA Contig_25_133.424:5p
+ErasedA Contig_25_133.424:5p
+ErasedA Contig_49_1391.19:3p
+ErasedA Contig_49_1391.19:3p
+ErasedA Contig_26_136.336:3p
+ErasedA Contig_26_136.336:3p
+ErasedA Contig_44_576.065:3p
+ErasedA Contig_44_576.065:3p
+ErasedA Contig_52_126.385:3p
+ErasedA Contig_54_142.53:5p
+ErasedA Contig_54_142.53:5p
+ErasedA Contig_5_110.716:3p
+ErasedA Contig_58_160.502:3p
+ErasedA Contig_58_160.502:3p
+ErasedA Contig_61_1157.4:5p
+ErasedA Contig_63_1964.52:3p
+ErasedA Contig_63_1964.52:3p
+ErasedA Contig_63_1964.52:3p
+ErasedA Contig_71_260.697:3p
+ErasedA Contig_71_260.697:3p
+ErasedA Contig_94_1252.71:3p
+ErasedA Contig_93_209.273:5p
+ErasedA Contig_93_209.273:3p
+Contig_62_2362.32:3p:1 2039 kills Contig_101_124.667:3p:1 173
+Contig_109_1699.01:5p:1 1126 kills Contig_101_124.667:5p:1 97
+Contig_106_546.877:3p:1 246 kills Contig_102_150.001:3p:1 96
+Contig_49_1391.19:5p:1 1357 kills Contig_102_150.001:5p:1 153
+Contig_43_186.408:3p:1 1274 kills Contig_103_140.379:3p:1 519
+Contig_62_2362.32:5p:1 1195 kills Contig_103_140.379:5p:1 131
+Contig_128_157.284:5p:1 1097 kills Contig_104_311.289:3p:1 1097
+Contig_128_157.284:5p:1 1097 kills Contig_104_311.289:5p:1 270
+Contig_44_576.065:3p:1 2006 kills Contig_105_395.551:3p:1 325
+Contig_109_1699.01:5p:1 1126 kills Contig_107_154.878:3p:1 98
+Contig_13_1653.21:3p:1 1443 kills Contig_107_154.878:5p:1 99
+Contig_84_459.863:5p:1 246 kills Contig_108_150.249:5p:1 96
+Contig_13_1653.21:5p:1 677 kills Contig_109_1699.01:3p:1 677
+Contig_2_159.295:3p:1 2737 kills Contig_10_118.883:3p:1 751
+Contig_106_546.877:5p:1 319 kills Contig_10_118.883:5p:1 97
+Contig_89_1072.73:3p:1 548 kills Contig_110_125.218:3p:1 104
+Contig_49_1391.19:5p:1 1357 kills Contig_110_125.218:5p:1 152
+Contig_38_317.674:3p:1 170 kills Contig_111_69.6068:3p:1 96
+Contig_136_130.374:3p:1 1878 kills Contig_111_69.6068:5p:1 96
+Contig_63_1964.52:5p:1 733 kills Contig_112_109.029:3p:1 132
+Contig_141_112.588:3p:1 539 kills Contig_112_109.029:5p:1 539
+Contig_13_1653.21:3p:1 1443 kills Contig_113_105.059:3p:1 98
+Contig_43_186.408:3p:1 1274 kills Contig_113_105.059:5p:1 520
+Contig_84_459.863:5p:1 246 kills Contig_115_149.024:3p:1 98
+Contig_62_2362.32:3p:1 2039 kills Contig_115_149.024:5p:1 173
+Contig_71_260.697:3p:1 2175 kills Contig_116_129.302:3p:1 1608
+Contig_118_906.124:3p:1 169 kills Contig_116_129.302:5p:1 169
+Contig_139_811.704:3p:1 473 kills Contig_117_120.415:3p:1 96
+Contig_12_215.498:3p:1 192 kills Contig_117_120.415:5p:1 192
+Contig_139_811.704:5p:1 190 kills Contig_118_906.124:5p:1 190
+Contig_62_2362.32:3p:1 2039 kills Contig_119_123.96:3p:1 173
+Contig_62_2362.32:5p:1 1195 kills Contig_119_123.96:5p:1 135
+Contig_62_2362.32:5p:1 1195 kills Contig_11_167.095:5p:1 131
+Contig_62_2362.32:3p:1 2039 kills Contig_120_134.885:5p:1 173
+Contig_49_1391.19:5p:1 1357 kills Contig_122_120.193:5p:1 152
+Contig_128_157.284:5p:1 1097 kills Contig_123_328.491:5p:1 270
+Contig_63_1964.52:5p:1 733 kills Contig_124_191.009:3p:1 132
+Contig_71_260.697:3p:1 2175 kills Contig_125_100.175:3p:1 1608
+Contig_13_1653.21:3p:1 1443 kills Contig_125_100.175:5p:1 98
+Contig_100_369.535:3p:1 170 kills Contig_126_165.94:3p:1 96
+Contig_81_1151.8:3p:1 261 kills Contig_126_165.94:5p:1 261
+Contig_48_163.079:3p:1 169 kills Contig_127_334.565:5p:1 169
+Contig_59_519.837:5p:1 169 kills Contig_128_157.284:3p:1 169
+Contig_42_2117.53:3p:1 246 kills Contig_129_288.447:5p:1 98
+Contig_134_2008.6:5p:1 190 kills Contig_130_1686.32:3p:1 190
+Contig_42_2117.53:5p:1 190 kills Contig_130_1686.32:5p:1 190
+Contig_62_2362.32:5p:1 1195 kills Contig_131_133.527:3p:1 134
+Contig_49_1391.19:5p:1 1357 kills Contig_131_133.527:5p:1 152
+Contig_2_159.295:3p:1 2737 kills Contig_132_123.736:3p:1 752
+Contig_114_623.248:5p:1 445 kills Contig_132_123.736:5p:1 127
+Contig_2_159.295:3p:1 2737 kills Contig_133_261.262:5p:1 751
+Contig_32_1145.29:5p:1 169 kills Contig_134_2008.6:3p:1 169
+Contig_68_158.938:5p:1 194 kills Contig_135_204.221:5p:1 194
+Contig_139_811.704:3p:1 473 kills Contig_136_130.374:5p:1 102
+Contig_75_475.715:3p:1 320 kills Contig_137_160.625:5p:1 98
+Contig_43_186.408:3p:1 1274 kills Contig_140_150.113:3p:1 520
+Contig_63_1964.52:5p:1 733 kills Contig_141_112.588:5p:1 136
+Contig_71_260.697:3p:1 2175 kills Contig_142_112.808:3p:1 1608
+Contig_105_395.551:5p:1 244 kills Contig_142_112.808:5p:1 96
+Contig_71_260.697:3p:1 2175 kills Contig_143_141.424:3p:1 1607
+Contig_109_1699.01:5p:1 1126 kills Contig_143_141.424:5p:1 98
+Contig_106_546.877:5p:1 319 kills Contig_144_147.274:5p:1 96
+Contig_62_2362.32:5p:1 1195 kills Contig_145_135.476:5p:1 135
+Contig_109_1699.01:5p:1 1126 kills Contig_146_136.126:3p:1 98
+Contig_62_2362.32:3p:1 2039 kills Contig_146_136.126:5p:1 174
+Contig_62_2362.32:5p:1 1195 kills Contig_147_122.978:3p:1 131
+Contig_62_2362.32:3p:1 2039 kills Contig_147_122.978:5p:1 173
+Contig_62_2362.32:5p:1 1195 kills Contig_148_115.168:5p:1 131
+Contig_89_1072.73:3p:1 548 kills Contig_149_154.604:5p:1 96
+Contig_75_475.715:3p:1 320 kills Contig_14_134.286:3p:1 98
+Contig_75_475.715:3p:1 320 kills Contig_14_134.286:5p:1 96
+Contig_62_2362.32:5p:1 1195 kills Contig_150_111.855:5p:1 131
+Contig_89_1072.73:3p:1 548 kills Contig_151_113.798:3p:1 97
+Contig_62_2362.32:3p:1 2039 kills Contig_151_113.798:5p:1 175
+Contig_85_802.63:3p:1 594 kills Contig_152_123.975:3p:1 198
+Contig_89_1072.73:3p:1 548 kills Contig_152_123.975:5p:1 97
+Contig_49_1391.19:5p:1 1357 kills Contig_153_120.046:3p:1 151
+Contig_62_2362.32:5p:1 1195 kills Contig_153_120.046:5p:1 131
+Contig_63_1964.52:5p:1 733 kills Contig_15_140.962:3p:1 136
+Contig_88_302.687:5p:1 190 kills Contig_16_263.841:3p:1 190
+Contig_114_623.248:3p:1 405 kills Contig_17_115.964:3p:1 103
+Contig_85_802.63:3p:1 594 kills Contig_17_115.964:5p:1 198
+Contig_89_1072.73:3p:1 548 kills Contig_18_138.517:3p:1 104
+Contig_65_150.535:5p:1 148 kills Contig_18_138.517:5p:1 148
+Contig_13_1653.21:3p:1 1443 kills Contig_19_152.5:3p:1 99
+Contig_62_2362.32:5p:1 1195 kills Contig_19_152.5:5p:1 134
+Contig_109_1699.01:5p:1 1126 kills Contig_1_139.016:3p:1 98
+Contig_49_1391.19:5p:1 1357 kills Contig_1_139.016:5p:1 153
+Contig_43_186.408:3p:1 1274 kills Contig_21_121.985:3p:1 517
+Contig_62_2362.32:3p:1 2039 kills Contig_22_150.271:5p:1 176
+Contig_62_2362.32:3p:1 2039 kills Contig_23_121.095:3p:1 179
+Contig_139_811.704:3p:1 473 kills Contig_24_137.981:3p:1 99
+Contig_2_159.295:3p:1 2737 kills Contig_24_137.981:5p:1 752
+Contig_89_1072.73:3p:1 548 kills Contig_25_133.424:3p:1 99
+Contig_63_1964.52:5p:1 733 kills Contig_26_136.336:5p:1 133
+Contig_62_2362.32:3p:1 2039 kills Contig_27_139.603:5p:1 173
+Contig_106_546.877:3p:1 246 kills Contig_28_172.073:3p:1 98
+Contig_84_459.863:3p:1 1383 kills Contig_28_172.073:5p:1 97
+Contig_114_623.248:5p:1 445 kills Contig_29_151.465:3p:1 128
+Contig_62_2362.32:3p:1 2039 kills Contig_29_151.465:5p:1 173
+Contig_54_142.53:3p:1 173 kills Contig_2_159.295:5p:1 173
+Contig_72_1037.79:3p:1 332 kills Contig_30_472.338:3p:1 332
+Contig_63_1964.52:5p:1 733 kills Contig_30_472.338:5p:1 131
+Contig_63_1964.52:5p:1 733 kills Contig_31_148.751:3p:1 132
+Contig_42_2117.53:3p:1 246 kills Contig_32_1145.29:3p:1 96
+Contig_66_512.419:3p:1 2966 kills Contig_33_153.828:5p:1 96
+Contig_105_395.551:5p:1 244 kills Contig_35_72.0939:3p:1 96
+Contig_13_1653.21:3p:1 1443 kills Contig_35_72.0939:5p:1 99
+Contig_106_546.877:5p:1 319 kills Contig_36_149.688:3p:1 96
+Contig_139_811.704:3p:1 473 kills Contig_36_149.688:5p:1 100
+Contig_100_369.535:3p:1 170 kills Contig_37_240.265:5p:1 96
+Contig_75_475.715:5p:1 254 kills Contig_38_317.674:5p:1 96
+Contig_62_2362.32:3p:1 2039 kills Contig_39_173.259:3p:1 173
+Contig_2_159.295:3p:1 2737 kills Contig_39_173.259:5p:1 755
+Contig_141_112.588:3p:1 539 kills Contig_3_99.6568:3p:1 392
+Contig_81_1151.8:5p:1 917 kills Contig_40_961.337:3p:1 917
+Contig_61_1157.4:3p:1 190 kills Contig_40_961.337:5p:1 190
+Contig_63_1964.52:5p:1 733 kills Contig_41_104.834:3p:1 133
+Contig_49_1391.19:5p:1 1357 kills Contig_41_104.834:5p:1 150
+Contig_85_802.63:5p:1 170 kills Contig_44_576.065:5p:1 96
+Contig_62_2362.32:3p:1 2039 kills Contig_45_99.7699:3p:1 179
+Contig_43_186.408:3p:1 1274 kills Contig_45_99.7699:5p:1 529
+Contig_85_802.63:5p:1 170 kills Contig_46_107.646:3p:1 96
+Contig_85_802.63:3p:1 594 kills Contig_46_107.646:5p:1 198
+Contig_62_2362.32:5p:1 1195 kills Contig_47_134.585:3p:1 131
+Contig_62_2362.32:5p:1 1195 kills Contig_47_134.585:5p:1 131
+Contig_48_163.079:5p:1 169 kills Contig_48_163.079:3p:1 169
+Contig_62_2362.32:3p:1 2039 kills Contig_4_131.449:3p:1 179
+Contig_63_1964.52:5p:1 733 kills Contig_50_159.225:3p:1 131
+Contig_114_623.248:3p:1 405 kills Contig_50_159.225:5p:1 103
+Contig_141_112.588:3p:1 539 kills Contig_51_102.389:3p:1 392
+Contig_109_1699.01:5p:1 1126 kills Contig_51_102.389:5p:1 98
+Contig_2_159.295:3p:1 2737 kills Contig_53_385.256:3p:1 752
+Contig_70_478.884:3p:1 419 kills Contig_55_513.272:3p:1 419
+Contig_109_1699.01:5p:1 1126 kills Contig_56_111.428:3p:1 97
+Contig_114_623.248:3p:1 405 kills Contig_56_111.428:5p:1 101
+Contig_62_2362.32:3p:1 2039 kills Contig_57_122.113:3p:1 173
+Contig_13_1653.21:3p:1 1443 kills Contig_57_122.113:5p:1 98
+Contig_70_478.884:5p:1 190 kills Contig_59_519.837:3p:1 190
+Contig_62_2362.32:3p:1 2039 kills Contig_5_110.716:5p:1 173
+Contig_55_513.272:5p:1 254 kills Contig_60_148.692:3p:1 96
+Contig_94_1252.71:3p:1 1652 kills Contig_61_1157.4:5p:1 1652
+Contig_42_2117.53:3p:1 246 kills Contig_64_141.039:3p:1 98
+Contig_62_2362.32:3p:1 2039 kills Contig_64_141.039:5p:1 179
+Contig_106_546.877:5p:1 319 kills Contig_65_150.535:3p:1 97
+Contig_85_802.63:3p:1 594 kills Contig_67_124.528:3p:1 198
+Contig_109_1699.01:5p:1 1126 kills Contig_67_124.528:5p:1 98
+Contig_109_1699.01:5p:1 1126 kills Contig_68_158.938:3p:1 98
+Contig_127_334.565:3p:1 170 kills Contig_69_102.432:3p:1 96
+Contig_106_546.877:3p:1 246 kills Contig_6_154.222:3p:1 98
+Contig_62_2362.32:3p:1 2039 kills Contig_6_154.222:5p:1 173
+Contig_94_1252.71:5p:1 190 kills Contig_72_1037.79:5p:1 190
+Contig_100_369.535:5p:1 170 kills Contig_73_242.555:5p:1 96
+Contig_62_2362.32:3p:1 2039 kills Contig_74_145.193:3p:1 174
+Contig_84_459.863:5p:1 246 kills Contig_74_145.193:5p:1 98
+Contig_105_395.551:5p:1 244 kills Contig_76_138.463:3p:1 96
+Contig_2_159.295:3p:1 2737 kills Contig_76_138.463:5p:1 751
+Contig_75_475.715:3p:1 320 kills Contig_77_153.673:3p:1 97
+Contig_62_2362.32:5p:1 1195 kills Contig_77_153.673:5p:1 135
+Contig_62_2362.32:5p:1 1195 kills Contig_78_112.176:3p:1 131
+Contig_89_1072.73:3p:1 548 kills Contig_78_112.176:5p:1 96
+Contig_71_260.697:3p:1 2175 kills Contig_79_149.235:3p:1 1607
+Contig_43_186.408:3p:1 1274 kills Contig_79_149.235:5p:1 520
+Contig_139_811.704:3p:1 473 kills Contig_7_121.82:3p:1 102
+Contig_43_186.408:3p:1 1274 kills Contig_7_121.82:5p:1 520
+Contig_38_317.674:3p:1 170 kills Contig_80_161.903:5p:1 96
+Contig_100_369.535:5p:1 170 kills Contig_83_148.243:3p:1 96
+Contig_13_1653.21:3p:1 1443 kills Contig_83_148.243:5p:1 99
+Contig_127_334.565:3p:1 170 kills Contig_86_1153.51:5p:1 96
+Contig_31_148.751:5p:1 259 kills Contig_89_1072.73:5p:1 89
+Contig_49_1391.19:5p:1 1357 kills Contig_8_123.942:3p:1 150
+Contig_62_2362.32:3p:1 2039 kills Contig_8_123.942:5p:1 173
+Contig_13_1653.21:3p:1 1443 kills Contig_91_128.221:5p:1 99
+Contig_109_1699.01:5p:1 1126 kills Contig_92_119.578:3p:1 98
+Contig_62_2362.32:3p:1 2039 kills Contig_97_163.716:3p:1 175
+Contig_88_302.687:3p:1 2604 kills Contig_98_110.827:5p:1 114
+Contig_139_811.704:3p:1 473 kills Contig_99_100.743:3p:1 99
+Contig_109_1699.01:5p:1 1126 kills Contig_99_100.743:5p:1 99
+Contig_114_623.248:5p:1 445 kills Contig_9_143.034:3p:1 127
+Contig_2_159.295:3p:1 2737 kills Contig_9_143.034:5p:1 755
+Contig_109_1699.01:5p:1 1126 absorbs Contig_16_263.841:5p:1 190
+Contig_109_1699.01:5p:1 1212 absorbs Contig_73_242.555:3p:1 190
+Contig_109_1699.01:5p:1 1306 absorbs Contig_85_802.63:3p:1 594
+Contig_114_623.248:3p:1 405 absorbs Contig_53_385.256:5p:1 1648
+Contig_114_623.248:3p:1 1870 absorbs Contig_71_260.697:5p:1 1124
+Contig_114_623.248:3p:1 2018 absorbs Contig_80_161.903:3p:1 1752
+Contig_114_623.248:3p:1 2135 absorbs Contig_87_109.378:3p:1 1677
+Contig_114_623.248:3p:1 2251 absorbs Contig_88_302.687:3p:1 2604
+Contig_114_623.248:3p:1 3987 absorbs Contig_90_129.656:5p:1 1412
+Contig_114_623.248:3p:1 4238 absorbs Contig_91_128.221:3p:1 900
+Contig_114_623.248:3p:1 4238 absorbs Contig_98_110.827:3p:1 2873
+Contig_114_623.248:5p:1 445 absorbs Contig_31_148.751:5p:1 259
+Contig_114_623.248:5p:1 698 absorbs Contig_49_1391.19:5p:1 1357
+Contig_114_623.248:5p:1 1868 absorbs Contig_52_126.385:3p:1 204
+Contig_114_623.248:5p:1 1950 absorbs Contig_5_110.716:3p:1 196
+Contig_114_623.248:5p:1 2022 absorbs Contig_62_2362.32:3p:1 2039
+Contig_114_623.248:5p:1 3592 absorbs Contig_62_2362.32:5p:1 1195
+Contig_114_623.248:5p:1 4765 absorbs Contig_63_1964.52:3p:1 2220
+Contig_114_623.248:5p:1 6124 absorbs Contig_93_209.273:5p:1 204
+Contig_118_906.124:3p:1 169 absorbs Contig_12_215.498:5p:1 235
+Contig_118_906.124:3p:1 308 absorbs Contig_21_121.985:5p:1 235
+Contig_118_906.124:3p:1 382 absorbs Contig_27_139.603:3p:1 230
+Contig_118_906.124:3p:1 456 absorbs Contig_4_131.449:5p:1 235
+Contig_118_906.124:3p:1 530 absorbs Contig_82_130.869:5p:1 235
+Contig_11_167.095:3p:1 101 absorbs Contig_124_191.009:5p:1 1488
+Contig_11_167.095:3p:1 1566 absorbs Contig_13_1653.21:3p:1 1443
+Contig_11_167.095:3p:1 2251 absorbs Contig_43_186.408:3p:1 1274
+Contig_11_167.095:3p:1 2251 absorbs Contig_49_1391.19:3p:1 1542
+Contig_120_134.885:3p:1 174 absorbs Contig_59_519.837:5p:1 169
+Contig_120_134.885:3p:1 247 absorbs Contig_60_148.692:5p:1 174
+Contig_121_132.547:3p:1 202 absorbs Contig_122_120.193:3p:1 202
+Contig_121_132.547:3p:1 276 absorbs Contig_145_135.476:3p:1 196
+Contig_121_132.547:5p:1 435 absorbs Contig_138_172.625:5p:1 651
+Contig_121_132.547:5p:1 725 absorbs Contig_149_154.604:3p:1 572
+Contig_121_132.547:5p:1 725 absorbs Contig_72_1037.79:3p:1 332
+Contig_121_132.547:5p:1 725 absorbs Contig_95_129.747:5p:1 515
+Contig_121_132.547:5p:1 803 absorbs Contig_96_157.968:5p:1 442
+Contig_123_328.491:3p:1 291 absorbs Contig_128_157.284:5p:1 1097
+Contig_123_328.491:3p:1 1244 absorbs Contig_23_121.095:5p:1 290
+Contig_123_328.491:3p:1 1318 absorbs Contig_34_186.158:3p:1 1357
+Contig_123_328.491:3p:1 1924 absorbs Contig_81_1151.8:3p:1 261
+Contig_123_328.491:3p:1 1997 absorbs Contig_84_459.863:3p:1 1383
+Contig_123_328.491:3p:1 3080 absorbs Contig_93_209.273:3p:1 374
+Contig_129_288.447:3p:1 2873 absorbs Contig_148_115.168:3p:1 1245
+Contig_129_288.447:3p:1 2947 absorbs Contig_2_159.295:3p:1 2737
+Contig_129_288.447:3p:1 3020 absorbs Contig_33_153.828:3p:1 1412
+Contig_129_288.447:3p:1 3167 absorbs Contig_37_240.265:3p:1 1925
+Contig_129_288.447:3p:1 4138 absorbs Contig_66_512.419:3p:1 2966
+Contig_129_288.447:3p:1 4305 absorbs Contig_66_512.419:5p:1 2828
+Contig_129_288.447:3p:1 4378 absorbs Contig_82_130.869:3p:1 1413
+Contig_133_261.262:3p:1 220 absorbs Contig_32_1145.29:5p:1 169
+Contig_133_261.262:3p:1 293 absorbs Contig_58_160.502:5p:1 222
+Contig_133_261.262:3p:1 369 absorbs Contig_96_157.968:3p:1 222
+Contig_135_204.221:3p:1 99 absorbs Contig_42_2117.53:3p:1 246
+Contig_136_130.374:3p:1 1878 absorbs Contig_144_147.274:3p:1 1685
+Contig_136_130.374:3p:1 2343 absorbs Contig_150_111.855:3p:1 1687
+Contig_136_130.374:3p:1 2419 absorbs Contig_20_105.699:3p:1 1687
+Contig_136_130.374:3p:1 2493 absorbs Contig_25_133.424:5p:1 1684
+Contig_136_130.374:3p:1 2567 absorbs Contig_44_576.065:3p:1 2006
+Contig_136_130.374:3p:1 2963 absorbs Contig_71_260.697:3p:1 2175
+Contig_38_317.674:3p:1 170 absorbs Contig_97_163.716:5p:1 98
+Contig_55_513.272:5p:1 254 absorbs Contig_75_475.715:5p:1 254
+Contig_63_1964.52:5p:1 733 absorbs Contig_86_1153.51:3p:1 135
+Contig_89_1072.73:3p:1 548 absorbs Contig_92_119.578:5p:1 103
+Contig_109_1699.01:5p:1 1674 absorbs Contig_11_167.095:3p:1 2379
+Contig_114_623.248:3p:1 4313 absorbs Contig_129_288.447:3p:1 4453
+Contig_114_623.248:5p:1 6198 absorbs Contig_121_132.547:3p:1 350
+Contig_114_623.248:3p:1 5820 absorbs Contig_123_328.491:3p:1 3080
+Cleaning in  36.829277s wall, 253.430000s user + 3.620000s system = 257.050000s CPU (698.0%)
+ErasedC Contig_68_158.938:5p
+ErasedC Contig_54_142.53:3p
+ErasedC Contig_65_150.535:5p
+ErasedC Contig_12_215.498:3p
+ErasedC Contig_100_369.535:3p
+ErasedC Contig_85_802.63:5p
+ErasedC Contig_105_395.551:5p
+ErasedC Contig_100_369.535:5p
+ErasedC Contig_127_334.565:3p
+Combined GFA in  1.161269s wall, 1.110000s user + 0.040000s system = 1.150000s CPU (99.0%)
+/home/chauvec/projects/ctb-chauvec/PLASMIDS/YERSINIA_PLASMIDS/src/utils.py convert_graph -i /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/short_skesa.gfa -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/short.gfa -l /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/graph_convert.log 2>&1 >>/project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_skesa/efae-E7237/graph.log
+rm -r temp
+gzip *.fasta *.gfa *.kmers *.hist log
+gzip: *.kmers: No such file or directory
+gzip: *.hist: No such file or directory
+Error in program 'gzip *.fasta *.gfa *...' (exit: 1, signal: 0, dumped: 0)
+
+  at /var/spool/slurmd/job35693669/slurm_script line 83.
