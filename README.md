@@ -149,8 +149,17 @@ processed, this can be done by listing them into an alternative file
 of samples (*e.g.* `samples_subset.txt` and then running
 `classify_samples.sh samples_subset.txt`).
 
-For a given sample, the results are listed in a file
+#### Original plASgraph
+For thh original (WABI submission) plASgraph implementation, for a given
+sample, the results are listed in a file
 `<sample_name>/<sample_name>_class.csv`. All files resulting from the
-analysis of a sample are stored in the directory `<sample_name>`.
+analysis of a sample are stored in the directory `<sample_name>`, and
+they include a '`png` graph file.
 
+The corresponding directories are `plasgraph_unicycler` and
+`plasgraph_skesa`. In this last one, only one sample was processed as
+the implementation expects that contigs id are integers, which is not
+the case for SKESA.
+
+#### Rewritten plASgraph
 
