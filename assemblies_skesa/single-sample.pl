@@ -40,7 +40,7 @@ unless (-e "short_2.fastq.gz" && $Options{'r'}) {
 #skesa short
 unless (-e "$dir/short.gfa" && $Options{'r'}) {
     my_run("/home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/SKESA/skesa --reads short_1.fastq.gz,short_2.fastq.gz --min_contig 100 --contigs_out $dir/short.fasta 2>&1 >>$dir/contigs.log");
-    my_run("/home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/SKESA/gfa_connector --reads short_1.fastq.gz,short_2.fastq.gz --contigs $dir/short.fasta --gfa $dir/short_skesa.gfa --csv $dir/short.csv 2>&1 >>$dir/graph.log");
+    my_run("/home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/SKESA/gfa_connector --reads short_1.fastq.gz,short_2.fastq.gz --contigs $dir/short.fasta --gfa $dir/short_skesa.gfa 2>&1 >>$dir/graph.log");
     my_run("/home/chauvec/projects/ctb-chauvec/PLASMIDS/YERSINIA_PLASMIDS/src/utils.py convert_graph -i $dir/short_skesa.gfa -o $dir/short.gfa -l $dir/graph_convert.log 2>&1 >>$dir/graph.log");
 }
 
