@@ -47,7 +47,7 @@ unless (-e "$dir/short.gfa" && $Options{'r'}) {
 #upracsiposebe
 chdir($dir);
 my_run("rm -r temp");
-my_run("gzip *.fasta *.gfa *.kmers *.hist log");
+my_run("gzip *.fasta *.gfa log");
 my_run("touch done");
 
 sub dir_names {
