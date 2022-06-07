@@ -1,0 +1,206 @@
+
+Starting Unicycler (2022-06-06 17:50:41)
+----------------------------------------
+    Welcome to Unicycler, an assembly pipeline for bacterial genomes. Since you provided only short reads, Unicycler will essentially function as a SPAdes-optimiser. It will try many k-mer sizes, choose the best based on contig length and graph connectivity, and scaffold the graph using SPAdes repeat resolution.
+    For more information, please see https://github.com/rrwick/Unicycler
+
+Command: /home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/Unicycler/unicycler-runner.py -o short -1 short_1.fastq.gz -2 short_2.fastq.gz -t 8 --keep 0
+
+Unicycler version: v0.5.0
+Using 8 threads
+
+Making output directory:
+  /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short
+
+Dependencies:
+  Program       Version   Status   
+  spades.py               not found
+  racon                   not used 
+  makeblastdb             not found
+  tblastn                 not found
+
+Error: could not find SPAdes at spades.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Unicycler (2022-06-06 18:49:46)
+----------------------------------------
+    Welcome to Unicycler, an assembly pipeline for bacterial genomes. Since you provided only short reads, Unicycler will essentially function as a SPAdes-optimiser. It will try many k-mer sizes, choose the best based on contig length and graph connectivity, and scaffold the graph using SPAdes repeat resolution.
+    For more information, please see https://github.com/rrwick/Unicycler
+
+Command: /home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/Unicycler/unicycler-runner.py -o short -1 short_1.fastq.gz -2 short_2.fastq.gz -t 8 --keep 0
+
+Unicycler version: v0.5.0
+Using 8 threads
+
+The output directory already exists and files may be reused or overwritten:
+  /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short
+
+Dependencies:
+  Program       Version   Status  
+  spades.py     3.15.3    good    
+  racon                   not used
+  makeblastdb   2.12.0+   good    
+  tblastn       2.12.0+   good    
+
+
+Choosing k-mer range for assembly (2022-06-06 18:50:16)
+-------------------------------------------------------
+    Unicycler chooses a k-mer range for SPAdes based on the length of the input reads. It uses a wide range of many k-mer sizes to maximise the chance of finding an ideal assembly.
+
+SPAdes maximum k-mer: 127
+Median read length: 151
+K-mer range: 27, 53, 71, 87, 99, 111, 119, 127
+
+
+SPAdes assemblies (2022-06-06 18:50:45)
+---------------------------------------
+    Unicycler now uses SPAdes to assemble the short reads. It scores the assembly graph for each k-mer using the number of contigs (fewer is better) and the number of dead ends (fewer is better). The score function is 1/(c*(d+2)), where c is the contig count and d is the dead end count.
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/spades_assembly -k 27 --threads 8 --isolate -1 /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short_1.fastq.gz -2 /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short_2.fastq.gz -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/spades_assembly -k 27,53 --threads 8 --restart-from k27 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/spades_assembly -k 27,53,71 --threads 8 --restart-from k53 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/spades_assembly -k 27,53,71,87 --threads 8 --restart-from k71 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/spades_assembly -k 27,53,71,87,99 --threads 8 --restart-from k87 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/spades_assembly -k 27,53,71,87,99,111 --threads 8 --restart-from k99 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/spades_assembly -k 27,53,71,87,99,111,119 --threads 8 --restart-from k111 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/spades_assembly -k 27,53,71,87,99,111,119,127 --threads 8 --restart-from k119 -m 1024
+
+K-mer   Contigs   Dead ends   Score      
+   27                         too complex
+   53     3,236           0      1.55e-04
+   71     2,311          11      3.33e-05
+   87     2,354          18      2.12e-05
+   99     1,592           6      7.85e-05
+  111     3,379          38      7.40e-06
+  119     1,929          40      1.23e-05
+  127       330          11      2.33e-04 ← best
+
+Read depth filter: removed 8 contigs totalling 2555 bp
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/001_spades_graph_k027.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/001_spades_graph_k053.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/001_spades_graph_k071.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/001_spades_graph_k087.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/001_spades_graph_k099.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/001_spades_graph_k111.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/001_spades_graph_k119.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/001_spades_graph_k127.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/spades_assembly/
+
+
+Determining graph multiplicity (2022-06-06 19:59:58)
+----------------------------------------------------
+    Multiplicity is the number of times a sequence occurs in the underlying sequence. Single-copy contigs (those with a multiplicity of one, occurring only once in the underlying sequence) are particularly useful.
+
+
+Cleaning graph (2022-06-06 19:59:58)
+------------------------------------
+    Unicycler now performs various cleaning procedures on the graph to remove overlaps and simplify the graph structure. The end result is a graph ready for bridging.
+
+Graph overlaps removed
+
+Removed zero-length segments:
+    233, 240, 277, 285, 305
+
+Merged small segments:
+    226, 237, 244, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 269, 270, 271, 272, 273, 275, 276, 278, 280, 281, 283, 286, 287, 288, 289, 291, 292, 294, 295, 297, 298, 299, 300, 301, 302, 304, 306, 307, 308, 309, 310, 311, 314, 315, 316, 317, 318, 320, 321, 322, 324, 325, 326, 328, 329
+
+    Unicycler now selects a set of anchor contigs from the single-copy contigs. These are the contigs which will be connected via bridges to form the final assembly.
+
+149 anchor segments (2,983,821 bp) out of 257 total segments (3,053,157 bp)
+
+
+Creating SPAdes contig bridges (2022-06-06 19:59:59)
+----------------------------------------------------
+    SPAdes uses paired-end information to perform repeat resolution (RR) and produce contigs from the assembly graph. SPAdes saves the graph paths corresponding to these contigs in the contigs.paths file. When one of these paths contains two or more anchor contigs, Unicycler can create a bridge from the path.
+
+                                     Bridge
+Start          Path         End     quality
+   -2          -202         150        60.0
+    1                       -60        63.2
+    4                       148        35.4
+    9                       -137       61.1
+   32                       40         61.9
+   38                       69         58.6
+   51          201          145        40.0
+   57          201          139        48.9
+   76                       119        38.1
+   82          198          1          45.8
+   89          208          -134       55.6
+  122          -212         -150       61.1
+  131   -202 → -188 → 212   -160       20.5
+  132    216 → 204 → 211    92         26.3
+
+
+Creating loop unrolling bridges (2022-06-06 19:59:59)
+-----------------------------------------------------
+    When a SPAdes contig path connects an anchor contig with the middle contig of a simple loop, Unicycler concludes that the sequences are contiguous (i.e. the loop is not a separate piece of DNA). It then uses the read depth of the middle and repeat contigs to guess the number of times to traverse the loop and makes a bridge.
+
+No loop unrolling bridges made
+
+
+Applying bridges (2022-06-06 19:59:59)
+--------------------------------------
+    Unicycler now applies to the graph in decreasing order of quality. This ensures that when multiple, contradictory bridges exist, the most supported option is used.
+
+Bridge type   Start → end    Path              Quality
+SPAdes            1 → -60                       63.243
+SPAdes           32 → 40                        61.892
+SPAdes            9 → -137                      61.140
+SPAdes          122 → -150   -212               61.068
+SPAdes           -2 → 150    -202               60.045
+SPAdes           38 → 69                        58.572
+SPAdes           89 → -134   208                55.598
+SPAdes           57 → 139    201                48.931
+SPAdes           82 → 1      198                45.771
+SPAdes           51 → 145    201                40.045
+SPAdes           76 → 119                       38.134
+SPAdes            4 → 148                       35.378
+SPAdes          132 → 92     216, 204, 211      26.258
+SPAdes          131 → -160   -202, -188, 212    20.512
+
+
+Bridged assembly graph (2022-06-06 20:00:00)
+--------------------------------------------
+    The assembly is now mostly finished and no more structural changes will be made. Ideally the assembly graph should now have one contig per replicon and no erroneous contigs (i.e. a complete assembly). If there are more contigs, then the assembly is not complete.
+
+
+Component   Segments   Links   Length      N50      Longest segment   Status    
+    total        224     321   3,042,126   40,379           132,593             
+        1        220     317   3,029,694   40,379           132,593   incomplete
+        2          2       2       6,173    6,031             6,031   incomplete
+        3          1       1       4,203    4,203             4,203     complete
+        4          1       1       2,056    2,056             2,056     complete
+
+
+Rotating completed replicons (2022-06-06 20:00:00)
+--------------------------------------------------
+    Any completed circular contigs (i.e. single contigs which have one link connecting end to start) can have their start position changed without altering the sequence. For consistency, Unicycler now searches for a starting gene (dnaA or repA) in each such contig, and if one is found, the contig is rotated to start with that gene on the forward strand.
+
+Segment   Length   Depth    Starting gene     Position   Strand    Identity   Coverage
+    111    4,203   10.35x   UniRef90_P13920      2,117   reverse      95.6%     100.0%
+    125    2,056   52.84x   none found                                                
+
+
+Assembly complete (2022-06-06 20:00:46)
+---------------------------------------
+Saving /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/assembly.gfa
+Saving /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E8202/temp/short/assembly.fasta
+

@@ -1,0 +1,7 @@
+/home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/Unicycler/unicycler-runner.py -o short -1 short_1.fastq.gz -2 short_2.fastq.gz -t 8 --keep 0 2>&1 >>/project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7098/log
+mv short/assembly.fasta /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7098/short.fasta
+mv short/assembly.gfa /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7098/short.gfa
+mv short/unicycler.log /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7098/short.log
+rm -r temp
+gzip *.fasta *.gfa log
+touch done

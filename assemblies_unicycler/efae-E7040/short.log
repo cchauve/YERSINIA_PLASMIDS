@@ -1,0 +1,258 @@
+
+Starting Unicycler (2022-06-06 17:51:26)
+----------------------------------------
+    Welcome to Unicycler, an assembly pipeline for bacterial genomes. Since you provided only short reads, Unicycler will essentially function as a SPAdes-optimiser. It will try many k-mer sizes, choose the best based on contig length and graph connectivity, and scaffold the graph using SPAdes repeat resolution.
+    For more information, please see https://github.com/rrwick/Unicycler
+
+Command: /home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/Unicycler/unicycler-runner.py -o short -1 short_1.fastq.gz -2 short_2.fastq.gz -t 8 --keep 0
+
+Unicycler version: v0.5.0
+Using 8 threads
+
+Making output directory:
+  /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short
+
+Dependencies:
+  Program       Version   Status   
+  spades.py               not found
+  racon                   not used 
+  makeblastdb             not found
+  tblastn                 not found
+
+Error: could not find SPAdes at spades.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Unicycler (2022-06-06 18:49:46)
+----------------------------------------
+    Welcome to Unicycler, an assembly pipeline for bacterial genomes. Since you provided only short reads, Unicycler will essentially function as a SPAdes-optimiser. It will try many k-mer sizes, choose the best based on contig length and graph connectivity, and scaffold the graph using SPAdes repeat resolution.
+    For more information, please see https://github.com/rrwick/Unicycler
+
+Command: /home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/Unicycler/unicycler-runner.py -o short -1 short_1.fastq.gz -2 short_2.fastq.gz -t 8 --keep 0
+
+Unicycler version: v0.5.0
+Using 8 threads
+
+The output directory already exists and files may be reused or overwritten:
+  /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short
+
+Dependencies:
+  Program       Version   Status  
+  spades.py     3.15.3    good    
+  racon                   not used
+  makeblastdb   2.12.0+   good    
+  tblastn       2.12.0+   good    
+
+
+Choosing k-mer range for assembly (2022-06-06 18:50:06)
+-------------------------------------------------------
+    Unicycler chooses a k-mer range for SPAdes based on the length of the input reads. It uses a wide range of many k-mer sizes to maximise the chance of finding an ideal assembly.
+
+SPAdes maximum k-mer: 127
+Median read length: 151
+K-mer range: 27, 53, 71, 87, 99, 111, 119, 127
+
+
+SPAdes assemblies (2022-06-06 18:50:25)
+---------------------------------------
+    Unicycler now uses SPAdes to assemble the short reads. It scores the assembly graph for each k-mer using the number of contigs (fewer is better) and the number of dead ends (fewer is better). The score function is 1/(c*(d+2)), where c is the contig count and d is the dead end count.
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/spades_assembly -k 27 --threads 8 --isolate -1 /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short_1.fastq.gz -2 /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short_2.fastq.gz -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/spades_assembly -k 27,53 --threads 8 --restart-from k27 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/spades_assembly -k 27,53,71 --threads 8 --restart-from k53 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/spades_assembly -k 27,53,71,87 --threads 8 --restart-from k71 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/spades_assembly -k 27,53,71,87,99 --threads 8 --restart-from k87 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/spades_assembly -k 27,53,71,87,99,111 --threads 8 --restart-from k99 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/spades_assembly -k 27,53,71,87,99,111,119 --threads 8 --restart-from k111 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/spades_assembly -k 27,53,71,87,99,111,119,127 --threads 8 --restart-from k119 -m 1024
+
+K-mer   Contigs   Dead ends   Score      
+   27                         too complex
+   53     5,510          12      1.30e-05
+   71     3,605          11      2.13e-05
+   87     3,609          33      7.92e-06
+   99     2,377          14      2.63e-05 ← best
+  111     3,274          55      5.36e-06
+  119     2,367         129      3.23e-06
+  127     1,236         125      6.37e-06
+
+Read depth filter: removed 36 contigs totalling 10774 bp
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/001_spades_graph_k027.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/001_spades_graph_k053.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/001_spades_graph_k071.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/001_spades_graph_k087.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/001_spades_graph_k099.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/001_spades_graph_k111.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/001_spades_graph_k119.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/001_spades_graph_k127.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/spades_assembly/
+
+
+Determining graph multiplicity (2022-06-06 19:41:28)
+----------------------------------------------------
+    Multiplicity is the number of times a sequence occurs in the underlying sequence. Single-copy contigs (those with a multiplicity of one, occurring only once in the underlying sequence) are particularly useful.
+
+
+Cleaning graph (2022-06-06 19:41:33)
+------------------------------------
+    Unicycler now performs various cleaning procedures on the graph to remove overlaps and simplify the graph structure. The end result is a graph ready for bridging.
+
+Graph overlaps removed
+
+Removed zero-length segments:
+    591, 598, 601, 603, 604, 605, 606, 607, 608, 612, 617, 622, 624, 625, 628, 638, 649, 650, 656, 668, 671, 682, 684, 708, 718, 720, 734, 743, 752, 770, 774, 780, 783, 786, 798, 804, 805, 814, 815, 818, 828, 832, 835, 853, 855, 859, 871, 885, 887, 890, 900, 911, 914, 918, 923, 924, 927, 931, 934, 938, 939, 943, 944, 949, 950, 954, 955, 960, 964, 965, 967, 968, 970, 972, 974, 979, 983, 986, 989, 990, 991, 994, 995, 996, 997, 998, 1000, 1001, 1002, 1003, 1004, 1005, 1007, 1009, 1010, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1029, 1031, 1032, 1033, 1034, 1040, 1042, 1043, 1044, 1048, 1049, 1050, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065, 1066, 1068, 1069, 1070, 1072, 1073, 1074, 1075, 1076, 1077, 1078, 1079, 1080, 1082, 1083, 1084, 1086, 1087, 1088, 1089, 1090, 1091, 1092, 1094, 1095, 1096, 1098, 1100, 1101, 1102, 1103, 1105, 1107, 1108, 1109, 1110, 1111, 1113, 1114, 1115, 1116, 1118, 1119, 1120, 1121, 1122, 1123, 1124, 1125, 1126, 1127, 1128, 1129, 1130, 1131, 1132, 1134, 1135, 1136, 1137, 1138, 1139, 1140, 1141, 1142, 1146, 1147, 1149, 1150, 1151, 1152, 1153, 1154, 1155, 1157, 1158, 1160, 1162, 1163, 1164, 1166, 1167, 1168, 1171, 1172, 1173, 1174, 1175, 1176, 1177, 1178, 1179, 1180, 1181, 1185, 1186, 1187, 1188, 1189, 1190, 1192, 1194, 1200, 1201, 1205, 1206, 1217, 1226, 1227, 1228, 1238, 1244, 1245, 1249, 1252, 1253, 1254, 1268, 1269, 1278, 1282, 1284, 1285, 1286, 1287, 1289, 1292, 1296, 1301, 1305, 1310, 1312, 1313, 1316, 1321, 1324, 1325, 1331, 1335, 1337, 1338, 1340, 1341, 1344, 1347, 1348, 1349, 1354, 1357, 1358, 1360, 1361, 1362, 1365, 1367, 1369, 1370, 1371, 1372, 1374, 1377, 1379, 1384, 1386, 1387, 1389, 1391, 1393, 1395, 1397, 1401, 1408, 1409, 1413, 1415, 1416, 1417, 1423, 1428, 1429, 1431, 1432, 1433, 1435, 1438, 1444, 1445, 1446, 1448, 1453, 1455, 1456, 1462, 1464, 1471, 1472, 1473, 1477, 1478, 1479, 1546, 1547, 1557, 1566, 1571, 1595, 1596, 1599, 1603, 1604, 1606, 1613, 1614, 1616, 1618, 1619, 1620, 1621, 1622, 1623, 1624, 1625, 1628, 1632, 1634, 1636, 1637, 1638, 1640, 1641, 1643, 1648, 1649, 1653, 1655, 1658, 1660, 1662, 1664, 1665, 1666, 1668, 1669, 1670, 1671, 1672, 1673, 1674, 1679, 1682, 1683, 1687, 1689, 1690, 1691, 1696, 1702, 1704, 1708, 1713, 1714, 1719, 1722, 1724, 1725, 1727, 1728, 1729, 1732, 1733, 1734, 1735, 1736, 1737, 1743, 1746, 1747, 1748, 1750, 1751, 1753, 1754, 1757, 1765, 1766, 1767, 1768, 1770, 1772, 1778, 1781, 1787, 1788, 1789, 1790, 1791, 1793, 1794, 1796, 1800, 1802, 1804, 1805, 1814, 1816, 1817, 1818, 1820, 1821, 1822, 1824, 1831, 1834, 1835, 1842, 1843, 1846, 1849, 1851, 1852, 1854, 1855, 1856, 1858, 1860, 1862, 1864, 1865, 1866, 1867, 1872, 1874, 1877, 1883, 1885, 1886, 1887, 1888, 1889, 1890, 1892, 1893, 1895, 1897, 1898, 1899, 1902, 1903, 1904, 1905, 1906, 1907, 1910, 1929, 1930, 1935, 1936, 1938, 1939, 1940, 1947, 1948, 1950, 1951, 1952, 1953, 1955, 1961, 1963, 1964, 1967, 1968, 1970, 1971, 1972, 1979, 1980, 1981, 1983, 1984, 1987, 1990, 1993, 1996, 1997, 2004, 2008, 2009, 2011, 2012, 2013, 2019, 2020, 2021, 2022, 2023, 2027, 2028, 2029, 2032, 2034, 2037, 2039, 2040, 2044, 2046, 2047, 2048, 2049, 2055, 2056, 2058, 2060, 2062, 2063, 2064, 2067, 2068, 2071, 2072, 2073, 2075, 2077, 2078, 2082, 2086, 2089, 2091, 2096, 2106, 2107, 2110, 2114, 2120, 2127, 2128, 2135, 2147, 2148, 2151, 2155, 2158, 2165, 2166, 2167, 2180, 2187, 2190, 2201, 2205, 2209, 2212, 2214, 2216, 2220, 2223, 2228, 2230, 2231, 2238, 2241, 2242, 2248, 2256, 2263, 2278, 2285, 2292, 2297, 2298, 2301, 2312, 2313, 2314, 2319, 2321, 2332, 2342, 2345, 2364, 2368
+
+Removed zero-length segments:
+    588, 589, 594, 724, 781, 784, 819, 884, 920, 928, 963, 977, 981, 984, 985, 987, 988, 1006, 1008, 1011, 1028, 1030, 1036, 1039, 1041, 1045, 1051, 1071, 1081, 1085, 1093, 1097, 1106, 1145, 1148, 1161, 1265, 1403, 1406, 1410, 1414, 1449, 1454, 1498, 1509, 1538, 1553, 1568, 1578, 1590, 1629, 1645, 1676, 1706, 1721, 1730, 1744, 1756, 1758, 1771, 1773, 1782, 1786, 1798, 1803, 1815, 1830, 1832, 1833, 1863, 1884, 1891, 1901, 1924, 1925, 1928, 1937, 1941, 1943, 1945, 1969, 1973, 1974, 1975, 1976, 1988, 1998, 2002, 2005, 2007, 2014, 2026, 2042, 2052, 2054, 2059, 2061, 2065, 2066, 2076, 2083, 2084, 2087, 2088, 2090, 2101, 2102, 2109, 2112, 2117, 2121, 2125, 2126, 2132, 2134, 2137, 2140, 2159, 2161, 2162, 2175, 2182, 2191, 2199, 2200, 2203, 2204, 2218, 2219, 2226, 2236, 2239, 2245, 2246, 2252, 2257, 2258, 2261, 2264, 2268, 2270, 2280, 2282, 2284, 2289, 2290, 2299, 2302, 2306, 2308, 2309, 2311, 2326, 2327, 2334, 2335, 2340, 2341, 2343, 2348, 2355, 2357, 2360, 2363, 2365
+
+Removed zero-length segments:
+    999, 1027, 1046, 1104, 1651, 1701, 1752, 1764, 1836, 1944, 1954, 1958, 1959, 1960, 1966, 1982, 1994, 2016, 2017, 2024, 2030, 2035, 2036, 2043, 2053, 2074, 2079, 2081, 2092, 2103, 2105, 2111, 2116, 2118, 2131, 2133, 2154, 2164, 2174, 2181, 2186, 2192, 2194, 2215, 2217, 2260, 2272, 2273, 2277, 2279, 2281, 2295, 2307, 2317, 2318, 2322, 2325, 2346, 2351, 2359, 2366, 2387
+
+Removed zero-length segments:
+    1047, 1067, 2229, 2243, 2249, 2250, 2274, 2300, 2315, 2333, 2352
+
+Removed zero-length segments:
+    2015, 2097, 2136, 2149, 2304, 2305, 2344
+
+Removed zero-length segments:
+    2085, 2193, 2227, 2247
+
+Merged small segments:
+    1809, 1811, 1837, 1838, 1839, 1840, 1841, 1844, 1868, 1869, 1871, 1876, 1879, 1909, 1911, 1912, 1913, 1914, 1915, 1916, 1919, 1920, 1921, 1934, 1942, 1956, 1986, 1989, 1991, 1995, 2010, 2031, 2050, 2051, 2057, 2069, 2070, 2080, 2094, 2098, 2099, 2119, 2122, 2123, 2124, 2129, 2138, 2139, 2144, 2146, 2150, 2152, 2153, 2156, 2157, 2160, 2170, 2176, 2177, 2179, 2183, 2188, 2189, 2195, 2196, 2198, 2207, 2208, 2210, 2222, 2234, 2244, 2262, 2271, 2275, 2283, 2287, 2288, 2293, 2303, 2310, 2323, 2324, 2328, 2329, 2330, 2331, 2336, 2353, 2354, 2367
+
+    Unicycler now selects a set of anchor contigs from the single-copy contigs. These are the contigs which will be connected via bridges to form the final assembly.
+
+166 anchor segments (2,739,529 bp) out of 1,438 total segments (2,906,813 bp)
+
+
+Creating SPAdes contig bridges (2022-06-06 19:41:34)
+----------------------------------------------------
+    SPAdes uses paired-end information to perform repeat resolution (RR) and produce contigs from the assembly graph. SPAdes saves the graph paths corresponding to these contigs in the contigs.paths file. When one of these paths contains two or more anchor contigs, Unicycler can create a bridge from the path.
+
+                                                                                                                                      Bridge
+Start                                                          Path                                                          End     quality
+ -143                                514 → 206 → -458 → -273 → -400 → -213 → 391 → 1378 → 401                                148        13.0
+ -133                                            483 → -1362 → -473 → 1384 → -480                                            176        43.2
+ -105                                                          419                                                           150        54.5
+  -92                                                          -445                                                          147        62.0
+  -63                                                          -493                                                          81         62.0
+  -59                                                   -407 → -1393 → 524                                                   154        24.0
+  -31                                                          -493                                                          74         62.6
+  -30                                                    425 → 310 → 301                                                     76         26.3
+  -29                                                          -500                                                          103        61.8
+  -23                                                          541                                                           46         62.6
+  -18                                                          -479                                                          28         63.0
+    4                                                          500                                                           -67        61.8
+    8                                                          476                                                           16         63.0
+   11                                            -394 → -456 → 362 → -586 → -428                                             -61        26.1
+   12                                                   -468 → -358 → -468                                                   -88        25.4
+   16                                                          -476                                                          33         59.6
+   17                                                          484                                                           -100       60.7
+   29                                                   -479 → -339 → 516                                                    67         35.4
+   41                                                          516                                                           54         61.3
+   47                                                          541                                                           2          62.6
+   54                                                          -477                                                          146        63.2
+   89                                                          -532                                                          170        57.0
+   92                                                          -532                                                          173        60.6
+   94                                             -394 → 452 → 362 → -590 → -428                                             -145       26.1
+   95   713 → 701 → 535 → -587 → -316 → 747 → -215 → -438 → -327 → 742 → 575 → 357 → -431 → 572 → -1110 → 305 → -217 → 774   -138        9.9
+   97                                                          461                                                           -139       59.3
+   98                                                          419                                                           -148       63.2
+  116                                                   -505 → 965 → -494                                                    77         51.4
+  133                               514 → -224 → -458 → -274 → -400 → -212 → 391 → 1385 → 401                                -150       13.3
+  143                                            483 → 1347 → -473 → -1374 → -480                                            -175       44.5
+  147                          470 → 434 → -502 → -343 → 542 → 792 → 421 → -705 → 414 → 1376 → -540                          128        19.4
+  149                                                          445                                                           89         62.5
+  170                                       -348 → -278 → 364 → 246 → 464 → -203 → 507                                       135        12.4
+  171                                                          -484                                                          17         61.0
+  173                                       -348 → 279 → 364 → 245 → 464 → -204 → 507                                        136        12.8
+
+
+Creating loop unrolling bridges (2022-06-06 19:41:35)
+-----------------------------------------------------
+    When a SPAdes contig path connects an anchor contig with the middle contig of a simple loop, Unicycler concludes that the sequences are contiguous (i.e. the loop is not a separate piece of DNA). It then uses the read depth of the middle and repeat contigs to guess the number of times to traverse the loop and makes a bridge.
+
+                                  Loop count   Loop count    Loop    Bridge
+Start   Repeat   Middle     End    by repeat    by middle   count   quality
+   88      468      358     -12         1.00         1.01       1      44.5
+   85     -509      764     -62         1.77         0.97       1       5.2
+   52     -363      739     -46         3.83         4.07       4      13.7
+
+
+Applying bridges (2022-06-06 19:41:35)
+--------------------------------------
+    Unicycler now applies to the graph in decreasing order of quality. This ensures that when multiple, contradictory bridges exist, the most supported option is used.
+
+Bridge type   Start → end    Path                                       Quality
+SPAdes           98 → -148   419                                         63.229
+SPAdes           54 → 146    -477                                        63.203
+SPAdes            8 → 16     476                                         63.034
+SPAdes          -18 → 28     -479                                        62.992
+SPAdes          -23 → 46     541                                         62.642
+SPAdes          -31 → 74     -493                                        62.630
+SPAdes           47 → 2      541                                         62.601
+SPAdes          149 → 89     445                                         62.537
+SPAdes          -92 → 147    -445                                        61.987
+SPAdes          -63 → 81     -493                                        61.958
+SPAdes            4 → -67    500                                         61.805
+SPAdes          -29 → 103    -500                                        61.771
+SPAdes           41 → 54     516                                         61.320
+SPAdes          171 → 17     -484                                        60.977
+SPAdes           17 → -100   484                                         60.719
+SPAdes           92 → 173    -532                                        60.639
+SPAdes           16 → 33     -476                                        59.582
+SPAdes           97 → -139   461                                         59.307
+SPAdes           89 → 170    -532                                        56.957
+SPAdes         -105 → 150    419                                         54.490
+SPAdes          116 → 77     -505, 965, -494                             51.435
+SPAdes          143 → -175   483, 1347, -473, -1374, -480                44.536
+SPAdes         -133 → 176    483, -1362, -473, 1384, -480                43.190
+SPAdes           29 → 67     -479, -339, 516                             35.443
+SPAdes          -30 → 76     425, 310, 301                               26.275
+SPAdes           11 → -61    -394, -456, 362, -586, -428                 26.090
+SPAdes           94 → -145   -394, 452, 362, -590, -428                  26.082
+SPAdes           12 → -88    -468, -358, -468                            25.400
+SPAdes          -59 → 154    -407, -1393, 524                            24.029
+SPAdes          147 → 128    470, 434, -502, -343, 542, 792, 421,        19.359
+                             -705, 414, 1376, -540                             
+SPAdes          133 → -150   514, -224, -458, -274, -400, -212, 391,     13.259
+                             1385, 401                                         
+SPAdes         -143 → 148    514, 206, -458, -273, -400, -213, 391,      12.982
+                             1378, 401                                         
+SPAdes          173 → 136    -348, 279, 364, 245, 464, -204, 507         12.815
+SPAdes          170 → 135    -348, -278, 364, 246, 464, -203, 507        12.450
+loop             52 → -46    -363, 739, -363, 739, -363, 739, -363,      13.681
+                             739, -363                                         
+
+
+Bridged assembly graph (2022-06-06 19:41:35)
+--------------------------------------------
+    The assembly is now mostly finished and no more structural changes will be made. Ideally the assembly graph should now have one contig per replicon and no erroneous contigs (i.e. a complete assembly). If there are more contigs, then the assembly is not complete.
+
+
+Component   Segments   Links   Length      N50      Longest segment   Status    
+        1        697     962   2,886,513   43,137           139,383   incomplete
+
+
+Assembly complete (2022-06-06 19:41:35)
+---------------------------------------
+Saving /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/assembly.gfa
+Saving /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7040/temp/short/assembly.fasta
+

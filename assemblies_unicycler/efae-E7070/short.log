@@ -1,0 +1,267 @@
+
+Starting Unicycler (2022-06-06 17:59:23)
+----------------------------------------
+    Welcome to Unicycler, an assembly pipeline for bacterial genomes. Since you provided only short reads, Unicycler will essentially function as a SPAdes-optimiser. It will try many k-mer sizes, choose the best based on contig length and graph connectivity, and scaffold the graph using SPAdes repeat resolution.
+    For more information, please see https://github.com/rrwick/Unicycler
+
+Command: /home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/Unicycler/unicycler-runner.py -o short -1 short_1.fastq.gz -2 short_2.fastq.gz -t 8 --keep 0
+
+Unicycler version: v0.5.0
+Using 8 threads
+
+Making output directory:
+  /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short
+
+Dependencies:
+  Program       Version   Status   
+  spades.py               not found
+  racon                   not used 
+  makeblastdb             not found
+  tblastn                 not found
+
+Error: could not find SPAdes at spades.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+Starting Unicycler (2022-06-06 18:58:46)
+----------------------------------------
+    Welcome to Unicycler, an assembly pipeline for bacterial genomes. Since you provided only short reads, Unicycler will essentially function as a SPAdes-optimiser. It will try many k-mer sizes, choose the best based on contig length and graph connectivity, and scaffold the graph using SPAdes repeat resolution.
+    For more information, please see https://github.com/rrwick/Unicycler
+
+Command: /home/chauvec/projects/ctb-chauvec/PLASMIDS/tools/Unicycler/unicycler-runner.py -o short -1 short_1.fastq.gz -2 short_2.fastq.gz -t 8 --keep 0
+
+Unicycler version: v0.5.0
+Using 8 threads
+
+The output directory already exists and files may be reused or overwritten:
+  /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short
+
+Dependencies:
+  Program       Version   Status  
+  spades.py     3.15.3    good    
+  racon                   not used
+  makeblastdb   2.12.0+   good    
+  tblastn       2.12.0+   good    
+
+
+Choosing k-mer range for assembly (2022-06-06 18:59:03)
+-------------------------------------------------------
+    Unicycler chooses a k-mer range for SPAdes based on the length of the input reads. It uses a wide range of many k-mer sizes to maximise the chance of finding an ideal assembly.
+
+SPAdes maximum k-mer: 127
+Median read length: 151
+K-mer range: 27, 53, 71, 87, 99, 111, 119, 127
+
+
+SPAdes assemblies (2022-06-06 18:59:19)
+---------------------------------------
+    Unicycler now uses SPAdes to assemble the short reads. It scores the assembly graph for each k-mer using the number of contigs (fewer is better) and the number of dead ends (fewer is better). The score function is 1/(c*(d+2)), where c is the contig count and d is the dead end count.
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/spades_assembly -k 27 --threads 8 --isolate -1 /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short_1.fastq.gz -2 /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short_2.fastq.gz -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/spades_assembly -k 27,53 --threads 8 --restart-from k27 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/spades_assembly -k 27,53,71 --threads 8 --restart-from k53 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/spades_assembly -k 27,53,71,87 --threads 8 --restart-from k71 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/spades_assembly -k 27,53,71,87,99 --threads 8 --restart-from k87 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/spades_assembly -k 27,53,71,87,99,111 --threads 8 --restart-from k99 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/spades_assembly -k 27,53,71,87,99,111,119 --threads 8 --restart-from k111 -m 1024
+
+spades.py -o /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/spades_assembly -k 27,53,71,87,99,111,119,127 --threads 8 --restart-from k119 -m 1024
+
+K-mer   Contigs   Dead ends   Score   
+   27    52,355          26   6.82e-07
+   53    82,370          98   1.21e-07
+   71    82,968         251   4.76e-08
+   87    71,896         473   2.93e-08
+   99    64,825       1,807   8.53e-09
+  111    30,653         348   9.32e-08
+  119       530         204   9.16e-06
+  127       345         311   9.26e-06 ← best
+
+Read depth filter: removed 30 contigs totalling 13254 bp
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/001_spades_graph_k027.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/001_spades_graph_k053.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/001_spades_graph_k071.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/001_spades_graph_k087.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/001_spades_graph_k099.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/001_spades_graph_k111.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/001_spades_graph_k119.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/001_spades_graph_k127.gfa
+Deleting /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/spades_assembly/
+
+
+Determining graph multiplicity (2022-06-06 22:25:47)
+----------------------------------------------------
+    Multiplicity is the number of times a sequence occurs in the underlying sequence. Single-copy contigs (those with a multiplicity of one, occurring only once in the underlying sequence) are particularly useful.
+
+
+Cleaning graph (2022-06-06 22:25:47)
+------------------------------------
+    Unicycler now performs various cleaning procedures on the graph to remove overlaps and simplify the graph structure. The end result is a graph ready for bridging.
+
+Graph overlaps removed
+
+Merged small segments:
+    300, 303, 306, 312, 313, 316, 319, 321, 326, 327, 328, 330, 336, 344
+
+    Unicycler now selects a set of anchor contigs from the single-copy contigs. These are the contigs which will be connected via bridges to form the final assembly.
+
+190 anchor segments (2,775,317 bp) out of 331 total segments (2,860,182 bp)
+
+
+Creating SPAdes contig bridges (2022-06-06 22:25:47)
+----------------------------------------------------
+    SPAdes uses paired-end information to perform repeat resolution (RR) and produce contigs from the assembly graph. SPAdes saves the graph paths corresponding to these contigs in the contigs.paths file. When one of these paths contains two or more anchor contigs, Unicycler can create a bridge from the path.
+
+                              Bridge
+Start      Path      End     quality
+ -148   286 → -309   153        43.2
+  -29                63         61.2
+   26      -243      -115       57.7
+   56   229 → 283    98         29.7
+   65                -172       60.0
+  206                26         54.1
+
+
+Creating loop unrolling bridges (2022-06-06 22:25:47)
+-----------------------------------------------------
+    When a SPAdes contig path connects an anchor contig with the middle contig of a simple loop, Unicycler concludes that the sequences are contiguous (i.e. the loop is not a separate piece of DNA). It then uses the read depth of the middle and repeat contigs to guess the number of times to traverse the loop and makes a bridge.
+
+No loop unrolling bridges made
+
+
+Applying bridges (2022-06-06 22:25:47)
+--------------------------------------
+    Unicycler now applies to the graph in decreasing order of quality. This ensures that when multiple, contradictory bridges exist, the most supported option is used.
+
+Bridge type   Start → end    Path        Quality
+SPAdes          -29 → 63                  61.193
+SPAdes           65 → -172                59.972
+SPAdes           26 → -115   -243         57.663
+SPAdes          206 → 26                  54.091
+SPAdes         -148 → 153    286, -309    43.235
+SPAdes           56 → 98     229, 283     29.656
+
+
+Bridged assembly graph (2022-06-06 22:25:47)
+--------------------------------------------
+    The assembly is now mostly finished and no more structural changes will be made. Ideally the assembly graph should now have one contig per replicon and no erroneous contigs (i.e. a complete assembly). If there are more contigs, then the assembly is not complete.
+
+
+Component   Segments   Links   Length      N50      Longest segment   Status    
+    total        256     207   2,830,422   27,640            78,815             
+        1        167     193   1,636,156   29,239            78,815   incomplete
+        2          3       2      91,695   69,437            69,437   incomplete
+        3          1       0      55,133   55,133            55,133   incomplete
+        4          1       0      50,062   50,062            50,062   incomplete
+        5          1       0      47,987   47,987            47,987   incomplete
+        6          1       0      42,316   42,316            42,316   incomplete
+        7          1       0      39,237   39,237            39,237   incomplete
+        8          7       8      68,693   38,402            38,402   incomplete
+        9          1       0      35,061   35,061            35,061   incomplete
+       10          1       0      33,264   33,264            33,264   incomplete
+       11          1       0      32,077   32,077            32,077   incomplete
+       12          1       0      31,903   31,903            31,903   incomplete
+       13          1       0      27,884   27,884            27,884   incomplete
+       14          1       0      26,611   26,611            26,611   incomplete
+       15          1       0      26,096   26,096            26,096   incomplete
+       16          1       0      25,182   25,182            25,182   incomplete
+       17          1       0      25,053   25,053            25,053   incomplete
+       18          1       0      24,640   24,640            24,640   incomplete
+       19          1       0      23,688   23,688            23,688   incomplete
+       20          1       0      21,446   21,446            21,446   incomplete
+       21          1       0      20,321   20,321            20,321   incomplete
+       22          1       0      19,520   19,520            19,520   incomplete
+       23          1       0      19,374   19,374            19,374   incomplete
+       24          1       0      18,356   18,356            18,356   incomplete
+       25          1       0      17,876   17,876            17,876   incomplete
+       26          1       0      17,679   17,679            17,679   incomplete
+       27          1       0      16,999   16,999            16,999   incomplete
+       28          1       0      16,421   16,421            16,421   incomplete
+       29          1       0      15,956   15,956            15,956   incomplete
+       30          1       0      15,750   15,750            15,750   incomplete
+       31          1       0      12,700   12,700            12,700   incomplete
+       32          1       0      11,743   11,743            11,743   incomplete
+       33          1       0      11,207   11,207            11,207   incomplete
+       34          1       0      11,034   11,034            11,034   incomplete
+       35          1       0      10,510   10,510            10,510   incomplete
+       36          1       0      10,460   10,460            10,460   incomplete
+       37          1       0      10,167   10,167            10,167   incomplete
+       38          1       0       9,924    9,924             9,924   incomplete
+       39          1       0       9,853    9,853             9,853   incomplete
+       40          1       0       9,101    9,101             9,101   incomplete
+       41          1       0       8,212    8,212             8,212   incomplete
+       42          1       0       7,856    7,856             7,856   incomplete
+       43          1       0       7,695    7,695             7,695   incomplete
+       44          1       0       6,880    6,880             6,880   incomplete
+       45          1       0       6,796    6,796             6,796   incomplete
+       46          1       0       6,708    6,708             6,708   incomplete
+       47          1       0       6,666    6,666             6,666   incomplete
+       48          1       0       6,296    6,296             6,296   incomplete
+       49          1       0       6,243    6,243             6,243   incomplete
+       50          1       0       6,080    6,080             6,080   incomplete
+       51          1       0       5,807    5,807             5,807   incomplete
+       52          1       0       5,798    5,798             5,798   incomplete
+       53          1       0       5,522    5,522             5,522   incomplete
+       54          1       0       5,452    5,452             5,452   incomplete
+       55          1       0       5,434    5,434             5,434   incomplete
+       56          1       0       5,177    5,177             5,177   incomplete
+       57          1       1       5,088    5,088             5,088     complete
+       58          1       0       4,770    4,770             4,770   incomplete
+       59          1       0       4,553    4,553             4,553   incomplete
+       60          1       0       4,551    4,551             4,551   incomplete
+       61          1       0       4,169    4,169             4,169   incomplete
+       62          1       0       3,894    3,894             3,894   incomplete
+       63          1       0       3,678    3,678             3,678   incomplete
+       64          1       0       3,650    3,650             3,650   incomplete
+       65          1       0       3,634    3,634             3,634   incomplete
+       66          1       0       3,608    3,608             3,608   incomplete
+       67          1       0       3,503    3,503             3,503   incomplete
+       68          1       0       3,240    3,240             3,240   incomplete
+       69          1       0       3,032    3,032             3,032   incomplete
+       70          1       1       2,947    2,947             2,947     complete
+       71          1       0       2,923    2,923             2,923   incomplete
+       72          1       0       2,862    2,862             2,862   incomplete
+       73          1       0       2,789    2,789             2,789   incomplete
+       74          1       0       2,218    2,218             2,218   incomplete
+       75          1       1       2,189    2,189             2,189     complete
+       76          1       0       2,146    2,146             2,146   incomplete
+       77          1       1       2,056    2,056             2,056     complete
+       78          1       0       1,741    1,741             1,741   incomplete
+       79          1       0       1,654    1,654             1,654   incomplete
+       80          1       0       1,507    1,507             1,507   incomplete
+       81          1       0       1,193    1,193             1,193   incomplete
+       82          1       0       1,070    1,070             1,070   incomplete
+
+
+Rotating completed replicons (2022-06-06 22:25:47)
+--------------------------------------------------
+    Any completed circular contigs (i.e. single contigs which have one link connecting end to start) can have their start position changed without altering the sequence. For consistency, Unicycler now searches for a starting gene (dnaA or repA) in each such contig, and if one is found, the contig is rotated to start with that gene on the forward strand.
+
+Segment   Length   Depth       Starting gene   Position   Strand   Identity   Coverage
+    125    5,088     274.55x   none found                                             
+    154    2,947     557.28x   none found                                             
+    169    2,189     778.21x   none found                                             
+    174    2,056   1,303.18x   none found                                             
+
+
+Assembly complete (2022-06-06 22:26:48)
+---------------------------------------
+Saving /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/assembly.gfa
+Saving /project/6069942/PLASMIDS/YERSINIA_PLASMIDS/assemblies_unicycler/efae-E7070/temp/short/assembly.fasta
+
