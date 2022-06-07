@@ -13,7 +13,7 @@ source ../config.sh
 ## Sample ID
 SAMPLE=$(sed -n "${SLURM_ARRAY_TASK_ID}p" samples.txt)
 ## Experiment and output directory
-EXP_DIR=${REPO_HOME}/classification_skesa
+EXP_DIR=${REPO_HOME}/plasgraph_skesa
 OUT_DIR=${EXP_DIR}/${SAMPLE}
 mkdir -p ${OUT_DIR}
 
