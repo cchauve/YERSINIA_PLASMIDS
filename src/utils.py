@@ -48,7 +48,7 @@ def convert_graph(input_graph_file, output_graph_file, log_file):
                 ctg_seq = line_split[2]
                 ctg_kcount = line_split[3]
                 # Contig coverage = number of k-mers times k-mers length
-                ctg_coverage = int(ctg_kcount.split(':')[2]) / len(ctg_seq)
+                ctg_coverage = float(ctg_kcount.split(':')[2]) / len(ctg_seq)
                 CTGS[CTG_CURRENT_ID] = {'skesa_id': ctg_id, 'seq': ctg_seq, 'cov': ctg_coverage, 'kcount': ctg_kcount}
                 CTG_CURRENT_ID += 1
                 if ':' in ctg_id:
